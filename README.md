@@ -21,7 +21,7 @@
 
 2. **The Joyce Project**  
    `https://www.joyceproject.com/1`
-   ## [The Joyce Project](https://www.joyceproject.com/1) :contentReference[oaicite:0]{index=0}
+   ## [The Joyce Project](https://www.joyceproject.com/1)
 
    Онлайн-издание *Ulysses* с полным текстом романа, цветовой разметкой и подробными гиперссылочными аннотациями, созданное Джоном Хантом для поддержки чтения романа. :contentReference[oaicite:0]{index=0}
 
