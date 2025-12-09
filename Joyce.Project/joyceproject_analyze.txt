@@ -1,0 +1,6 @@
+mimes                     files     size       share
+----------------------  -------  -------  ----------
+application/javascript        1  1083790   98.6278
+image/png                     1    12637    1.15
+text/html                     2     2442    0.222228
+#total                        4  1098869  100
