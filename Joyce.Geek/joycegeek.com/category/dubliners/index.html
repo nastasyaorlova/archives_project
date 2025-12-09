@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html id="ie7" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Dubliners &laquo; JoyceGeek</title>
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://joycegeek.com/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="https://s2.wp.com/wp-content/themes/pub/quintus/js/html5.js?m=1315596887i" type="text/javascript"></script>
+<![endif]-->
+
+<script type="text/javascript">
+  WebFontConfig = {"google":{"families":["Merriweather:r,i,b,bi:latin,latin-ext","EB+Garamond:500:latin,latin-ext"]},"api_url":"https:\/\/fonts-api.wp.com\/css"};
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = '/wp-content/plugins/custom-fonts/js/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+	})();
+</script><style id="jetpack-custom-fonts-css">.wf-active #site-title{font-family:"EB Garamond",serif;font-style:normal;font-weight:500}.wf-active .entry-meta .entry-date, .wf-active body{font-family:"Merriweather",serif}.wf-active #access .menu, .wf-active #comments #comments-title, .wf-active #content nav, .wf-active #site-description, .wf-active .blog-footer, .wf-active .comment .comment-author, .wf-active .comment .comment-meta, .wf-active .content .page-title, .wf-active .entry-content label, .wf-active .entry-meta, .wf-active .entry-title, .wf-active .widget .widget-title{font-family:"EB Garamond",serif;font-style:normal;font-weight:500}.wf-active .entry-content h1, .wf-active .entry-content h2, .wf-active .entry-content h3, .wf-active .entry-content h4, .wf-active .entry-content h5, .wf-active .entry-content h6{font-family:"EB Garamond",serif;font-weight:500;font-style:normal}.wf-active #site-description{font-weight:500;font-style:normal}.wf-active #access .menu{font-weight:500;font-style:normal}.wf-active #access ul ul a{font-style:normal;font-weight:500}.wf-active .content .page-title{font-weight:500;font-style:normal}.wf-active .entry-title, .wf-active .entry-title a{font-weight:500;font-style:normal}.wf-active .entry-meta{font-style:normal;font-weight:500}.wf-active .entry-meta .entry-date b{font-weight:500;font-style:normal}.wf-active footer.entry-meta .comments-link a{font-style:normal;font-weight:500}.wf-active #content nav div a{font-style:normal;font-weight:500}.wf-active .format-link .entry-title a{font-style:normal;font-weight:500}.wf-active .format-link .entry-title:after{font-style:normal;font-weight:500}.wf-active .entry-content label{font-weight:500;font-style:normal}.wf-active #comments #comments-title{font-style:normal;font-weight:500}.wf-active #comments #comments-title em{font-style:normal;font-weight:500}.wf-active .comment .comment-author cite{font-style:normal;font-weight:500}.wf-active .comment .comment-meta{font-style:normal;font-weight:500}.wf-active .widget .widget-title{font-weight:500;font-style:normal}.wf-active .blog-footer{font-style:normal;font-weight:500}</style>
+<meta name='robots' content='max-image-preview:large' />
+<meta name="google-site-verification" content="x-XGTI63KjxWax_Y7nUFdww69HrSdCBGnvWsFf2jzBs" />
+
+<!-- Async WordPress.com Remote Login -->
+<script id="wpcom_remote_login_js">
+var wpcom_remote_login_extra_auth = '';
+function wpcom_remote_login_remove_dom_node_id( element_id ) {
+	var dom_node = document.getElementById( element_id );
+	if ( dom_node ) { dom_node.parentNode.removeChild( dom_node ); }
+}
+function wpcom_remote_login_remove_dom_node_classes( class_name ) {
+	var dom_nodes = document.querySelectorAll( '.' + class_name );
+	for ( var i = 0; i < dom_nodes.length; i++ ) {
+		dom_nodes[ i ].parentNode.removeChild( dom_nodes[ i ] );
+	}
+}
+function wpcom_remote_login_final_cleanup() {
+	wpcom_remote_login_remove_dom_node_classes( "wpcom_remote_login_msg" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_key" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_validate" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_js" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_request_access_iframe" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_request_access_styles" );
+}
+
+// Watch for messages back from the remote login
+window.addEventListener( "message", function( e ) {
+	if ( e.origin === "https://r-login.wordpress.com" ) {
+		var data = {};
+		try {
+			data = JSON.parse( e.data );
+		} catch( e ) {
+			wpcom_remote_login_final_cleanup();
+			return;
+		}
+
+		if ( data.msg === 'LOGIN' ) {
+			// Clean up the login check iframe
+			wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_key" );
+
+			var id_regex = new RegExp( /^[0-9]+$/ );
+			var token_regex = new RegExp( /^.*|.*|.*$/ );
+			if (
+				token_regex.test( data.token )
+				&& id_regex.test( data.wpcomid )
+			) {
+				// We have everything we need to ask for a login
+				var script = document.createElement( "script" );
+				script.setAttribute( "id", "wpcom_remote_login_validate" );
+				script.src = '/remote-login.php?wpcom_remote_login=validate'
+					+ '&wpcomid=' + data.wpcomid
+					+ '&token=' + encodeURIComponent( data.token )
+					+ '&host=' + window.location.protocol
+					+ '//' + window.location.hostname
+					+ '&postid=1446'
+					+ '&is_singular=';
+				document.body.appendChild( script );
+			}
+
+			return;
+		}
+
+		// Safari ITP, not logged in, so redirect
+		if ( data.msg === 'LOGIN-REDIRECT' ) {
+			window.location = 'https://wordpress.com/log-in?redirect_to=' + window.location.href;
+			return;
+		}
+
+		// Safari ITP, storage access failed, remove the request
+		if ( data.msg === 'LOGIN-REMOVE' ) {
+			var css_zap = 'html { -webkit-transition: margin-top 1s; transition: margin-top 1s; } /* 9001 */ html { margin-top: 0 !important; } * html body { margin-top: 0 !important; } @media screen and ( max-width: 782px ) { html { margin-top: 0 !important; } * html body { margin-top: 0 !important; } }';
+			var style_zap = document.createElement( 'style' );
+			style_zap.type = 'text/css';
+			style_zap.appendChild( document.createTextNode( css_zap ) );
+			document.body.appendChild( style_zap );
+
+			var e = document.getElementById( 'wpcom_request_access_iframe' );
+			e.parentNode.removeChild( e );
+
+			document.cookie = 'wordpress_com_login_access=denied; path=/; max-age=31536000';
+
+			return;
+		}
+
+		// Safari ITP
+		if ( data.msg === 'REQUEST_ACCESS' ) {
+			console.log( 'request access: safari' );
+
+			// Check ITP iframe enable/disable knob
+			if ( wpcom_remote_login_extra_auth !== 'safari_itp_iframe' ) {
+				return;
+			}
+
+			// If we are in a "private window" there is no ITP.
+			var private_window = false;
+			try {
+				var opendb = window.openDatabase( null, null, null, null );
+			} catch( e ) {
+				private_window = true;
+			}
+
+			if ( private_window ) {
+				console.log( 'private window' );
+				return;
+			}
+
+			var iframe = document.createElement( 'iframe' );
+			iframe.id = 'wpcom_request_access_iframe';
+			iframe.setAttribute( 'scrolling', 'no' );
+			iframe.setAttribute( 'sandbox', 'allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-top-navigation-by-user-activation' );
+			iframe.src = 'https://r-login.wordpress.com/remote-login.php?wpcom_remote_login=request_access&origin=' + encodeURIComponent( data.origin ) + '&wpcomid=' + encodeURIComponent( data.wpcomid );
+
+			var css = 'html { -webkit-transition: margin-top 1s; transition: margin-top 1s; } /* 9001 */ html { margin-top: 46px !important; } * html body { margin-top: 46px !important; } @media screen and ( max-width: 660px ) { html { margin-top: 71px !important; } * html body { margin-top: 71px !important; } #wpcom_request_access_iframe { display: block; height: 71px !important; } } #wpcom_request_access_iframe { border: 0px; height: 46px; position: fixed; top: 0; left: 0; width: 100%; min-width: 100%; z-index: 99999; background: #23282d; } ';
+
+			var style = document.createElement( 'style' );
+			style.type = 'text/css';
+			style.id = 'wpcom_request_access_styles';
+			style.appendChild( document.createTextNode( css ) );
+			document.body.appendChild( style );
+
+			document.body.appendChild( iframe );
+		}
+
+		if ( data.msg === 'DONE' ) {
+			wpcom_remote_login_final_cleanup();
+		}
+	}
+}, false );
+
+// Inject the remote login iframe after the page has had a chance to load
+// more critical resources
+window.addEventListener( "DOMContentLoaded", function( e ) {
+	var iframe = document.createElement( "iframe" );
+	iframe.style.display = "none";
+	iframe.setAttribute( "scrolling", "no" );
+	iframe.setAttribute( "id", "wpcom_remote_login_key" );
+	iframe.src = "https://r-login.wordpress.com/remote-login.php"
+		+ "?wpcom_remote_login=key"
+		+ "&origin=aHR0cHM6Ly9qb3ljZWdlZWsuY29t"
+		+ "&wpcomid=69025680"
+		+ "&time=" + Math.floor( Date.now() / 1000 );
+	document.body.appendChild( iframe );
+}, false );
+</script>
+<link rel='dns-prefetch' href='https://s2.wp.com/' />
+<link rel='dns-prefetch' href='https://s0.wp.com/' />
+<link rel="alternate" type="application/rss+xml" title="JoyceGeek &raquo; Feed" href="../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="JoyceGeek &raquo; Comments Feed" href="../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="JoyceGeek &raquo; Dubliners Category Feed" href="https://joycegeek.com/category/dubliners/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+	<link crossorigin='anonymous' rel='stylesheet' id='all-css-0-1' href='../../wp-content/mu-plugins/infinity/themes/pub/quintus.css%3Fm=1340018328i&amp;cssminify=yes.css' type='text/css' media='all' />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-2-1' href='../../wp-content/plugins/gutenberg-core/v22.2.0/build/styles/block-library/style.css%3Fm=1764855221i&amp;cssminify=yes.css' type='text/css' media='all' />
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify {
+	text-align:justify;
+}
+.has-text-align-justify{text-align:justify;}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style><style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-family--albert-sans: 'Albert Sans', sans-serif;--wp--preset--font-family--alegreya: Alegreya, serif;--wp--preset--font-family--arvo: Arvo, serif;--wp--preset--font-family--bodoni-moda: 'Bodoni Moda', serif;--wp--preset--font-family--bricolage-grotesque: 'Bricolage Grotesque', sans-serif;--wp--preset--font-family--cabin: Cabin, sans-serif;--wp--preset--font-family--chivo: Chivo, sans-serif;--wp--preset--font-family--commissioner: Commissioner, sans-serif;--wp--preset--font-family--cormorant: Cormorant, serif;--wp--preset--font-family--courier-prime: 'Courier Prime', monospace;--wp--preset--font-family--crimson-pro: 'Crimson Pro', serif;--wp--preset--font-family--dm-mono: 'DM Mono', monospace;--wp--preset--font-family--dm-sans: 'DM Sans', sans-serif;--wp--preset--font-family--dm-serif-display: 'DM Serif Display', serif;--wp--preset--font-family--domine: Domine, serif;--wp--preset--font-family--eb-garamond: 'EB Garamond', serif;--wp--preset--font-family--epilogue: Epilogue, sans-serif;--wp--preset--font-family--fahkwang: Fahkwang, sans-serif;--wp--preset--font-family--figtree: Figtree, sans-serif;--wp--preset--font-family--fira-sans: 'Fira Sans', sans-serif;--wp--preset--font-family--fjalla-one: 'Fjalla One', sans-serif;--wp--preset--font-family--fraunces: Fraunces, serif;--wp--preset--font-family--gabarito: Gabarito, system-ui;--wp--preset--font-family--ibm-plex-mono: 'IBM Plex Mono', monospace;--wp--preset--font-family--ibm-plex-sans: 'IBM Plex Sans', sans-serif;--wp--preset--font-family--ibarra-real-nova: 'Ibarra Real Nova', serif;--wp--preset--font-family--instrument-serif: 'Instrument Serif', serif;--wp--preset--font-family--inter: Inter, sans-serif;--wp--preset--font-family--josefin-sans: 'Josefin Sans', sans-serif;--wp--preset--font-family--jost: Jost, sans-serif;--wp--preset--font-family--libre-baskerville: 'Libre Baskerville', serif;--wp--preset--font-family--libre-franklin: 'Libre Franklin', sans-serif;--wp--preset--font-family--literata: Literata, serif;--wp--preset--font-family--lora: Lora, serif;--wp--preset--font-family--merriweather: Merriweather, serif;--wp--preset--font-family--montserrat: Montserrat, sans-serif;--wp--preset--font-family--newsreader: Newsreader, serif;--wp--preset--font-family--noto-sans-mono: 'Noto Sans Mono', sans-serif;--wp--preset--font-family--nunito: Nunito, sans-serif;--wp--preset--font-family--open-sans: 'Open Sans', sans-serif;--wp--preset--font-family--overpass: Overpass, sans-serif;--wp--preset--font-family--pt-serif: 'PT Serif', serif;--wp--preset--font-family--petrona: Petrona, serif;--wp--preset--font-family--piazzolla: Piazzolla, serif;--wp--preset--font-family--playfair-display: 'Playfair Display', serif;--wp--preset--font-family--plus-jakarta-sans: 'Plus Jakarta Sans', sans-serif;--wp--preset--font-family--poppins: Poppins, sans-serif;--wp--preset--font-family--raleway: Raleway, sans-serif;--wp--preset--font-family--roboto: Roboto, sans-serif;--wp--preset--font-family--roboto-slab: 'Roboto Slab', serif;--wp--preset--font-family--rubik: Rubik, sans-serif;--wp--preset--font-family--rufina: Rufina, serif;--wp--preset--font-family--sora: Sora, sans-serif;--wp--preset--font-family--source-sans-3: 'Source Sans 3', sans-serif;--wp--preset--font-family--source-serif-4: 'Source Serif 4', serif;--wp--preset--font-family--space-mono: 'Space Mono', monospace;--wp--preset--font-family--syne: Syne, sans-serif;--wp--preset--font-family--texturina: Texturina, serif;--wp--preset--font-family--urbanist: Urbanist, sans-serif;--wp--preset--font-family--work-sans: 'Work Sans', sans-serif;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-albert-sans-font-family{font-family: var(--wp--preset--font-family--albert-sans) !important;}.has-alegreya-font-family{font-family: var(--wp--preset--font-family--alegreya) !important;}.has-arvo-font-family{font-family: var(--wp--preset--font-family--arvo) !important;}.has-bodoni-moda-font-family{font-family: var(--wp--preset--font-family--bodoni-moda) !important;}.has-bricolage-grotesque-font-family{font-family: var(--wp--preset--font-family--bricolage-grotesque) !important;}.has-cabin-font-family{font-family: var(--wp--preset--font-family--cabin) !important;}.has-chivo-font-family{font-family: var(--wp--preset--font-family--chivo) !important;}.has-commissioner-font-family{font-family: var(--wp--preset--font-family--commissioner) !important;}.has-cormorant-font-family{font-family: var(--wp--preset--font-family--cormorant) !important;}.has-courier-prime-font-family{font-family: var(--wp--preset--font-family--courier-prime) !important;}.has-crimson-pro-font-family{font-family: var(--wp--preset--font-family--crimson-pro) !important;}.has-dm-mono-font-family{font-family: var(--wp--preset--font-family--dm-mono) !important;}.has-dm-sans-font-family{font-family: var(--wp--preset--font-family--dm-sans) !important;}.has-dm-serif-display-font-family{font-family: var(--wp--preset--font-family--dm-serif-display) !important;}.has-domine-font-family{font-family: var(--wp--preset--font-family--domine) !important;}.has-eb-garamond-font-family{font-family: var(--wp--preset--font-family--eb-garamond) !important;}.has-epilogue-font-family{font-family: var(--wp--preset--font-family--epilogue) !important;}.has-fahkwang-font-family{font-family: var(--wp--preset--font-family--fahkwang) !important;}.has-figtree-font-family{font-family: var(--wp--preset--font-family--figtree) !important;}.has-fira-sans-font-family{font-family: var(--wp--preset--font-family--fira-sans) !important;}.has-fjalla-one-font-family{font-family: var(--wp--preset--font-family--fjalla-one) !important;}.has-fraunces-font-family{font-family: var(--wp--preset--font-family--fraunces) !important;}.has-gabarito-font-family{font-family: var(--wp--preset--font-family--gabarito) !important;}.has-ibm-plex-mono-font-family{font-family: var(--wp--preset--font-family--ibm-plex-mono) !important;}.has-ibm-plex-sans-font-family{font-family: var(--wp--preset--font-family--ibm-plex-sans) !important;}.has-ibarra-real-nova-font-family{font-family: var(--wp--preset--font-family--ibarra-real-nova) !important;}.has-instrument-serif-font-family{font-family: var(--wp--preset--font-family--instrument-serif) !important;}.has-inter-font-family{font-family: var(--wp--preset--font-family--inter) !important;}.has-josefin-sans-font-family{font-family: var(--wp--preset--font-family--josefin-sans) !important;}.has-jost-font-family{font-family: var(--wp--preset--font-family--jost) !important;}.has-libre-baskerville-font-family{font-family: var(--wp--preset--font-family--libre-baskerville) !important;}.has-libre-franklin-font-family{font-family: var(--wp--preset--font-family--libre-franklin) !important;}.has-literata-font-family{font-family: var(--wp--preset--font-family--literata) !important;}.has-lora-font-family{font-family: var(--wp--preset--font-family--lora) !important;}.has-merriweather-font-family{font-family: var(--wp--preset--font-family--merriweather) !important;}.has-montserrat-font-family{font-family: var(--wp--preset--font-family--montserrat) !important;}.has-newsreader-font-family{font-family: var(--wp--preset--font-family--newsreader) !important;}.has-noto-sans-mono-font-family{font-family: var(--wp--preset--font-family--noto-sans-mono) !important;}.has-nunito-font-family{font-family: var(--wp--preset--font-family--nunito) !important;}.has-open-sans-font-family{font-family: var(--wp--preset--font-family--open-sans) !important;}.has-overpass-font-family{font-family: var(--wp--preset--font-family--overpass) !important;}.has-pt-serif-font-family{font-family: var(--wp--preset--font-family--pt-serif) !important;}.has-petrona-font-family{font-family: var(--wp--preset--font-family--petrona) !important;}.has-piazzolla-font-family{font-family: var(--wp--preset--font-family--piazzolla) !important;}.has-playfair-display-font-family{font-family: var(--wp--preset--font-family--playfair-display) !important;}.has-plus-jakarta-sans-font-family{font-family: var(--wp--preset--font-family--plus-jakarta-sans) !important;}.has-poppins-font-family{font-family: var(--wp--preset--font-family--poppins) !important;}.has-raleway-font-family{font-family: var(--wp--preset--font-family--raleway) !important;}.has-roboto-font-family{font-family: var(--wp--preset--font-family--roboto) !important;}.has-roboto-slab-font-family{font-family: var(--wp--preset--font-family--roboto-slab) !important;}.has-rubik-font-family{font-family: var(--wp--preset--font-family--rubik) !important;}.has-rufina-font-family{font-family: var(--wp--preset--font-family--rufina) !important;}.has-sora-font-family{font-family: var(--wp--preset--font-family--sora) !important;}.has-source-sans-3-font-family{font-family: var(--wp--preset--font-family--source-sans-3) !important;}.has-source-serif-4-font-family{font-family: var(--wp--preset--font-family--source-serif-4) !important;}.has-space-mono-font-family{font-family: var(--wp--preset--font-family--space-mono) !important;}.has-syne-font-family{font-family: var(--wp--preset--font-family--syne) !important;}.has-texturina-font-family{font-family: var(--wp--preset--font-family--texturina) !important;}.has-urbanist-font-family{font-family: var(--wp--preset--font-family--urbanist) !important;}.has-work-sans-font-family{font-family: var(--wp--preset--font-family--work-sans) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-4-1' href='../../_static/index.html%3F%3F-eJyFj10KwkAMhC9kNtQWrQ%252FiWbZtrKv752bX4u1NEbQi6EtIhvmGDE4R+uAz+YzRltF4xj50NvQXxrWqWlUBGxctQaKbanAwnF8O4Hy3pHrmFS6CXIF3ViLRXdR5djgajCZLTmy%252FsCkKA10XEzGDTGeKg3wSkL+4p4yxdHgtxufC+PevRNJglHVEcS3OX9BIAaS3zib4jwOOVps0owe3r7ZNtdn.css' type='text/css' media='all' />
+<link crossorigin='anonymous' rel='stylesheet' id='print-css-5-1' href='../../wp-content/mu-plugins/global-print/global-print.css%3Fm=1465851035i&amp;cssminify=yes.css' type='text/css' media='print' />
+<style id='jetpack-global-styles-frontend-style-inline-css'>
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+/*# sourceURL=jetpack-global-styles-frontend-style-inline-css */
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-8-1' href='../../wp-content/themes/h4/global.css%3Fm=1420737423i&amp;cssminify=yes.css' type='text/css' media='all' />
+<script type="text/javascript" id="wpcom-actionbar-placeholder-js-extra">
+/* <![CDATA[ */
+var actionbardata = {"siteID":"69025680","postID":"0","siteURL":"https://joycegeek.com","xhrURL":"https://joycegeek.com/wp-admin/admin-ajax.php","nonce":"5d291f3206","isLoggedIn":"","statusMessage":"","subsEmailDefault":"instantly","proxyScriptUrl":"https://s0.wp.com/wp-content/js/wpcom-proxy-request.js?m=1513050504i&amp;ver=20211021","i18n":{"followedText":"New posts from this site will now appear in your \u003Ca href=\"https://wordpress.com/reader\"\u003EReader\u003C/a\u003E","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","shortLinkCopied":"Shortlink copied to clipboard."}};
+//# sourceURL=wpcom-actionbar-placeholder-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" id="jetpack-mu-wpcom-settings-js-before">
+/* <![CDATA[ */
+var JETPACK_MU_WPCOM_SETTINGS = {"assetsUrl":"https://s1.wp.com/wp-content/mu-plugins/jetpack-mu-wpcom-plugin/sun/jetpack_vendor/automattic/jetpack-mu-wpcom/src/build/"};
+//# sourceURL=jetpack-mu-wpcom-settings-js-before
+/* ]]> */
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='../../wp-content/js/rlt-proxy.js%3Fm=1720530689i'></script>
+<script type="text/javascript" id="rlt-proxy-js-after">
+/* <![CDATA[ */
+	rltInitialize( {"token":null,"iframeOrigins":["https:\/\/widgets.wp.com"]} );
+//# sourceURL=rlt-proxy-js-after
+/* ]]> */
+</script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://joycegeek.wordpress.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress.com" />
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Dubliners &#8211; JoyceGeek" />
+<meta property="og:url" content="https://joycegeek.com/category/dubliners/" />
+<meta property="og:site_name" content="JoyceGeek" />
+<meta property="og:image" content="https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=200&#038;ts=1765299630" />
+<meta property="og:image:width" content="200" />
+<meta property="og:image:height" content="200" />
+<meta property="og:image:alt" content="" />
+<meta property="og:locale" content="en_US" />
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="shortcut icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=32" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=32" sizes="16x16" />
+<link rel="apple-touch-icon" href="https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=114" />
+<link rel='openid.server' href='../../index.html%3Fopenidserver=1.html' />
+<link rel='openid.delegate' href='../../index.html' />
+<link rel="search" type="application/opensearchdescription+xml" href="../../osd.xml" title="JoyceGeek" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+<meta name="theme-color" content="#153c15" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>		<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="description" content="Posts about Dubliners written by JoyceGeek" />
+
+	<style type="text/css">
+		#ie7 .blog-header .site-branding {
+			display: block;
+		}
+	</style>
+	<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #153c15; background-image: url("https://joycegeek.files.wordpress.com/2014/06/web-background.jpg"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }
+</style>
+	<style type="text/css" id="custom-colors-css">.content article {
+	background-image: none;
+}
+#page { background-color: #f1f1f1;}
+.blog-footer a { color: #6D6D6D;}
+#access { background-color: #fff;}
+#content nav div a { color: #3A3A3A;}
+footer.entry-meta .comments-link a { fg1: #fff;}
+.entry-meta .entry-date { color: #6D6D6D;}
+.blog-footer { color: #6D6D6D;}
+body { background: #153c15;}
+footer.entry-meta { border-color: #DED9D4;}
+footer.entry-meta { border-color: rgba( 222, 217, 212, 0.4 );}
+.widget .widget-title { border-color: #DED9D4;}
+.widget .widget-title { border-color: rgba( 222, 217, 212, 0.4 );}
+#access .menu { border-color: #DED9D4;}
+#access .menu { border-color: rgba( 222, 217, 212, 0.5 );}
+#content nav div a { background-color: #DED9D4;}
+#content nav div a { border-color: #C7BFB6;}
+#content nav div a:hover { background-color: #B1A59A;}
+#content nav div a:hover { border-color: #9B8C7D;}
+footer.entry-meta .comments-link a { background-color: #DED9D4;}
+footer.entry-meta .comments-link a:hover { background-color: #C7BFB6;}
+#respond label { background-color: #DED9D4;}
+#wp-calendar tbody td { background-color: #DED9D4;}
+.entry-meta .entry-date { background-color: #ffffff;}
+.blog-footer { background-color: #ffffff;}
+.page-link a { background-color: #ffffff;}
+.page-link a:hover { background-color: #CCCCCC;}
+.content .page-link a { color: #424242;}
+#wp-calendar tbody #today { background-color: #ffffff;}
+.widget_authors img + strong { background-color: #ffffff;}
+.content a { color: #666666;}
+.entry-meta .entry-date:hover { color: #f1f1f1;}
+.image-attachment .entry-content .entry-attachment { background-color: #f1f1f1;}
+.wp-caption { background-color: #f1f1f1;}
+#comments #comments-title em:before { color: #f1f1f1;}
+#comments #comments-title em:after { color: #f1f1f1;}
+.widget_authors a:hover strong { color: #f1f1f1;}
+.entry-title, .entry-title a { color: #4D6A83;}
+.widget_authors img + strong { color: #C6D4E1;}
+.widget_authors a:hover strong { background-color: #C6D4E1;}
+</style>
+			<link rel="stylesheet" id="custom-css-css" type="text/css" href="https://s0.wp.com/?custom-css=1&#038;csblog=4FCJq&#038;cscache=6&#038;csrev=24" />
+			<link crossorigin='anonymous' rel='stylesheet' id='all-css-0-3' href='../../_static/index.html%3F%3F-eJydj9sKwjAQRH%252FIuNQL6oP4KdImS9k2yS7ZDcW%252Ft1IVfFOfhjMMBwYmcZ6zYTZI1UmsPWWFAU1aPz4ZtGa4UvbQRfajgk4kWNZedQVfCxKHGlHBt4WrYnxvXsWfvolCjzYnlyAFVZ2wmltqULtF%252FNG8XK0Uw4yd+kJixPP2g9aJ8kN8SefmsN+ejs2u2Qx3UYV%252F%252FQ==&amp;cssminify=ye.css' type='text/css' media='all' />
+</head>
+
+<body class="archive category category-dubliners category-722262 custom-background wp-theme-pubquintus customizer-styles-applied color-default jetpack-reblog-enabled custom-colors">
+
+<div id="page" class="hfeed">
+		<header class="blog-header" role="banner">
+		<div class="site-branding">
+			<h1 id="site-title"><a href="../../index.html" title="JoyceGeek" rel="home">JoyceGeek</a></h1>
+			<h2 id="site-description">A James Joyce Blogsite</h2>
+		</div>
+	</header>
+
+	<nav id="access" role="navigation">
+		<form method="get" id="searchform" action="../../index.html">
+	<input type="text" class="field" name="s" id="s" placeholder="Search" />
+	<label for="s" class="assistive-text">Search</label>
+	<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
+</form>		<div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-2225" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2225"><a href="../../index.html">What’s a JoyceGeek?</a></li>
+<li id="menu-item-2226" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2226"><a href="../../dontpanic/index.html">Finnegans Wake in Performance</a></li>
+<li id="menu-item-2227" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2227"><a href="../../thundervideos/index.html">ThunderVideos</a></li>
+<li id="menu-item-2228" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2228"><a href="../../whats-a-joycegeek/all-about-adam-harvey/index.html">Meet Adam Harvey: JoyceGeek</a></li>
+<li id="menu-item-2229" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-2229"><a href="../../joyceblog-2/index.html">JoyceBlog</a></li>
+<li id="menu-item-2230" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2230"><a href="../../groupread/index.html">JoyceGroup Santa Fe</a></li>
+<li id="menu-item-4556" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4556"><a href="../../bloomsday/index.html">Bloomsday in Santa Fe</a></li>
+</ul></div>	</nav>
+
+	<div id="main">
+		<section id="primary">
+			<div class="content" id="content" role="main">
+
+				<header class="page-header">
+					<h1 class="page-title">
+						Category Archives: <span>Dubliners</span>					</h1>
+									</header>
+
+				
+								
+								
+					
+<article id="post-1446" class="post-1446 post type-post status-publish format-standard hentry category-a-portrait-of-the-artist-as-a-young-man category-dubliners category-finnegans-wake category-joyceplanet-navigation category-metempsychosis category-rule-of-three category-the-prankquean category-ulysses tag-dubliners tag-finnegans-wake tag-james-joyce tag-ulysses">
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="../../2015/11/11/reverse-reading/index.html" rel="bookmark">Reverse-Reading: Beautiful, Fierce,&nbsp;Unkempt</a></h1>
+
+				<div class="entry-meta">
+			<a class="entry-date" title="November 11 2015" href="../../2015/11/11/reverse-reading/index.html">
+				<time datetime="2015-11-11T21:20:00-07:00">Nov<b>11</b></time>
+			</a>
+					</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		<div data-shortcode="caption" id="attachment_1472" style="width: 650px" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-1472" data-attachment-id="1472" data-permalink="https://joycegeek.com/2015/11/11/reverse-reading/start-to-finish/" data-orig-file="https://joycegeek.com/wp-content/uploads/2015/10/start-to-finish3.jpg" data-orig-size="1436,386" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Start to Finish" data-image-description="" data-image-caption="" data-medium-file="https://joycegeek.com/wp-content/uploads/2015/10/start-to-finish3.jpg?w=300" data-large-file="https://joycegeek.com/wp-content/uploads/2015/10/start-to-finish3.jpg?w=640" class="wp-image-1472 size-large" src="../../wp-content/uploads/2015/10/start-to-finish3.jpg%3Fw=640&amp;h=172" alt="Start to Finish"   srcset="../../wp-content/uploads/2015/10/start-to-finish3.jpg%3Fw=660 660w, ../../wp-content/uploads/2015/10/start-to-finish3.jpg%3Fw=1320 1320w, ../../wp-content/uploads/2015/10/start-to-finish3.jpg%3Fw=150 150w, ../../wp-content/uploads/2015/10/start-to-finish3.jpg%3Fw=300 300w, ../../wp-content/uploads/2015/10/start-to-finish3.jpg%3Fw=768 768w, ../../wp-content/uploads/2015/10/start-to-finish3.jpg%3Fw=1024 1024w" sizes="(max-width: 660px) 100vw, 660px" /><p id="caption-attachment-1472" class="wp-caption-text">Go, Set, Ready!</p></div>
+<h1 style="text-align:justify;"><strong>There are lots of ways to read Joyce, and really, none of them are conventional.</strong></h1>
+<p style="text-align:justify;">After all, Joyce&#8217;s writing remains outside even today&#8217;s boundaries of convention &#8211; a full century later. So for the nonce (but not really), I&#8217;d like to recommend the following programme: Start by reading <em><strong>Finnegans Wake</strong></em>, and when that&#8217;s done, read <em><strong>Ulysses</strong></em>, then <em><strong>A Portrait of the Artist as a Young Man</strong></em>, and finally <em><strong>Dubliners</strong></em>. Do this as if these books were written in this order, as if they were intended to be read in this order, as if this were their natural order of ascending complexity, and no fool in their right mind would dare even crack open <em><strong>Dubliners</strong></em> without first having fully immersed themselves in the later works – particularly <em><strong>Finnegans Wake</strong></em>.</p>
+<p style="text-align:justify;">It&#8217;s a little something I like to call Reverse-Reading, a practice that brings insights into the earlier works that quite simply would not be possible otherwise. I wouldn&#8217;t be surprised actually if the term has been used before, for the practice itself certainly has. Some of my favorite <em><strong>Dubliners</strong></em> studies are in fact by <em><strong>Finnegans Wake</strong></em> scholars: <strong><span style="color:#008000;"><a style="color:#008000;" href="http://www.bookfinder.com/search/?keywords=0815630190&amp;new=&amp;used=&amp;ebooks=&amp;classic=&amp;lang=en&amp;st=sh&amp;ac=qr&amp;submit=" target="_blank" rel="noopener">John Gordon</a></span></strong> and <strong><span style="color:#008000;"><a style="color:#008000;" href="http://www.bookfinder.com/search/?keywords=0812237390&amp;new=&amp;used=&amp;ebooks=&amp;classic=&amp;lang=en&amp;st=sh&amp;ac=qr&amp;submit=" target="_blank" rel="noopener">Margot Norris</a></span></strong> come immediately to mind (links are to the books I recommend). John&#8217;s wonderfully dense reading of <em><strong>A Little Cloud</strong></em> pairs itself beautifully with the &#8220;Issy&#8221; character outline in <em><strong>Finnegans Wake</strong></em>, and Margot has a brilliant Reverse-Reading of <em><strong>Two Gallants</strong></em> that places the events it describes <span style="text-decoration:underline;">after</span> those of <em><strong>Ulysses &#8211; </strong></em>as if it were a sequel. Plus, a great many <em><strong>Wake</strong></em> scholars &#8211; John and Margot included &#8211; have observed that the washerwomen of <em><strong>Finnegans Wake</strong></em> who &#8220;tuck up&#8221; their sleeves as they prepare for their day&#8217;s work at the beginning of chapter 8 (FW196.8) are later seen &#8220;pulling down&#8221; those same sleeves as they come in from their day&#8217;s work at the beginning of <em><strong>Clay</strong></em>.</p>
+<p style="text-align:justify;">I discovered a pretty amazing Reverse-Reading of my own a while back &#8211; it&#8217;s of a single short story<b>,</b> the second in the <em><strong>Dubliners</strong></em> collection &#8211; <em><strong>An Encounter</strong></em>. The story itself is a short and simple read &#8211; one of the quickest in the book &#8211; and while it is celebrated for its visceral depiction of youthful awakenings, it&#8217;s often misunderstood as one of the &#8220;lesser&#8221; <em><strong>Dubliners</strong></em> installments, generally when compared to <em><strong>Araby</strong></em>, <em><strong>A Little Cloud</strong></em>, <em><strong>The Dead</strong></em>, etc. A straightforward Reverse-Reading of <em><strong>An Encounter</strong></em> from a Wakean should hopefully &#8211; well &#8211; reverse this misconception.</p>
+<p style="text-align:justify;">So why is this story so often marginalized? Most complaints center around the seeming lack of structure. <em><strong>An Encounter</strong></em> is a bit of a structural salmagundi for non-<em><strong>Wake</strong></em> readers; as <span style="color:#008000;"><strong><a style="color:#008000;" href="http://www.bookfinder.com/search/?keywords=0312097905&amp;new=&amp;used=&amp;ebooks=&amp;classic=&amp;lang=en&amp;st=sh&amp;ac=qr&amp;submit=" target="_blank" rel="noopener">John Wyse Jackson and Bernard McGinley</a></strong></span> so well observe (p. 20):</p>
+<blockquote>
+<h4 style="text-align:justify;">&#8230;this is not one story, but two half-stories. A narrative that starts out about the Dillon brothers loses one of them, then the other: the business of miching from school is then bolted on to the account of the strange meeting. Most exasperating of all, [the story has] no conclusive ending. The inconclusive petering out shows how much Joyce needed catching up with by the contemporary reader. He still does.</h4>
+</blockquote>
+<p style="text-align:justify;">&#8220;Contemporary readers&#8221; might very well be stumped, but none of these &#8220;inconclusive peterings-out&#8221; should hold the least amount of concern for the <em><strong>Finnegans Wake</strong></em> reader. Conclusive endings? Who needs endings at all? Half-stories bolted together? Pshaw &#8211; try half-<em>words</em> bolted together. And <em>so what</em> if Joe Dillon is completely vanished from the narrative before the first page is half-over? Do <em><strong>Wake</strong></em> readers care that &#8220;Sir Tristram, violer d&#8217;amores,&#8221; the first character to be introduced in <em><strong>Finnegans </strong><strong>Wake </strong></em>(3.04), makes no further appearance? Hardly.</p>
+<p style="text-align:justify;">For one thing, &#8220;Sir Tristram&#8221; doesn&#8217;t really vanish at all &#8211; his &#8216;love-violations&#8217; continue deep into the book and even build in scope &#8211; it&#8217;s only his name that changes. Granted, his name changes a lot &#8211; at every available opportunity in fact &#8211; as many as five times within the book&#8217;s first full paragraph alone: &#8220;topsawyer&#8217;s rocks&#8221;, &#8220;tauftauf thuartpeatrick&#8221;, &#8220;a bland old isaac&#8221;, &#8220;twone nathandjoe&#8221;, &#8220;Rot a peck of pa&#8221;, etc. In Joyce&#8217;s world, characters are identified by their <em>actions</em>; names are as interchangeable as playing cards.</p>
+<p style="text-align:justify;">This program of identification is <span style="text-decoration:underline;">not</span> arbitrary randomization &#8211; it has movement toward a purpose, and is key to understanding Joyce&#8217;s revolutionary method of character development, which he actually gives a name to in <em><strong>Ulysses</strong></em>:</p>
+<h1 style="text-align:center;">METEMPSYCHOSIS</h1>
+<p style="text-align:justify;">That&#8217;s right &#8211; Metempsychosis &#8211; the only ten-dollar word in <em><strong>Ulysses</strong></em> that you don&#8217;t have to look up in the dictionary, for Leopold Bloom himself gives it a full and extended definition in the &#8216;Calypso&#8217; chapter: reincarnation, &#8220;the transmigration of souls&#8221;, the phenomenon whereby an individual&#8217;s psychological value is transferred from one persona to another. This is how Cranley from <em><strong>A Portrait of the Artist as a Young Man</strong></em> can transmigrate to Buck Mulligan in <em><strong>Ulysses</strong></em> and then on to Shaun the Post in <em><strong>Finnegans Wake</strong></em>, for example. My favorite description of how the transmigration works comes from Ananda K. Coomaraswamy* who, like Bloom, ties the concept of transmigrating to that of <em>karma</em>:</p>
+<blockquote>
+<h4 style="text-align:justify;"><img data-attachment-id="1514" data-permalink="https://joycegeek.com/2015/11/11/reverse-reading/snooker/" data-orig-file="https://joycegeek.com/wp-content/uploads/2015/11/snooker.jpg" data-orig-size="297,85" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Snooker" data-image-description="" data-image-caption="" data-medium-file="https://joycegeek.com/wp-content/uploads/2015/11/snooker.jpg?w=297" data-large-file="https://joycegeek.com/wp-content/uploads/2015/11/snooker.jpg?w=297" class="alignleft wp-image-1514 size-full" style="border:5px solid green;" src="../../wp-content/uploads/2015/11/snooker.jpg%3Fw=640" alt="Snooker"   srcset="../../wp-content/uploads/2015/11/snooker.jpg 297w, ../../wp-content/uploads/2015/11/snooker.jpg%3Fw=150&amp;h=43h=43 150w" sizes="(max-width: 297px) 100vw, 297px" />[Imagine] a series of billiard balls in close contact: if another ball is rolled against the last stationary ball, the moving ball will stop dead, and the foremost stationary ball will move on. Here precisely is Buddhist transmigration: the first moving ball does not pass over, it remains behind, it dies; but it is precisely the <em>movement of that ball</em>, its momentum, its <em>karma</em>, and not any newly created movement, which is reborn in the foremost ball. [&#8230;] Nothing is transmitted but an impulse, a <em>vis a tergo</em>, dependent on the heaping up of the past. It is a man&#8217;s character, and not himself, that goes on.</h4>
+<h6 style="padding-left:90px;text-align:justify;">*<span style="color:#008000;"><em><a style="color:#008000;" href="http://www.bookfinder.com/search/?keywords=8121500966&amp;new=&amp;used=&amp;ebooks=&amp;classic=&amp;lang=en&amp;st=sh&amp;ac=qr&amp;submit=" target="_blank" rel="noopener">Buddha and the Gospel of Buddhism</a></em></span>, pp. 107-108. The original &#8220;new age&#8221; movement, spearheaded by Coomaraswamy, Helena Blavatsky, W. B. Yeats, Lady Gregory <em>et al</em> was very much <em>en vogue</em> in Dublin during the period of <em><strong>An Encounter</strong></em>&#8216;s composition, and while Joyce couldn&#8217;t ultimately stomach all of the mystical mumbo-jumbo, he did spend some time studying it; he was even seen walking about Dublin carrying a copy of H. S. Olcott&#8217;s <em>Buddhist Catechism</em> as if he were a clergyman carrying a prayerbook.</h6>
+</blockquote>
+<p style="text-align:justify;">Returning to <em><strong>An Encounter</strong></em>, Joe Dillon does indeed appear to completely vanish from the story with a simple two-sentence paragraph:</p>
+<blockquote>
+<h4 style="text-align:justify;"><span style="color:#f1f1f1;">—</span>Everyone was incredulous when it was reported that he had a vocation for the priesthood. Nevertheless it was true.</h4>
+</blockquote>
+<p style="text-align:justify;">Appearances can deceive, however. True, Joe Dillon &#8211; much like the billiard ball in Coomaraswamy&#8217;s metaphor &#8211; has been &#8216;stopped dead&#8217;; it&#8217;s as if entering the seminary is tantamount to a death sentence in fact, for no further mention is given to Joe or his &#8220;war dance of victory&#8221;. But even here in this brief half-page of text, Joe Dillon&#8217;s actions have already &#8216;heaped up&#8217; enough momentum so that the karmic impulses he started &#8211; a morbid blend of aggression and piety &#8211; are easily transmitted to the character of Father Butler on the following page, who, though he no longer wears a tea cozy on his head shouting &#8220;Ya! yaka, yaka, yaka!&#8221;, is indeed found humiliating his students as he teaches them Julius Caesar&#8217;s <em>Commentaries on</em> <em>the Gallic Wars</em> as if he expected them to memorize it:</p>
+<blockquote>
+<h4 style="text-align:justify;">—This page or this page? This page? Now, Dillon, up. <em>Hardly had the day&#8230;</em> Go on! What day? <em>Hardly had the day dawned&#8230;</em> Have you studied it? What have you there in your pocket?</h4>
+</blockquote>
+<p style="text-align:justify;">No simple change of plotline can eliminate the influence of this future priest; it remains ubiquitous throughout the story: Mahoney bullies the smaller children in the street in likely response to being bullied himself by the even bigger Joe Dillon. The narrator’s haughty attitude towards “National School boys” is lifted directly from Father Butler’s ‘rebuke’, and Leo Dillon’s cowardly choice to forgo the miching adventure is influenced most likely by both brother and priest. Mahoney&#8217;s question, “what would Father Butler be doing out at the Pigeon House” is not nearly so rhetorical when viewed in this light.</p>
+<p style="text-align:justify;">Like Joe before him, younger brother Leo Dillon is also expelled from the narrative after brief prominence as its central figure. This second disappearance raises the question as to whether Leo&#8217;s character transmigrates as well, and again, if we look to the behavior patterns, especially the specific role Leo plays up to the point the other boys abandon him, I believe that an answer reveals itself. One has almost to look twice at the phrase: “…the confused, puffy face of Leo Dillon awakened one of my consciences” to notice that the word employed here is &#8216;consciences&#8217; rather than &#8216;consciousness&#8217;. On the surface at least, consciousness would be a much tighter semantic fit given its pairing with &#8216;awakened&#8217;. But the story&#8217;s central issue has less to do with awareness <em>per se</em> than than it does with moral rectitude. After all, <em><strong>An Encounter</strong></em>&#8216;s final sentence shows us a &#8216;penitent&#8217; (i.e. ‘conscientious’) narrator &#8211; the direct result of having seen another ‘confused’ face, this time with “bottle-green eyes peering…from under a twitching forehead.”</p>
+<p style="text-align:justify;">Evidence that this nameless and deeply troubled stranger in the field at Ringsend is the abandoned and transmigrated soul of Leo Dillon, though perhaps less direct than Joe&#8217;s vocational connection, nevertheless abounds. Soon after his appearance, the stranger’s behavior is observed as unusual: “I wondered why he shivered once or twice as if he feared something&#8230;” As his attitude is “strangely liberal,” maybe this phantom fear is of humiliation or castigation from the likes of Father Butler or Mr. Ryan. That “his accent was good” indicates higher, perhaps Jesuitical education, but the strongest argument for the stranger’s metempsychotic link to Leo Dillon is his warped sexuality and sadism, which could easily be an advanced stage of what originated in childhood as overeating, idleness, and inability to adapt to an environment of constant bullying, derision, and oppression.</p>
+<p style="text-align:justify;">So next question: is there a third? This is after all a story about childhood, and children&#8217;s stories invariably require a third occurrence in order to reach completion. In fact, the story itself seems to be keenly aware of what has come to be commonly known as the &#8220;<span style="color:#008000;"><a style="color:#008000;" href="http://tvtropes.org/pmwiki/pmwiki.php/Main/RuleOfThree" target="_blank" rel="noopener">Rule of Three</a></span>&#8220;:</p>
+<blockquote>
+<h4 style="text-align:justify;">When we came to the Smoothing Iron we arranged a siege; but it was a failure because you must have at least three.</h4>
+</blockquote>
+<p style="text-align:justify;">The story&#8217;s third banishment is of course Mahoney, who, when he runs off to chase the cat, disappears from the narrative much like the Dillon brothers before him. For a full two pages &#8211; taking us nearly all the way to the end of the story &#8211; the young narrator&#8217;s interaction with the pedophilic stranger so completely dominates the narrative that Mahoney himself seems to forget he&#8217;s still part of it:</p>
+<blockquote>
+<h4 style="text-align:justify;">—Murphy!<br />
+<span style="color:#f1f1f1;">—</span>My voice had an accent of forced bravery in it, and I was ashamed of my paltry stratagem. I had to call the name again before Mahony saw me and hallooed in answer.</h4>
+</blockquote>
+<p style="text-align:justify;">Note that for a moment at least, Mahoney here becomes &#8216;Murphy&#8217;, a very brief identity-shift which, while it falls just short of outright Dillon-style metempsychosis, nevertheless touches on the story&#8217;s pattern of exile and transformed return. This is not just a clever storytelling trick &#8211; it actually points us toward the nature of the narrator&#8217;s final penitence, the <em>real</em> karmic momentum of <em><strong>An Encounter</strong></em> which has been accrued not by Mahoney nor even the Dillon brothers, but by the narrator himself. It is the narrator&#8217;s personal agenda &#8211; his longings for a sense of personal agency, for adventure abroad, for distinction from the common rabble &#8211; that drive the plot forward. Notice, too, that in the three stories which he narrates, we never learn his real name &#8211; the only name we&#8217;re ever given is a pseudonym &#8211; &#8216;Smith&#8217;:</p>
+<blockquote>
+<h4 style="text-align:justify;">—In case he asks us for our names, I said, let you be Murphy and I&#8217;ll be Smith.</h4>
+</blockquote>
+<p style="text-align:justify;">The good Reverse-Reader should here recall the finale of <em><strong>A Portrait of the Artist as a Young Man</strong></em>, where Stephen Dedalus, obviously one-and-the-same as the narrator of the first three <em><strong>Dubliners</strong></em> stories, likens himself to a blacksmith in the novel&#8217;s penultimate sentence, and note once again how Joyce slyly invokes moral rectitude by swapping the word &#8216;consciousness&#8217; with its phonetic double, &#8216;conscience&#8217;:</p>
+<blockquote>
+<h4 style="text-align:justify;">I go to encounter for the millionth time the reality of experience and to forge in the smithy of my soul the uncreated conscience of my race.</h4>
+</blockquote>
+<p style="text-align:justify;">Awe-inspiring though Stephen&#8217;s declaration here may be, it is also dangerously arrogant &#8211; bordering on self-apotheosis &#8211; and contains within it a seed of his Icarus-like fall in <em><strong>Ulysses</strong></em>. Who is this young upstart to claim he can create his race&#8217;s conscience? Even given such a power, what&#8217;s to prevent him from abusing it? It is the narrator himself who ejects the Dillon Brothers and Mahoney from his story, and his motivation for doing so should be obvious: this is <span style="text-decoration:underline;">his</span> adventure, and he&#8217;ll do whatever it takes to eliminate any and all rival protagonists. Ethically, his actions are highly questionable; he in fact commits all three types of &#8220;sin&#8221; as defined by the Catholic church:</p>
+<ul>
+<li style="text-align:justify;">Sin by thought:<br />
+Elitism and bigotry; &#8220;I was afraid the man would think I was as stupid as Mahony.&#8221;</li>
+<li style="text-align:justify;">Sin by word:<br />
+Malice and gloating: &#8220;We revenged ourselves on Leo Dillon by saying what a funk he was and guessing how many he would get at three o&#8217;clock from Mr. Ryan.&#8221;</li>
+<li style="text-align:justify;">Sin by deed:<br />
+Deception and theft: He pockets Leo Dillon’s sixpence.<br />
+(An interesting side note: The law of karma &#8211; being the equivalent of &#8216;sin&#8217; in Buddhist theology &#8211; requires that this stolen sixpence eventually be surrendered, and it can be no coincidence that the narrator winds up paying an unnecessary sixpence at the bazaar’s turnstile in <em><strong>Araby</strong></em>:</li>
+</ul>
+<blockquote>
+<h4 style="text-align:justify;padding-left:30px;">I could not find any sixpenny entrance and, fearing that the bazaar would be closed, I passed in quickly through a turnstile, handing a shilling to a weary-looking man.</h4>
+</blockquote>
+<p style="text-align:justify;padding-left:30px;">Thus do the various stories in the <em><strong>Dubliners</strong></em> collection start to inter-connect.)</p>
+<p style="text-align:justify;">So <strong style="font-style:italic;">An Encounter</strong>&#8216;s principle meditation &#8211; be it Buddhist, Christian, secular or what have you &#8211; is undeniably moral: All actions reap consequence. The final sentences show us a narrator who has truly reaped as he has sown, whose actions in thought, word, and deed have succeeded in forging his friends into monsters &#8211; one of which is about to grab him by the ankles. His only hope of escape from the smithy-of-his-soul&#8217;s own creation, then, is to return to Mahoney and relinquish to his friend that which he had up to this point so zealously coveted for himself &#8211; the title of True Hero:</p>
+<blockquote>
+<h4 style="text-align:justify;">How my heart beat as he came running across the field to me! He ran as if to bring me aid. And I was penitent; for in my heart I had always despised him a little.</h4>
+</blockquote>
+<p style="text-align:justify;">That the nearly forgotten Mahoney with his paltry catapult and boorish ways should wind up charging to the rescue here is perhaps the most touchingly ironic detail of the entire <em><strong>Dubliners</strong></em> collection. No conclusive ending? I say it again &#8211; pshaw. The stunning irony here is that Joe Dillon and his ferocious tactics never really vanished at all; the narrator may have tried to write them out of his story, but by the end, he finds himself very much needing them, and much like Little Chandler and Gabriel Conroy, must then endure a profound humbling. <em><strong>An Encounter</strong></em>&#8216;s ending is every bit as powerful as those of <em><strong>A Little Cloud</strong></em> or <em><strong>The Dead</strong></em> &#8211; perhaps even more so.</p>
+<hr />
+<p style="text-align:justify;">An obvious point: Narrative elisions can be of course filled in any number of ways, and if this reading somehow interferes or conflicts with insights offered in other, alternate readings of <em><strong>An Encounter</strong></em>, then by all means set it aside. I can only reiterate that this is a Reverse-Reading, that these kinds of imaginative insights can only be fostered by Reverse-Reading, and even setting the question of Joyce&#8217;s intentionality aside, this particular story now has an uncannily strong narrative cohesion, very much thanks to Reverse-Reading.</p>
+<p style="text-align:justify;">And the Reverse-Reading insights continue. Any <em><strong>Finnegans Wake</strong></em> reader should recognize an early Shem/Shaun study in the diametrically opposed temperaments of the Dillon brothers, and there is a specific Shem/Shaun sub-category that conforms to the Dillon brothers near-perfectly: the Jiminies from the &#8216;Prankquean&#8217; passage (FW pp. 21-23) which I <strong><span style="color:#008000;"><a style="color:#008000;" href="https://joycegeek.com/2015/04/15/prankquean/" target="_blank" rel="noopener">blogged</a></span></strong> about a few posts ago. In the &#8216;Prankquean&#8217;, we have a pair of brothers (&#8220;Jiminy&#8221; = Gemini: twin brothers), one of which is comic (&#8220;Hillary&#8221; = hilarity), the other tragic (&#8220;Tristopher&#8221; = Italian/Spanish/Portuguese: <em>triste</em>, sad), along with a third companion, a &#8220;dummy&#8221;. Each in their turn are &#8220;kidsnapped up&#8221; (= vanished) by the Prankquean and returned with a difference: Hillary (= Joe) is &#8220;convorted&#8221; (= converted/distorted) into a &#8220;tristian&#8221; (= sad christian = Fr. Butler), and Tristopher (= Leo) becomes &#8220;provorted&#8221; (= perverted/distorted) into a &#8220;luderman&#8221; (= German: <em>luder man</em> = scoundrel-man / Irish: <em>ludramán</em>, lazy idler = Ringsend pedophile). A third &#8220;kidsnapping&#8221; is presumably about to be visited upon the &#8220;dummy&#8221; (= Mahoney, described as &#8220;stupid&#8221; by the narrator), but is aborted by a thunderclap (= <em><strong>An Encounter</strong></em>&#8216;s shocking finale).</p>
+<p style="text-align:justify;">As I demonstrated in &#8220;<span style="color:#008000;"><a style="color:#008000;" href="https://joycegeek.com/2015/04/15/prankquean/">The Prankquean Matrix</a></span>,&#8221; Joyce puts the &#8220;rule of three&#8221; storytelling trope to very specific use in his works, always casting a female in the role of instigator against a stubborn male protagonist. On the surface, <em><strong>An Encounter</strong></em> appears bereft of any female characters whatsoever, but females are by no means completely absent &#8211; the story contains a total of three (!) very striking yet etheric evocations of feminine power:</p>
+<ul>
+<li style="text-align:justify;">&#8220;&#8230;the peaceful odour of Mrs Dillon was prevalent in the hall of the house.&#8221;</li>
+<li style="text-align:justify;">&#8220;I liked better some American detective stories which were traversed from time to time by unkempt fierce and beautiful girls.&#8221;</li>
+<li style="text-align:justify;">&#8220;I watched him lazily as I chewed one of those green stems on which girls tell fortunes.&#8221;</li>
+</ul>
+<p style="text-align:justify;">These are oddly supernatural descriptions, and I would argue the feminine link to be metempsychotic. The word &#8220;metempsychosis&#8221; is itself introduced in <em><strong>Ulysses</strong></em> on an absolute tidal wave of feminine imagery in the ‘Calypso’ chapter &#8211; a chapter rife with meditations on feminine processes and symbols of feminine power. When asked by Molly to define the word, Bloom turns to a picture of a bathing nymph he has hanging over the bed, and gives a very odd but tellingly associative definition:</p>
+<blockquote>
+<h4 style="text-align:justify;">—Metempsychosis [&#8230;] is what the ancient Greeks called it. They used to believe you could be changed into an animal or a tree, for instance. What they called nymphs, for example. (<em>U</em> 4.375)</h4>
+</blockquote>
+<p style="text-align:justify;">Typically, Bloom here confuses his concepts &#8211; his nymph analogy is much more like meta<span style="text-decoration:underline;">morph</span>osis than transmigration, but the nymph&#8217;s presence here serves Joyce&#8217;s overall purpose by permanently associating metempsychosis with the feminine. This imagery in fact builds throughout the novel, so that when we reach Bloom&#8217;s hallucination in ‘Oxen of the Sun’ we have a near-literal apotheosis:</p>
+<blockquote>
+<h4 style="text-align:justify;">And lo, wonder of metempsychosis, it is she, the everlasting bride, harbinger of the daystar, the bride, ever virgin. It is she, Martha, thou lost one, Millicent, the young, the dear, the radiant. How serene does she now arise, a queen among the Pleiades, in the penultimate antelucan hour, shod in sandals of bright gold, coifed with a veil of what do you call it gossamer. It floats, it flows about her starborn flesh and loose it streams, emerald, sapphire, mauve and heliotrope, sustained on currents of the cold interstellar wind, winding, coiling, simply swirling, writhing in the skies a mysterious writing till, after a myriad metamorphoses of symbol, it blazes, Alpha, a ruby and triangled sign upon the forehead of Taurus. (U 14.1099)</h4>
+</blockquote>
+<p style="text-align:justify;">Notice how Bloom&#8217;s associative cluster links the feminine not just to metempsychosis, but to the very concept of mutable identity, whether it be through transmigration, &#8220;myriad metamorphoses of symbol,&#8221; or what have you. This is nothing less than a portrait of the Goddess Metempsychosis, the Goddess Metamorphosis, Molly, Milly, Martha, Seaside Girl, Pleiadean queen, etc. By naming her differently at nearly each occurrence &#8211; thus making her as formless and mutable as water itself &#8211; Joyce gives us the freedom to assign to her whichever epithet we want. &#8216;Anna Livia Plurabelle&#8217; is the general first choice for most <em><strong>Finnegans </strong><strong>Wake</strong></em> readers, particularly when Joyce comes up with a sentence likes this:</p>
+<blockquote>
+<h4 style="text-align:justify;"><span style="color:#f1f1f1;">—</span>In the name of Annah the Allmaziful, the Everliving, the Bringer of Plurabilities, haloed be her eve, her singtime sung, her rill be run, unhemmed as it is uneven! (FW 104.1-3)</h4>
+</blockquote>
+<p style="text-align:justify;">For present purposes I&#8217;ll simply call her The Prankquean. Unkempt, fierce, and stunningly beautiful, her matrix is given its very first full expression in Joyce&#8217;s canon with <em><strong>An Encounter</strong></em>, which I&#8217;ll summarize using the formula I developed in &#8220;<span style="color:#008000;"><a style="color:#008000;" href="https://joycegeek.com/2015/04/15/prankquean/">The Prankquean Matrix</a></span>&#8220;:</p>
+<ul>
+<li style="text-align:justify;"><span class="st">Once upon a time, a thing happens</span><br />
+<span class="st"><em>A young boy (the narrator) seeks adventure. In his words,&#8221;I wanted real adventures to happen to myself.&#8221;</em></span></li>
+<li style="text-align:justify;"><span class="st">As a result, three things happen, one after the other<br />
+<em><i>Exercising his right as author of his own story, he banishes t</i>hree schoolmates who threaten to usurp his position as chief protagonist.</em></span></li>
+<li style="text-align:justify;"><span class="st">The first thing goes POW<br />
+<i>He banishes Joe Dillon, who returns as Father Butler via metempsychosis</i></span><span class="st"><em>.</em></span></li>
+<li style="text-align:justify;"><span class="st">The second thing also goes POW<br />
+<em>He banishes Leo Dillon, who returns as the &#8220;queer old josser&#8221; &#8211; again via metempsychosis</em><span class="st"><em>.</em></span><br />
+</span></li>
+<li style="text-align:justify;"><span class="st">But the third thing goes BOOM<br />
+</span><span class="st"><em>He banishes Mahoney, who returns to the rescue as &#8220;Murphy&#8221; &#8211; via metamorphosis</em></span><span class="st"><em>.</em></span></li>
+<li style="text-align:justify;"><span class="st">And now it&#8217;s a new thing<br />
+<em>Penitence.</em></span></li>
+</ul>
+<p style="text-align:justify;">I&#8217;ll let Joyce himself have the final word here. As you either watch the following video or read <em><strong>Finnegans Wake</strong></em> pp. 21-23 (on which it is based), consider how the events of <em><strong>An Encounter</strong></em> are echoed in its narrative:</p>
+<div data-shortcode="caption" id="attachment_1187" style="width: 650px" class="wp-caption aligncenter"><a href="http://youtu.be/wH1kaHt3Fa8"><img aria-describedby="caption-attachment-1187" data-attachment-id="1187" data-permalink="https://joycegeek.com/2015/04/15/prankquean/prankquean-video-screen-2/" data-orig-file="https://joycegeek.com/wp-content/uploads/2015/04/prankquean-video-screen1.jpg" data-orig-size="1400,788" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Prankquean Video Screen" data-image-description="" data-image-caption="" data-medium-file="https://joycegeek.com/wp-content/uploads/2015/04/prankquean-video-screen1.jpg?w=300" data-large-file="https://joycegeek.com/wp-content/uploads/2015/04/prankquean-video-screen1.jpg?w=640" class="wp-image-1187 size-large" src="../../wp-content/uploads/2015/04/prankquean-video-screen1.jpg%3Fw=640&amp;h=360" alt="Prankquean Video Screen" width="640" height="360" srcset="../../wp-content/uploads/2015/04/prankquean-video-screen1.jpg%3Fw=640 640w, ../../wp-content/uploads/2015/04/prankquean-video-screen1.jpg%3Fw=1280 1280w, ../../wp-content/uploads/2015/04/prankquean-video-screen1.jpg%3Fw=150 150w, ../../wp-content/uploads/2015/04/prankquean-video-screen1.jpg%3Fw=300 300w, ../../wp-content/uploads/2015/04/prankquean-video-screen1.jpg%3Fw=768 768w, ../../wp-content/uploads/2015/04/prankquean-video-screen1.jpg%3Fw=1024 1024w" sizes="(max-width: 640px) 100vw, 640px" /></a><p id="caption-attachment-1187" class="wp-caption-text">The &#8216;Prankquean&#8217; Video &#8211; by JoyceGeek</p></div>
+			</div><!-- .entry-content -->
+	
+	<footer class="entry-meta">
+			<span class="comments-link"><a href="../../2015/11/11/reverse-reading/index.html#comments">1 Comment</a></span>
+				<span class="cat-links"><span class="entry-utility-prep entry-utility-prep-cat-links">Posted in </span><a href="../a-portrait-of-the-artist-as-a-young-man/index.html" rel="category tag">A Portrait of the Artist as a Young Man</a>, <a href="index.html" rel="category tag">Dubliners</a>, <a href="../finnegans-wake/index.html" rel="category tag">Finnegans Wake</a>, <a href="../joyceplanet-navigation/index.html" rel="category tag">JoycePlanet Navigation</a>, <a href="../metempsychosis/index.html" rel="category tag">Metempsychosis</a>, <a href="../rule-of-three/index.html" rel="category tag">Rule of Three</a>, <a href="../the-prankquean/index.html" rel="category tag">The Prankquean</a>, <a href="../ulysses/index.html" rel="category tag">Ulysses</a></span>
+		<span class="tag-links">Tagged <a href="https://joycegeek.com/tag/dubliners/" rel="tag">Dubliners</a>, <a href="https://joycegeek.com/tag/finnegans-wake/" rel="tag">Finnegans Wake</a>, <a href="https://joycegeek.com/tag/james-joyce/" rel="tag">James Joyce</a>, <a href="https://joycegeek.com/tag/ulysses/" rel="tag">Ulysses</a></span>				</footer><!-- #entry-meta -->
+</article><!-- #post-## -->
+
+				
+					
+<article id="post-1004" class="post-1004 post type-post status-publish format-standard hentry category-a-portrait-of-the-artist-as-a-young-man category-dubliners category-finnegans-wake category-joyce-in-performance category-joyceplanet-navigation category-rule-of-three category-the-prankquean category-ulysses">
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="https://joycegeek.com/2015/04/15/prankquean/" rel="bookmark">The Prankquean Matrix: a&nbsp;JoyceTrope</a></h1>
+
+				<div class="entry-meta">
+			<a class="entry-date" title="April 15 2015" href="https://joycegeek.com/2015/04/15/prankquean/">
+				<time datetime="2015-04-15T01:11:00-06:00">Apr<b>15</b></time>
+			</a>
+					</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		<hr />
+<h1><em>Once upon an amalgam&#8230;</em></h1>
+<blockquote>
+<p style="text-align:justify;">&#8230;a wise old wolf gave each of his three pigs a bag of talents. Two of the wicked stepsisters &#8211; their names were Goneril and Regan &#8211; were lazy and stupid and built their houses out of straw and sticks. So no matter how much the Big Bad Lear huffed and puffed, he couldn&#8217;t get the glass slipper to fit on a single foot, for the first bag of talents was way too hot and the second was far too soft.</p>
+<p style="text-align:justify;">But Cordelia&#8217;s bag of talents was just right, for she had built hers out of bricks.</p>
+<p style="text-align:justify;">So when Papa Lear found Cinderella sleeping in his bed, he cried, &#8220;Nothing will come from nothing,&#8221; and added, &#8220;<span id="en-KJV-24035" class="text Matt-25-26">Thou wicked and slothful servant, </span><span id="en-KJV-24036" class="text Matt-25-27"><span id="en-KJV-24039" class="text Matt-25-30">cast ye into outer darkness: there shall be weeping and gnashing of teeth.</span>&#8221; </span></p>
+<p style="text-align:justify;">And he married her and they all lived happily ever after. The End.</p>
+</blockquote>
+<hr />
+<p style="text-align:justify;">This is what happens after you&#8217;ve read enough<strong> <em>Finnegans Wake</em></strong>; s<span class="st">tories become confounded and start blending together, especially if they exhibit even slight similarities. </span><span class="st"><span style="color:#008000;"><a style="color:#008000;" href="https://www.biblegateway.com/passage/?search=Matthew%2025:14-30&amp;version=KJV" target="_blank" rel="noopener">Matthew 25:14-30</a></span> melds into act I scene 1 from K</span>ing Lear, who then becomes the Big Bad Wolf, who then somehow fits a glass slipper onto Cinderella, <span class="st">who in her turn becomes Goldilocks and so on. </span><span class="st">Distinctions such as &#8216;happy ending vs unhappy ending&#8217;, &#8216;wolf-and-pigs vs father-and-daughters&#8217;, &#8216;bags-of-talents vs bowls-of-porridge&#8217;, <em>et cetera </em>start to matter much less than the structural scaffolding these stories are all built on, for the </span><span class="st">pattern is </span><span class="st">unmistakably predictable:</span></p>
+<ul>
+<li><span class="st">Once upon a time, a thing happened. </span></li>
+<li><span class="st">As a result, three things happened, one after the other. </span></li>
+<li><span class="st">The first thing was a thing, and it went POW.</span></li>
+<li><span class="st">The second thing was a different thing from the first thing, but not really, for it also went POW, or maybe KA-POW.</span></li>
+<li><span class="st">But the third thing was </span><span class="st">a </span><span class="st">totally different thing, and it went BOOM, or maybe WHOOSH or THUD.</span></li>
+<li><span class="st">And we all learned a new thing. The end. </span></li>
+</ul>
+<p style="text-align:justify;">Apply this outline to any of the stories referenced in my little amalgam and they all fit, without exception. A whole bunch of others do as well &#8211; here&#8217;s just one example:</p>
+<ul>
+<li><span class="st">Once upon a time, a thing happened.<br />
+<em>A giant beanstalk  grows in Jack&#8217;s back yard.</em> </span></li>
+<li><span class="st">As a result, three things happened, one after the other.<br />
+<em>Jack climbs/descends the beanstalk three times.</em> </span></li>
+<li><span class="st">The first thing was a thing.<br />
+<em>Jack steals a bag of gold, &#8220;Fee-fi-fo-fum&#8221; etc.</em> </span></li>
+<li><span class="st">The second thing was different but not really.<br />
+<em>Jack steals the golden goose, &#8220;Fee-fi-fo-fum&#8221; etc.</em> </span></li>
+<li><span class="st">But the third thing went </span><span class="st">BOOM / WHOOSH / THUD.<br />
+<em>Jack steals the magic harp, which cries out (BOOM), the giant chases Jack (WHOOSH), who chops down beanstalk (THUD).</em> </span></li>
+<li><span class="st">And now it&#8217;s a new thing.<br />
+<em>Jack and his mother are rich and never have to work again.</em> </span></li>
+</ul>
+<p style="text-align:justify;"><span style="color:#000000;">Sometimes called</span> the <span style="color:#008000;"><a style="color:#008000;" href="http://tvtropes.org/pmwiki/pmwiki.php/Main/RuleOfThree" target="_blank" rel="noopener">Rule of Three</a></span>, this storytelling trope is pretty much the oldest one in the book, and it&#8217;s used and re-used by writers <strong><span style="color:#008000;"><a style="color:#008000;" href="https://youtu.be/bN1_h_eGitE" target="_blank" rel="noopener">to this very day</a></span></strong>. It arguably plays roles in Freytag&#8217;s pyramid, Campbell&#8217;s hero-journey, and perhaps even Aristotle&#8217;s formula for successful drama, <em>vide </em>his great exemplar, Sophoceles&#8217; <em><strong>Oedipus Rex</strong></em>:</p>
+<ul>
+<li style="text-align:justify;"><span class="st">Once upon a time, a thing happened<br />
+<em>Oedipus vows to find Laius&#8217; killer.</em> </span></li>
+<li style="text-align:justify;"><span class="st">As a result, three things happened, one after the other<br />
+<em>Three old men are summoned to testify.</em> </span></li>
+<li style="text-align:justify;"><span class="st">The first thing went POW<br />
+<em>The first old man (Tiresias) implicates Oedipus as the killer. Oedipus responds with threats.</em> </span></li>
+<li style="text-align:justify;"><span class="st">The second thing also went POW<br />
+<em>The second old man (first shepherd) gives evidence further implicating Oedipus, who responds with more threats.</em> </span></li>
+<li style="text-align:justify;"><span class="st">But the third thing went BOOM<br />
+</span><em>The third old man (second shepherd) confirms the guilt of Oedipus, who responds by blinding himself.</em></li>
+<li style="text-align:justify;"><span class="st">And we all learned a new thing<br />
+<em>Destiny is a bitch.<br />
+</em> </span></li>
+</ul>
+<p style="text-align:justify;"><span class="st">(MacBeth comes to mind here as well, with the three witches and their whole Glamis/Cawdor/King business.) </span></p>
+<p style="text-align:justify;">So with such literary heavies as Sophocles and Shakespeare (as well as Dante, come to think of it) weighing in, James Joyce certainly wouldn&#8217;t allow himself to be left out. He enters into this fray with an eye to creating a very specific effect, however, and so adds his own set of rules to the trope&#8217;s makeup. I call it the &#8220;Prankquean Matrix&#8221; to distinguish it from the general &#8220;rule of three&#8221;, and I take my moniker from one of the more celebrated passages in <em><strong>Finnegans Wake</strong></em>&#8230;</p>
+<h1 style="text-align:justify;">&#8230;and it goes a little like this:</h1>
+<h6 style="text-align:center;"><a href="http://youtu.be/wH1kaHt3Fa8" target="_blank" rel="noopener"><img data-attachment-id="1187" data-permalink="https://joycegeek.com/2015/04/15/prankquean/prankquean-video-screen-2/" data-orig-file="https://joycegeek.com/wp-content/uploads/2015/04/prankquean-video-screen1.jpg" data-orig-size="1400,788" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Prankquean Video Screen" data-image-description="" data-image-caption="" data-medium-file="https://joycegeek.com/wp-content/uploads/2015/04/prankquean-video-screen1.jpg?w=300" data-large-file="https://joycegeek.com/wp-content/uploads/2015/04/prankquean-video-screen1.jpg?w=640" loading="lazy" class="aligncenter wp-image-1187 size-large" src="../../wp-content/uploads/2015/04/prankquean-video-screen1.jpg%3Fw=640&amp;h=360" alt="Prankquean Video Screen"   srcset="../../wp-content/uploads/2015/04/prankquean-video-screen1.jpg%3Fw=660 660w, ../../wp-content/uploads/2015/04/prankquean-video-screen1.jpg%3Fw=1320 1320w, ../../wp-content/uploads/2015/04/prankquean-video-screen1.jpg%3Fw=150 150w, ../../wp-content/uploads/2015/04/prankquean-video-screen1.jpg%3Fw=300 300w, ../../wp-content/uploads/2015/04/prankquean-video-screen1.jpg%3Fw=768 768w, ../../wp-content/uploads/2015/04/prankquean-video-screen1.jpg%3Fw=1024 1024w" sizes="(max-width: 660px) 100vw, 660px" /></a>JoyceGeek Presents: The Prankquean Video</h6>
+<hr />
+<p style="text-align:justify;">Sure, the language here is difficult &#8211; it&#8217;s <em><strong>Finnegans Wake</strong></em> after all. But knowledge of the source material Joyce used for this passage (Grace O&#8217;Malley &amp; the Earl of Howth, St. Patrick &amp; the druid, Grania &amp; Dermot, <em>etc</em>.) is hardly a prerequisite for understanding pp. 21-23 (though it&#8217;s certainly always a good thing to have). Every bit as simple as &#8216;Jack and the Beanstalk&#8217;, the story&#8217;s structural breakdown is almost sophomoric:</p>
+<ul>
+<li><span class="st">Once upon a time, a thing happened</span><br />
+<span class="st"><em>Jarl von Hoother is holed up with his three charges: the jiminy Tristopher, the jiminy Hilary, and the dummy.</em> </span></li>
+<li><span class="st">As a result, three things happened, one after the other<br />
+<em>The Prankquean riddles Jarl and kidnaps his charges.</em> </span></li>
+<li><span class="st">The first thing went POW<br />
+<em>&#8220;Mark the wans&#8221; etc. </em></span><span class="st"><em>Jarl shuts the gates, the </em></span><span class="st"><em>prankquean nabs jiminy Tristopher.</em> </span></li>
+<li><span class="st">The second thing also went POW<br />
+<em>&#8220;Mark the twy&#8221; etc. Jarl shuts the gates again</em></span><span class="st"><em>, the prankquean nabs jiminy Hilary.</em></span></li>
+<li><span class="st">But the third thing went BOOM/WHOOSH/THUD<br />
+</span><em><span class="st">&#8220;Mark the tris&#8221;etc. (the prankquean is presumably about to nab the dummy), Jarl is provoked</span> / Thunder.</em></li>
+<li><span class="st">And we all learned a new thing<br />
+<em>The fable concludes with a number of &#8220;morals&#8221;.</em></span></li>
+</ul>
+<p style="text-align:justify;">So leaving aside the typically impenetrable linguistic details, what we have here is almost pure archetype, and if we want to suggest an avatar for the trope as Joyce used it, the distorted language actually serves to create some critically helpful ambiguities:</p>
+<ul>
+<li>Is it a happy ending?<br />
+<em>No telling.</em></li>
+<li>Which character is the villain, which the hero?<br />
+<em>Again, no telling.</em></li>
+<li>Is the Moral&#8217;s tone cautionary or simply observational?<br />
+<em>Perhaps both, perhaps neither.</em></li>
+</ul>
+<p style="text-align:justify;">The only unambiguous issue here is gender &#8211; a female (prankquean) provokes a male (Hoother) three times <em>etc &#8211;</em> and with one single exception (that I could find), Joyce assigned these specific gender roles each and every time he incorporated the &#8216;rule of three&#8217; into his writing. The exception can be found in the following extremely subtle example which, as always, Joyce created to a purpose:</p>
+<hr />
+<h1 style="text-align:left;">from <em><strong>A Portrait of the Artist as a Young Man</strong></em><strong>:</strong></h1>
+<blockquote>
+<h6 style="padding-left:60px;text-align:justify;">(The prankquean matrix pattern will become much more blatant as we progress through more examples, but uncovering its subtle occurrences in Joyce can be as fun a parlor-game as finding the H.C.E. acrostic in <em><strong>Finnegans Wake</strong></em>.)</h6>
+</blockquote>
+<p style="text-align:justify;">Immediately before Stephen Dedalus vomits &#8220;profusely in agony&#8221; in chapter three, he imagines the demons of his Roman Catholic Guilt following a &#8220;hither and thither&#8221; pattern. This phrase: &#8220;hither and thither&#8221; &#8211; which I&#8217;ve highlighted in red below &#8211; is repeated exactly three times, and will be later developed into something of a leitmotif in Joyce&#8217;s other works:</p>
+<blockquote>
+<h5 style="text-align:justify;"><span style="color:#f1f1f1;">—</span>Creatures were in the field: one, three, six: creatures were moving in the field, <span style="color:#cf0000;">hither and thither</span>. Goatish creatures with human faces, horny­browed, lightly bearded and grey as india-rubber. The malice of evil glittered in their hard eyes, as they moved <span style="color:#cf0000;">hither and thither</span>, trailing their long tails behind them. A rictus of cruel malignity lit up greyly their old bony faces. One was clasping about his ribs a torn flannel waistcoat, another complained monotonously as his beard stuck in the tufted weeds. Soft language issued from their spittleless lips as they swished in slow circles round and round the field, winding <span style="color:#cf0000;">hither and thither</span> through the weeds, dragging their long tails amid the rattling canisters. They moved in slow circles, circling closer and closer to enclose, to enclose, soft language issuing from their lips, their long swishing tails besmeared with stale shite, thrusting upwards their terrific faces . . .<br />
+<span style="color:#f1f1f1;">—</span>Help!</h5>
+</blockquote>
+<p style="text-align:justify;">This rather &#8216;goth&#8217; passage takes place near the novel&#8217;s center, at a point where Stephen&#8217;s aesthetic is still very much in incubation. As Stephen matures, the narrative associations in the novel mature as well, so that by the end of the fourth chapter, we have a near perfect inversion of the above passage, again with a threefold repetition of &#8220;hither and thither&#8221;, and again followed immediately by a foundation-shaking catharsis:</p>
+<blockquote>
+<h5 style="text-align:justify;"><span style="color:#f1f1f1;">—</span>She was alone and still, gazing out to sea; and when she felt his presence and the worship of his eyes her eyes turned to him in quiet sufferance of his gaze, without shame or wantonness. Long, long she suffered his gaze and then quietly withdrew her eyes from his and bent them towards the stream, gently stirring the water with her foot <span style="color:#cf0000;">hither and thither</span>. The first faint noise of gently moving water broke the silence, low and faint and whispering, faint as the bells of sleep; <span style="color:#cf0000;">hither and thither</span>, <span style="color:#cf0000;">hither and thither</span><em>;</em> and a faint flame trembled on her cheek.<br />
+—Heavenly God! cried Stephen&#8217;s soul, in an outburst of profane joy.</h5>
+</blockquote>
+<p style="text-align:justify;">The larger sections of which these two passages are a part also invite careful cross-comparison. Both are stunning outpourings of lyrical prose with near identical syntax and rhythm, and as the above examples demonstrate, the vocabulary even matches from time to time. One could argue that the second passage simply sublimates the first.</p>
+<p style="text-align:justify;">But this is more than mere sublimation. The girl in the stream &#8211; much like Dante&#8217;s Beatrice &#8211; is a kind of herald, trumpeting a permanent associative shift in Joyce&#8217;s prose. From this point on, Stephen (and Joyce by proxy, of course) will hold fast to two basic associations:</p>
+<ol>
+<li style="text-align:justify;">The phrase &#8220;hither and thither&#8221; will be used exclusively to invoke the feminine and/or water.</li>
+<li style="text-align:justify;">The &#8216;rule of three&#8217; trope will be used exclusively to describe a female-to-male interaction as defined by the Prankquean Matrix.</li>
+</ol>
+<blockquote>
+<h6 style="text-align:justify;padding-left:60px;">(This blogpost is all about association #2, of course, but very quickly: the &#8220;hither and thither&#8221; examples to which I refer are mostly from <em><strong>Finnegans Wake</strong></em>: p. 158 lines 25 &amp; 32, p. 216 line 4, p. 452, lines 27-28, etc. There is at least one from <em><strong>Ulysses</strong></em> as well, though: Gabler ed. p. 288, line 626.)</h6>
+</blockquote>
+<hr />
+<h1 style="text-align:left;">So turning to Dubliners&#8230;</h1>
+<blockquote>
+<h6 style="padding-left:60px;text-align:justify;">(&#8230; and yes, I know, <em><strong>Dubliners</strong></em> is an earlier work than <em><strong>Portrait</strong></em>. I place it later in my mind because I assume it to have been composed by a post-<em><strong>Portrait</strong></em> Stephen Dedalus, i.e. a matured Joyce who has already worked out his aesthetic guidelines.)</h6>
+</blockquote>
+<p style="text-align:justify;">Three-fold female-to-male interactions are <em>everywhere</em> in <em><strong>Dubliners</strong></em>, and often constitute the structure of entire stories<strong>.</strong> Here are just a few examples:</p>
+<h3 style="padding-left:30px;">Counterparts</h3>
+<ul>
+<li style="text-align:justify;"><span class="st">Three things happen, one after the other:<br />
+<em>Farrington (male) is denied access to three females: Miss Delacour, the nameless London woman, and Mrs Farrington </em> </span></li>
+<li><span class="st">The first thing went POW:<br />
+<em>Miss Delacour smiles broadly  / Farrington is emboldened.</em> </span></li>
+<li><span class="st">The second thing went KA-POW:<br />
+<em>London woman brushes past Farrington  / </em><em>Farrington is aroused.</em> </span></li>
+<li><span class="st">But the third thing went BOOM:<br />
+</span><em><span class="st">Mrs Farrington goes to the chapel instead of cooking dinner  </span>/ <span class="st">Farrington is enraged.</span> </em></li>
+<li><span class="st">And now it&#8217;s a new thing:<br />
+<em>Farrington beats his son.</em></span></li>
+</ul>
+<h3 style="text-align:justify;padding-left:30px;">Clay</h3>
+<ul>
+<li style="text-align:justify;"><span class="st">Once upon a time, a thing happened:</span><br />
+<span class="st"><em>The Donnellys throw a Hallow&#8217;s Eve party..</em> </span></li>
+<li style="text-align:justify;"><span class="st">As a result, three things happened, one after the other:<br />
+<em>Maria (female) embarrasses herself three times in front of Joe Donnelly (male).</em> </span></li>
+<li style="text-align:justify;"><span class="st">The first thing went POW:<br />
+<em>Maria loses the plumcake and nearly cries outright  / Joe comforts her.</em> </span></li>
+<li style="text-align:justify;"><span class="st">The second thing went KA-POW:<br />
+<em>Maria suggests a reconciliation with Alphy  / </em><em>Joe rebuffs her.</em> </span></li>
+<li style="text-align:justify;"><span class="st">But the third thing went THUD:<br />
+</span><em><span class="st">Maria sings poorly </span>/ <span class="st">Joe is moved, becomes maudlin, weeps.</span> </em></li>
+<li style="text-align:justify;"><span class="st">And now it&#8217;s a new thing:<br />
+<em>Joe&#8217;s corkscrew is missing.</em></span></li>
+</ul>
+<h3 style="text-align:justify;padding-left:30px;">The Dead</h3>
+<ul>
+<li style="text-align:justify;"><span class="st">Once upon a time, a thing happened:</span><br />
+<span class="st"><em>The Misses Morkan host their annual dinner.</em> </span></li>
+<li style="text-align:justify;"><span class="st">As a result, three things happened, one after the other:<br />
+<em>Three females (Lily, Miss Ivors, Gretta) provoke Gabriel Conroy.</em> </span></li>
+<li style="text-align:justify;"><span class="st">The first thing went POW:<br />
+<em>Lily: &#8220;The men that is now is only all palaver&#8221; etc. / Gabriel is irritated.</em> </span></li>
+<li style="text-align:justify;"><span class="st">The second thing went KA-POW:<br />
+<em>Miss Ivors: &#8220;West Briton!&#8221;  / </em><em>Gabriel is aggravated.</em> </span></li>
+<li style="text-align:justify;"><span class="st">But the third thing went BOOM:<br />
+<em>Gretta:</em> </span><em><span class="st">&#8220;I think he died for me.&#8221; </span>/ <span class="st">Gabriel is devastated.</span> </em></li>
+<li style="text-align:justify;"><span class="st">And now it&#8217;s a new thing:<br />
+<em>Generous tears, etc. </em></span></li>
+</ul>
+<p style="text-align:justify;">All of these stories adhere to Joyce&#8217;s prankqueanish gender assignments &#8211; females provoking males. They are all neatly divided into three sections: &#8216;Counterparts&#8217;: work / pub crawl / home, &#8216;Clay&#8217;: work / shopping-spree / party, &#8216;The Dead&#8217;: before / during / after dinner. And seemingly random references to the number three are almost comically ubiquitous throughout all of these stories: Farrington&#8217;s son offers to &#8220;say a Hail Mary&#8221; exactly three times, during the course of &#8216;Clay&#8217; exactly three items are lost and Maria&#8217;s nose is described as nearly touching her chin exactly three times, and Gabriel famously toasts &#8220;the Three Graces (Joyce&#8217;s capitalization) of the Dublin musical world&#8221;. These occurrences are prankquean<em> obliques</em> &#8211; not examples of the prankquean trope by themselves but merely signals of her matrix&#8217;s presence.</p>
+<p style="text-align:justify;">There are many more prankqueanish instances in <em><strong>Dubliners</strong></em> than just these three, but these are the most obvious, and three, after all, is the magic number here. I&#8217;ll save the other <em><strong>Dubliners</strong></em> examples for <strong><span style="color:#008000;"><a style="color:#008000;" href="../../2015/11/11/reverse-reading/index.html" target="_blank" rel="noopener">a later post</a></span></strong>.</p>
+<hr />
+<h1 style="text-align:left;">Moving onto <em><strong>Ulysses&#8230;</strong></em></h1>
+<p>The opening of the &#8216;Calypso&#8217; chapter has a rather cute exchange:</p>
+<ul>
+<li style="text-align:justify;"><span class="st">Once upon a time, a thing happens:</span><br />
+<span class="st"><em>It&#8217;s breakfast time.</em> </span></li>
+<li style="text-align:justify;"><span class="st">As a result, three things happen, one after the other:<br />
+<em>The cat (female) approaches Bloom (Male) &#8220;with tail on high&#8221;.</em> </span></li>
+<li style="text-align:justify;"><span class="st">The first thing goes:<br />
+<em>&#8220;Mkgnao!&#8221; / Bloom offers milk.</em> </span></li>
+<li style="text-align:justify;"><span class="st">The second thing goes:<br />
+<em>&#8220;Mrkgnao!&#8221;  / Bloom withholds milk, taunting the cat.</em> </span></li>
+<li style="text-align:justify;"><span class="st">But the third thing goes:<br />
+</span><em><span class="st">&#8220;Mrkrgnao!&#8221; </span>/ Bloom pours the milk.</em></li>
+<li style="text-align:justify;"><span class="st">And now it&#8217;s a new thing:<br />
+<em>&#8220;Gurrhr!&#8221;</em></span></li>
+</ul>
+<p style="text-align:justify;">This exchange appears to be a trivialization of the pattern, but notice: the cat&#8217;s vocalizations are not mere repetition. Each one builds off of its predecessor, inserting a vocal &#8220;r&#8221; with each new utterance. Had Bloom continued to withhold milk, we can assume the fourth would be &#8220;<em>Mrkrgrnao!</em>&#8221; As is typical with Joyce, however, the pattern breaks after three.</p>
+<p style="text-align:justify;">It&#8217;s worth noting that the cat&#8217;s mewing sound ends each time with &#8220;nao&#8221;, a sound to be echoed later &#8211; and again thrice &#8211; by young Tommy Caffrey at the beginning of the &#8216;Nausicaa&#8217; chapter:</p>
+<blockquote>
+<h5 style="text-align:justify;">—Tell us who is your sweetheart, spoke Edy Boardman. Is Cissy your sweetheart?<br />
+—Nao, tearful Tommy said.<br />
+—Is Edy Boardman your sweetheart? Cissy queried.<br />
+—Nao, Tommy said.<br />
+—I know, Edy Boardman said none too amiably with an arch glance from her shortsighted eyes. I know who is Tommy&#8217;s sweetheart. Gerty is Tommy&#8217;s sweetheart.<br />
+—Nao, Tommy said on the verge of tears.</h5>
+</blockquote>
+<p style="text-align:justify;">Now this is <em>true</em> trivialization: no signs of change nor accrual from one instance to the next, and apart from the narrative shift to Gerty, nothing significant happens as a result, certainly not &#8216;BOOM&#8217;. So this doesn&#8217;t really qualify as a true prankquean exchange. Rather, this passage is another prankquean <em>oblique</em> &#8211; a signal to be on the lookout for the <em>true</em> pattern in the pages to come, and sure enough, careful scrutiny reveals the following:</p>
+<ul>
+<li style="text-align:justify;"><span class="st">Once upon a time, a thing happens</span>:<br />
+<span class="st"><em>Gerty (female) and Bloom (male) are on the beach in Sandymount.</em> </span></li>
+<li style="text-align:justify;"><span class="st">As a result, three things happen, one after the other:<br />
+<em>Gerty reveals herself to Bloom in three different ways.</em> </span></li>
+<li style="text-align:justify;"><span class="st">The first thing goes POW:<br />
+<em>She kicks the ball and makes eye contact with Bloom.</em> </span></li>
+<li style="text-align:justify;"><span class="st">The second thing goes KA-POW:<br />
+<em>She removes her hat and reveals her hair, &#8220;raising the devil&#8221; in Bloom.</em> </span></li>
+<li style="text-align:justify;"><span class="st">But the third thing goes BOOM/WHOOSH/THUD:<br />
+</span><span class="st"><i>She arches back to reveal her knickers. Bloom bastes his loins.</i></span></li>
+<li style="text-align:justify;"><span class="st">And now it&#8217;s a new thing:<br />
+<em>&#8220;Cuckoo Cuckoo Cuckoo&#8221; (3x) </em></span></li>
+</ul>
+<p style="text-align:justify;">All of this is of course merely prep-work for the &#8216;Circe&#8217; chapter, which works countless prankqueanish echoes and variants into its narrative, from the three wealthy socialites of Bloom&#8217;s hallucination (Mrs Bellingham, Mrs Yelverton Barry and the Honourable Mrs Mervyn Talboys) to the three whores whom he and Stephen encounter in the flesh (Zoe, Kitty and Florry). Nothing in &#8216;Circe&#8217; is clean, however, so the pattern doesn&#8217;t seem to take a solid hold here as it does elsewhere, although certainly the apparition of Stephen&#8217;s mother feels very much like &#8216;the third thing that goes BOOM&#8217;. Plus, it can hardly be mere coincidence that the mother&#8217;s appearance comes as a near-direct consequence of the pianola&#8217;s playing &#8220;<a href="https://joycegeek.com/wp-content/uploads/2015/04/my-girls-a-yorkshire-girl.mp3" target="_blank" rel="noopener"><strong><span style="color:#008000;">My Girl&#8217;s A Yorkshire Girl</span></strong>&#8220;</a>, a song in three-quarter time with three verses about three men who share a single woman. If this isn&#8217;t enough to establish Joyce&#8217;s commitment to the pattern, nothing is.</p>
+<hr />
+<h1 style="text-align:left;">So then, back to the <em><strong>Wake</strong></em>.</h1>
+<p style="text-align:justify;">A major problem arises with what properly should be the Pankquean Matrix&#8217;s ultimate expression: <em><strong>Finnegans Wake</strong></em> pp. 219-259, &#8220;The Mime of Mick, Nick and the Maggies&#8221; (Joyce&#8217;s own title). It&#8217;s a chapter rife with Prankquean signposts: It culminates with a <strong><span style="color:#008000;"><a style="color:#008000;" title="ThunderVideos" href="../../thundervideos/index.html" target="_blank" rel="noopener">thunderword</a></span></strong> (#7) and concludes with overtones of a &#8220;moral&#8221; &#8211; the final sentence of the chapter being one of the most lauded in the entire book. And it contains numerous threefold interactions between male and female, most notably on page 225:</p>
+<blockquote>
+<h5 style="text-align:justify;">—Have you monbreamstone?<br />
+—No.<br />
+—Or Hellfeuersteyn?<br />
+—No.<br />
+—Or Van Diemen&#8217;s coral pearl?<br />
+—No.</h5>
+</blockquote>
+<p>&#8230;repeated with a difference on page 233:</p>
+<blockquote>
+<h5 style="text-align:justify;">—Haps thee jaoneofergs?<br />
+—Nao.<br />
+—Haps thee mayjaunties?<br />
+—Naohao.<br />
+—Haps thee per causes nunsibellies?<br />
+—Naohaohao.</h5>
+</blockquote>
+<p style="text-align:justify;">This last interaction is of course famously evocative of tearful Tommy Caffrey&#8217;s exclamations in &#8216;Nausicaa&#8217;, and much like Bloom&#8217;s cat, develops a phonetic accrual from one utterance to the next.</p>
+<p style="text-align:justify;">So you may be well asking the same question <strong><em>Wake</em></strong> scholars have been asking for three-quarters of a century now: With the first exchange from p. 225 looking an awful lot like the thing that goes POW, especially when paired with the KA-POWish one on p. 233, where&#8217;s the third exchange preceding the BOOM on p. 257?</p>
+<p style="text-align:justify;">Answer: there is none.</p>
+<p style="text-align:justify;">&#8230;at least none that the scholars can agree on. One of my favorite <strong><em>Wake</em></strong> scholars, <strong><span style="color:#008000;"><a style="color:#008000;" title="The Johns of ’86" href="https://joycegeek.com/2015/01/21/john/" target="_blank" rel="noopener">John Gordon</a></span></strong>, sees it happening on p. 247:</p>
+<blockquote>
+<h5 style="text-align:justify;"><span style="color:#f1f1f1;">—</span>Boo, you&#8217;re through!<br />
+<span style="color:#f1f1f1;">—</span>Hoo, I&#8217;m true!<br />
+<span style="color:#f1f1f1;">—</span>Men, teacan a tea simmering, hamo mavrone kerry O?<br />
+<span style="color:#f1f1f1;">—</span>Teapotty. Teapotty.<br />
+<span style="color:#f1f1f1;">—</span>Kod knows. Anything ruind. Meetingless.</h5>
+</blockquote>
+<p style="text-align:justify;">I&#8217;ve also heard it argued that it takes place on p. 249:</p>
+<blockquote>
+<h5 style="text-align:justify;">—I rose up one maypole morning and saw in my glass how nobody loves me but you. Ugh. Ugh.<br />
+<span style="color:#f1f1f1;">—</span>All point in the shem direction as if to shun.<br />
+—My name is Misha Misha but call me Toffey Tough. I mean Mettenchough. It was her, boy the boy that was loft in the larch. Ogh! Ogh!</h5>
+</blockquote>
+<p>A great many scholars, including <span style="color:#008000;"><a style="color:#008000;" href="http://www.bookfinder.com/search/?ac=sl&amp;st=sl&amp;ref=bf_s2_a1_t1_1&amp;qi=k5EMarLiDfXDLjeOJIRkUwbLuh4_1431572892_1:1265:5503&amp;bq=author%3Dbernard%2520benstock%26title%3Djoyce-again%2527s%2520wake%2520analysis%2520of%2520finnegans%2520wake" target="_blank" rel="noopener">Bernard Benstock</a></span>, <span style="color:#008000;"><a style="color:#008000;" href="http://www.bookfinder.com/search/?ac=sl&amp;st=sl&amp;ref=bf_s2_a1_t1_1&amp;qi=zz9OEEQGZTSV0tx0VR.Ts72DdRc_1431573173_1:655:5224&amp;bq=author%3Dm.c.%2520solomon%26title%3Deternal%2520geomater%2520the%2520sexual%2520universe%2520of%2520finnegans%2520wake" target="_blank" rel="noopener">Margaret Solomon</a></span>, <span style="color:#008000;"><a style="color:#008000;" href="http://www.bookfinder.com/search/?ac=sl&amp;st=sl&amp;ref=bf_s2_a1_t1_1&amp;qi=7bcMGUG8NtYp6akCpyqnk1LPgAA_1431573090_1:99:2843&amp;bq=author%3Dgrace%2520eckley%26title%3Dchildren%2527s%2520lore%2520in%2520finnegans%2520wake%2520irish%2520studies" target="_blank" rel="noopener">Grace Eckley</a></span>, and <span style="color:#008000;"><a style="color:#008000;" href="http://www.bookfinder.com/search/?ac=sl&amp;st=sl&amp;ref=bf_s2_a1_t1_1&amp;qi=.9gw8eVfkXItMrLjig7tTjTsJrQ_1431573002_1:1314:6026&amp;bq=author%3Ddanis%2520rose%26title%3Dunderstanding%2520finnegans%2520wake" target="_blank" rel="noopener">Danis Rose</a></span> all argue that it takes place on page 250:</p>
+<blockquote>
+<h5 style="text-align:justify;">—Willest thou rossy banders havind?<br />
+<span style="color:#f1f1f1;">—</span>He simules to be tight in ribbings round his rumpffkorpff.<br />
+—Are you Swarthants that&#8217;s hit on a shorn stile?<br />
+<span style="color:#f1f1f1;">—</span>He makes semblant to be swiping their chimbleys.<br />
+—Can you ajew ajew fro&#8217; Sheidam?<br />
+<span style="color:#f1f1f1;">—</span>He finges to be cutting up with a pair of sissers and to be buy­tings of their maidens and spitting their heads into their facepails.</h5>
+</blockquote>
+<p style="text-align:justify;">Still others place it on p. 252:</p>
+<blockquote>
+<h5 style="text-align:justify;">—Now may Saint Mowy of the Pleasant Grin be your ever­glass and even prospect!<br />
+—Feeling dank.<br />
+<span style="color:#f1f1f1;">—</span>Exchange, reverse.<br />
+—And may Saint Jerome of the Harlots&#8217; Curse make family three of you which is much abedder!<br />
+—Grassy ass ago.</h5>
+</blockquote>
+<p style="text-align:justify;">And Roland MacHugh, perhaps more persuasively than anyone else, claims in his <span style="color:#008000;"><a style="color:#008000;" href="http://www.bookfinder.com/search/?keywords=0801883822&amp;new=&amp;used=&amp;ebooks=&amp;classic=&amp;lang=en&amp;st=sh&amp;ac=qr&amp;submit=" target="_blank" rel="noopener">Annotations</a></span> (with <span style="color:#008000;"><a style="color:#008000;" href="http://fweet.org/cgi-bin/fw_grep.cgi?srch=^253&amp;cake=&amp;icase=1&amp;accent=1&amp;regex=1&amp;beauty=1&amp;hilight=1&amp;escope=1&amp;rscope=1&amp;dist=4&amp;ndist=4&amp;fontsz=100&amp;shorth=1&amp;showtxt=1" target="_blank" rel="noopener">Slepon</a></span> chiming in as well) that the final exchange is on p.253:</p>
+<blockquote>
+<h5 style="text-align:justify;">But Noodynaady&#8217;s actual ingrate tootle is of come into the garner mauve and thy nice are stores of morning and buy me a bunch of iodines.<br />
+<span style="color:#f1f1f1;">—</span>Evidentament he has failed as tiercely as the deuce before for she is wearing none of the three.</h5>
+</blockquote>
+<p style="text-align:justify;">While there are good arguments for all of these speculations (and probably more), I think they&#8217;re all likely fueled by little more than a desire for the pattern to be completed. Joyce has, of course, quite deliberately built up these expectations over the course of four novels, but his writing really only ever consistently follows one rule, and here it is:</p>
+<h1 style="text-align:center;">Rules are for breaking.</h1>
+<p style="text-align:justify;">The &#8216;Mime&#8217; chapter is, after all, a study of childhood, and children never respond to rules very well.</p>
+<p style="text-align:justify;">This, in my view, is the ultimate function of the Prankquean Matrix. The vast majority of examples from Joyce&#8217;s works I&#8217;ve cited here involve the male figure experiencing a <em>disruption</em> of one kind or another &#8211; of routine, of agenda, of rigid thought-pattern. In this sense, the Prankquean Matrix actually functions as more of a formula for change than it does a trope for storytellers, and this is the reason I believe Joyce so consistently assigned a feminine/puerile value to the disruption. Women and children may be first onto the lifeboats, but in a world ruled by men, they are the marginalized, inconvenient voice of <em>the other</em> that need only be pushed aside in order to go boom.</p>
+<p style="text-align:justify;"><img data-attachment-id="1196" data-permalink="https://joycegeek.com/2015/04/15/prankquean/prankquean-collage-1/" data-orig-file="https://joycegeek.com/wp-content/uploads/2015/04/prankquean-collage-11.jpg" data-orig-size="1400,788" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Prankquean Collage 1" data-image-description="" data-image-caption="" data-medium-file="https://joycegeek.com/wp-content/uploads/2015/04/prankquean-collage-11.jpg?w=300" data-large-file="https://joycegeek.com/wp-content/uploads/2015/04/prankquean-collage-11.jpg?w=640" loading="lazy" class="aligncenter wp-image-1196 size-large" src="../../wp-content/uploads/2015/04/prankquean-collage-11.jpg%3Fw=640&amp;h=360" alt="Prankquean Collage 1"   srcset="../../wp-content/uploads/2015/04/prankquean-collage-11.jpg%3Fw=660 660w, ../../wp-content/uploads/2015/04/prankquean-collage-11.jpg%3Fw=1320 1320w, ../../wp-content/uploads/2015/04/prankquean-collage-11.jpg%3Fw=150 150w, ../../wp-content/uploads/2015/04/prankquean-collage-11.jpg%3Fw=300 300w, ../../wp-content/uploads/2015/04/prankquean-collage-11.jpg%3Fw=768 768w, ../../wp-content/uploads/2015/04/prankquean-collage-11.jpg%3Fw=1024 1024w" sizes="(max-width: 660px) 100vw, 660px" /></p>
+			</div><!-- .entry-content -->
+	
+	<footer class="entry-meta">
+			<span class="comments-link"><a href="https://joycegeek.com/2015/04/15/prankquean/#respond">Leave a comment</a></span>
+				<span class="cat-links"><span class="entry-utility-prep entry-utility-prep-cat-links">Posted in </span><a href="../a-portrait-of-the-artist-as-a-young-man/index.html" rel="category tag">A Portrait of the Artist as a Young Man</a>, <a href="index.html" rel="category tag">Dubliners</a>, <a href="../finnegans-wake/index.html" rel="category tag">Finnegans Wake</a>, <a href="../joyce-in-performance/index.html" rel="category tag">Joyce in Performance</a>, <a href="../joyceplanet-navigation/index.html" rel="category tag">JoycePlanet Navigation</a>, <a href="../rule-of-three/index.html" rel="category tag">Rule of Three</a>, <a href="../the-prankquean/index.html" rel="category tag">The Prankquean</a>, <a href="../ulysses/index.html" rel="category tag">Ulysses</a></span>
+						</footer><!-- #entry-meta -->
+</article><!-- #post-## -->
+
+				
+								
+			</div><!-- #content -->
+		</section><!-- #primary -->
+
+<div id="secondary" class="widget-area" role="complementary">
+		<aside id="jetpack_display_posts_widget-2" class="widget widget_jetpack_display_posts_widget"><h1 class="widget-title">Latest from: JoyceGeek</h1><div class="jetpack-display-remote-posts"><h4><a href="../../2018/04/20/shempartthree/index.html">Syntax and Sigla: Shem part three</a></h4>
+<p>The animation project continues&#8230;</p>
+<h4><a href="../../2017/05/04/theshemproject/index.html">The Shem Project</a></h4>
+<p>A-year-and-a-half&#8217;s worth of work, all in one blogpost!</p>
+<h4><a href="../../2015/12/01/loekle-archive/index.html">Simon Loekle&#8217;s Finnegans Wake Audio Archive</a></h4>
+<p>(in)COMPLETE and (un)ABRIDGED</p>
+<h4><a href="../../2015/11/11/reverse-reading/index.html">Reverse-Reading: Beautiful, Fierce, Unkempt</a></h4>
+<p>Carl Jung said you could read Joyce backwards. Let&#8217;s try it!</p>
+<h4><a href="../../2015/08/06/lunatic/index.html">Readings from the Lunatic Fringe</a></h4>
+<p>BIFF WHACK BOOM CLUCK!<br />
+It&#8217;s time to be ridiculous.<br />
+But not really&#8230;</p>
+</div><!-- .jetpack-display-remote-posts --></aside><aside id="blog_subscription-3" class="widget widget_blog_subscription jetpack_subscription_widget"><h1 class="widget-title"><label for="subscribe-field">Follow the JoyceBlog via Email</label></h1>
+
+			<div class="wp-block-jetpack-subscriptions__container">
+			<form
+				action="https://subscribe.wordpress.com"
+				method="post"
+				accept-charset="utf-8"
+				data-blog="69025680"
+				data-post_access_level="everybody"
+				id="subscribe-blog"
+			>
+				<p>Enter your email address to follow this blog and receive notifications of new posts by email.</p>
+				<p id="subscribe-email">
+					<label
+						id="subscribe-field-label"
+						for="subscribe-field"
+						class="screen-reader-text"
+					>
+						Email Address:					</label>
+
+					<input
+							type="email"
+							name="email"
+							autocomplete="email"
+							
+							style="width: 95%; padding: 1px 10px"
+							placeholder="Email Address"
+							value=""
+							id="subscribe-field"
+							required
+						/>				</p>
+
+				<p id="subscribe-submit"
+									>
+					<input type="hidden" name="action" value="subscribe"/>
+					<input type="hidden" name="blog_id" value="69025680"/>
+					<input type="hidden" name="source" value="https://joycegeek.com/category/dubliners/"/>
+					<input type="hidden" name="sub-type" value="widget"/>
+					<input type="hidden" name="redirect_fragment" value="subscribe-blog"/>
+					<input type="hidden" id="_wpnonce" name="_wpnonce" value="87209033c3" />					<button type="submit"
+													class="wp-block-button__link"
+																	>
+						Follow					</button>
+				</p>
+			</form>
+						</div>
+			
+</aside><aside id="search-2" class="widget widget_search"><form method="get" id="searchform" action="../../index.html">
+	<input type="text" class="field" name="s" id="s" placeholder="Search" />
+	<label for="s" class="assistive-text">Search</label>
+	<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
+</form></aside>
+		<aside id="recent-posts-2" class="widget widget_recent_entries">
+		<h1 class="widget-title">Recent Posts</h1>
+		<ul>
+											<li>
+					<a href="../../2018/04/20/shempartthree/index.html">Syntax and Sigla: Shem part&nbsp;three</a>
+									</li>
+											<li>
+					<a href="../../2017/05/04/theshemproject/index.html">The Shem Project</a>
+									</li>
+											<li>
+					<a href="../../2015/12/01/loekle-archive/index.html">Simon Loekle&#8217;s Finnegans Wake Audio&nbsp;Archive</a>
+									</li>
+											<li>
+					<a href="../../2015/11/11/reverse-reading/index.html">Reverse-Reading: Beautiful, Fierce,&nbsp;Unkempt</a>
+									</li>
+											<li>
+					<a href="../../2015/08/06/lunatic/index.html">Readings from the Lunatic&nbsp;Fringe</a>
+									</li>
+					</ul>
+
+		</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h1 class="widget-title">Recent Comments</h1>				<table class="recentcommentsavatar" cellspacing="0" cellpadding="0" border="0">
+					<tr><td title="JoyceGeek" class="recentcommentsavatartop" style="height:48px; width:48px;"><a href="https://joycegeek.wordpress.com" rel="nofollow"><img referrerpolicy="no-referrer" alt='JoyceGeek&#039;s avatar' src='https://0.gravatar.com/avatar/31c34ac4fa14e2afbcbe006aefc1feb6aa11507e5f3fd3852f2d253c54876308?s=48&#038;d=identicon&#038;r=G' srcset='https://0.gravatar.com/avatar/31c34ac4fa14e2afbcbe006aefc1feb6aa11507e5f3fd3852f2d253c54876308?s=48&#038;d=identicon&#038;r=G 1x, https://0.gravatar.com/avatar/31c34ac4fa14e2afbcbe006aefc1feb6aa11507e5f3fd3852f2d253c54876308?s=72&#038;d=identicon&#038;r=G 1.5x, https://0.gravatar.com/avatar/31c34ac4fa14e2afbcbe006aefc1feb6aa11507e5f3fd3852f2d253c54876308?s=96&#038;d=identicon&#038;r=G 2x, https://0.gravatar.com/avatar/31c34ac4fa14e2afbcbe006aefc1feb6aa11507e5f3fd3852f2d253c54876308?s=144&#038;d=identicon&#038;r=G 3x, https://0.gravatar.com/avatar/31c34ac4fa14e2afbcbe006aefc1feb6aa11507e5f3fd3852f2d253c54876308?s=192&#038;d=identicon&#038;r=G 4x' class='avatar avatar-48' height='48' width='48' loading='lazy' decoding='async' /></a></td><td class="recentcommentstexttop" style=""><a href="https://joycegeek.wordpress.com" rel="nofollow">JoyceGeek</a> on <a href="../../2015/02/12/permission/comment-page-1/index.html#comment-13095">The Permission to&nbsp;Free-As&hellip;</a></td></tr><tr><td title="Paul Waldron" class="recentcommentsavatarend" style="height:48px; width:48px;"><img referrerpolicy="no-referrer" alt='Paul Waldron&#039;s avatar' src='https://1.gravatar.com/avatar/42dbdeb6d3f8d6a710a0a97e2a39826c41a871511c8db9dfdb1132d734ab0ccc?s=48&#038;d=identicon&#038;r=G' srcset='https://1.gravatar.com/avatar/42dbdeb6d3f8d6a710a0a97e2a39826c41a871511c8db9dfdb1132d734ab0ccc?s=48&#038;d=identicon&#038;r=G 1x, https://1.gravatar.com/avatar/42dbdeb6d3f8d6a710a0a97e2a39826c41a871511c8db9dfdb1132d734ab0ccc?s=72&#038;d=identicon&#038;r=G 1.5x, https://1.gravatar.com/avatar/42dbdeb6d3f8d6a710a0a97e2a39826c41a871511c8db9dfdb1132d734ab0ccc?s=96&#038;d=identicon&#038;r=G 2x, https://1.gravatar.com/avatar/42dbdeb6d3f8d6a710a0a97e2a39826c41a871511c8db9dfdb1132d734ab0ccc?s=144&#038;d=identicon&#038;r=G 3x, https://1.gravatar.com/avatar/42dbdeb6d3f8d6a710a0a97e2a39826c41a871511c8db9dfdb1132d734ab0ccc?s=192&#038;d=identicon&#038;r=G 4x' class='avatar avatar-48' height='48' width='48' loading='lazy' decoding='async' /></td><td class="recentcommentstextend" style="">Paul Waldron on <a href="../../2015/02/12/permission/comment-page-1/index.html#comment-13094">The Permission to&nbsp;Free-As&hellip;</a></td></tr><tr><td title="Joyce Audio – Audiobooks: Finnegans Wake &#8211;Shipwreck Library" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="https://shipwrecklibrary.com/joyce/joyce-audio-fw/" rel="nofollow"></a></td><td class="recentcommentstextend" style=""><a href="https://shipwrecklibrary.com/joyce/joyce-audio-fw/" rel="nofollow">Joyce Audio – Audiob&hellip;</a> on <a href="../../2015/03/05/horgan/comment-page-1/index.html#comment-13087">Interview With a VoiceGeek: Pa&hellip;</a></td></tr><tr><td title="Joyce Audio – Audiobooks: Finnegans Wake &#8211;Shipwreck Library" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="https://shipwrecklibrary.com/joyce/joyce-audio-fw/" rel="nofollow"></a></td><td class="recentcommentstextend" style=""><a href="https://shipwrecklibrary.com/joyce/joyce-audio-fw/" rel="nofollow">Joyce Audio – Audiob&hellip;</a> on <a href="../../2015/12/01/loekle-archive/comment-page-1/index.html#comment-13083">Simon Loekle&#8217;s Finnegans&hellip;</a></td></tr><tr><td title="Joyce Audio – Audiobooks: Finnegans Wake &#8211;Shipwreck Library" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="https://shipwrecklibrary.com/joyce/joyce-audio-fw/" rel="nofollow"></a></td><td class="recentcommentstextend" style=""><a href="https://shipwrecklibrary.com/joyce/joyce-audio-fw/" rel="nofollow">Joyce Audio – Audiob&hellip;</a> on <a href="../../2015/01/29/deadly/comment-page-1/index.html#comment-13082">Crossing the Deadly Line: an O&hellip;</a></td></tr>				</table>
+				</aside><aside id="archives-2" class="widget widget_archive"><h1 class="widget-title">Archives</h1>
+			<ul>
+					<li><a href='../../2018/04/index.html'>April 2018</a></li>
+	<li><a href='../../2017/05/index.html'>May 2017</a></li>
+	<li><a href='../../2015/12/index.html'>December 2015</a></li>
+	<li><a href='../../2015/11/index.html'>November 2015</a></li>
+	<li><a href='../../2015/08/index.html'>August 2015</a></li>
+	<li><a href='../../2015/06/index.html'>June 2015</a></li>
+	<li><a href='../../2015/04/index.html'>April 2015</a></li>
+	<li><a href='../../2015/03/index.html'>March 2015</a></li>
+	<li><a href='../../2015/02/index.html'>February 2015</a></li>
+	<li><a href='../../2015/01/index.html'>January 2015</a></li>
+	<li><a href='../../2014/12/index.html'>December 2014</a></li>
+	<li><a href='../../2014/11/index.html'>November 2014</a></li>
+	<li><a href='../../2014/06/index.html'>June 2014</a></li>
+			</ul>
+
+			</aside><aside id="categories-2" class="widget widget_categories"><h1 class="widget-title">Categories</h1>
+			<ul>
+					<li class="cat-item cat-item-4204921"><a href="../a-portrait-of-the-artist-as-a-young-man/index.html">A Portrait of the Artist as a Young Man</a>
+</li>
+	<li class="cat-item cat-item-1792569"><a href="../annie-oakley/index.html">Annie Oakley</a>
+</li>
+	<li class="cat-item cat-item-276222"><a href="../atomic-bomb/index.html">Atomic Bomb</a>
+</li>
+	<li class="cat-item cat-item-48159"><a href="../batman/index.html">Batman</a>
+</li>
+	<li class="cat-item cat-item-307118"><a href="../christopher-nolan/index.html">Christopher Nolan</a>
+</li>
+	<li class="cat-item cat-item-17535"><a href="../dublin/index.html">Dublin</a>
+</li>
+	<li class="cat-item cat-item-722262 current-cat"><a aria-current="page" href="index.html">Dubliners</a>
+</li>
+	<li class="cat-item cat-item-273891"><a href="../finnegans-wake/index.html">Finnegans Wake</a>
+</li>
+	<li class="cat-item cat-item-218691454"><a href="../frank-movie/index.html">Frank (movie)</a>
+</li>
+	<li class="cat-item cat-item-192006"><a href="../frank-miller/index.html">Frank Miller</a>
+</li>
+	<li class="cat-item cat-item-1205470"><a href="../fuzzy-zoeller/index.html">Fuzzy Zoeller</a>
+</li>
+	<li class="cat-item cat-item-65622"><a href="../hiroshima/index.html">Hiroshima</a>
+</li>
+	<li class="cat-item cat-item-15509854"><a href="../jono-manson/index.html">Jono Manson</a>
+</li>
+	<li class="cat-item cat-item-323159584"><a href="../joyce-in-performance/index.html">Joyce in Performance</a>
+</li>
+	<li class="cat-item cat-item-241067845"><a href="../joyceplanet-navigation/index.html">JoycePlanet Navigation</a>
+</li>
+	<li class="cat-item cat-item-792342"><a href="../leonard-nimoy/index.html">Leonard Nimoy</a>
+</li>
+	<li class="cat-item cat-item-241065665"><a href="../local-joycethings/index.html">Local JoyceThings</a>
+</li>
+	<li class="cat-item cat-item-774889"><a href="../marylin-monroe/index.html">Marylin Monroe</a>
+</li>
+	<li class="cat-item cat-item-2501613"><a href="../metempsychosis/index.html">Metempsychosis</a>
+</li>
+	<li class="cat-item cat-item-872145"><a href="../mike-watt/index.html">Mike Watt</a>
+</li>
+	<li class="cat-item cat-item-6002294"><a href="../patrick-horgan/index.html">Patrick Horgan</a>
+</li>
+	<li class="cat-item cat-item-11447493"><a href="../peaches-browning/index.html">Peaches Browning</a>
+</li>
+	<li class="cat-item cat-item-1160604"><a href="../phoenix-park/index.html">Phoenix Park</a>
+</li>
+	<li class="cat-item cat-item-42369"><a href="../prophecy/index.html">Prophecy</a>
+</li>
+	<li class="cat-item cat-item-844215"><a href="../rule-of-three/index.html">Rule of Three</a>
+</li>
+	<li class="cat-item cat-item-396600270"><a href="../simon-loekle/index.html">Simon Loekle</a>
+</li>
+	<li class="cat-item cat-item-28444"><a href="../star-trek/index.html">Star Trek</a>
+</li>
+	<li class="cat-item cat-item-31417905"><a href="../stephen-rennicks/index.html">Stephen Rennicks</a>
+</li>
+	<li class="cat-item cat-item-354569526"><a href="../the-prankquean/index.html">The Prankquean</a>
+</li>
+	<li class="cat-item cat-item-247581"><a href="../tiger-woods/index.html">Tiger Woods</a>
+</li>
+	<li class="cat-item cat-item-1601"><a href="../ulysses/index.html">Ulysses</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="../uncategorized/index.html">Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-342518977"><a href="../waywords-and-meansigns/index.html">Waywords and Meansigns</a>
+</li>
+	<li class="cat-item cat-item-62291"><a href="../world-war-ii/index.html">World War II</a>
+</li>
+			</ul>
+
+			</aside><aside id="meta-2" class="widget widget_meta"><h1 class="widget-title">Meta</h1>
+		<ul>
+			<li><a class="click-register" href="https://wordpress.com/start?ref=wplogin">Create account</a></li>			<li><a href="https://joycegeek.wordpress.com/wp-login.php">Log in</a></li>
+			<li><a href="../../feed/index.html">Entries feed</a></li>
+			<li><a href="../../comments/feed/index.html">Comments feed</a></li>
+
+			<li><a href="https://wordpress.com/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.com</a></li>
+		</ul>
+
+		</aside></div><!-- #secondary .widget-area -->
+
+	</div><!-- #main -->
+
+	<footer class="blog-footer" id="colophon" role="contentinfo">
+		<div id="site-generator">
+			<a href="https://wordpress.com/?ref=footer_blog" rel="nofollow">Blog at WordPress.com.</a>		</div>
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<!--  -->
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/files/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/pub/quintus/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript" src="https://0.gravatar.com/js/hovercards/hovercards.min.js?ver=202550924dcd77a86c6f1d3698ec27fc5da92b28585ddad3ee636c0397cf312193b2a1" id="grofiles-cards-js"></script>
+<script type="text/javascript" id="wpgroho-js-extra">
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+//# sourceURL=wpgroho-js-extra
+/* ]]> */
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='../../wp-content/mu-plugins/gravatar-hovercards/wpgroho.js%3Fm=1610363240i'></script>
+
+	<script>
+		// Initialize and attach hovercards to all gravatars
+		( function() {
+			function init() {
+				if ( typeof Gravatar === 'undefined' ) {
+					return;
+				}
+
+				if ( typeof Gravatar.init !== 'function' ) {
+					return;
+				}
+
+				Gravatar.profile_cb = function ( hash, id ) {
+					WPGroHo.syncProfileData( hash, id );
+				};
+
+				Gravatar.my_hash = WPGroHo.my_hash;
+				Gravatar.init(
+					'body',
+					'#wp-admin-bar-my-account',
+					{
+						i18n: {
+							'Edit your profile →': 'Edit your profile →',
+							'View profile →': 'View profile →',
+							'Contact': 'Contact',
+							'Send money': 'Send money',
+							'Sorry, we are unable to load this Gravatar profile.': 'Sorry, we are unable to load this Gravatar profile.',
+							'Gravatar not found.': 'Gravatar not found.',
+							'Too Many Requests.': 'Too Many Requests.',
+							'Internal Server Error.': 'Internal Server Error.',
+							'Is this you?': 'Is this you?',
+							'Claim your free profile.': 'Claim your free profile.',
+							'Email': 'Email',
+							'Home Phone': 'Home Phone',
+							'Work Phone': 'Work Phone',
+							'Cell Phone': 'Cell Phone',
+							'Contact Form': 'Contact Form',
+							'Calendar': 'Calendar',
+						},
+					}
+				);
+			}
+
+			if ( document.readyState !== 'loading' ) {
+				init();
+			} else {
+				document.addEventListener( 'DOMContentLoaded', init );
+			}
+		} )();
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-cfe26e0ddcc0d722543ff990d49f824c">
+	</div>
+	<div class="grofile-hash-map-9b28f49d5562bfd85d0ad17d9f27eef1">
+	</div>
+	</div>
+		<div id="actionbar" dir="ltr" style="display: none;"
+			class="actnbr-pub-quintus actnbr-has-follow actnbr-has-actions">
+		<ul>
+								<li class="actnbr-btn actnbr-hidden">
+								<a class="actnbr-action actnbr-actn-follow " href="index.html">
+			<svg class="gridicon" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path clip-rule="evenodd" d="m4 4.5h12v6.5h1.5v-6.5-1.5h-1.5-12-1.5v1.5 10.5c0 1.1046.89543 2 2 2h7v-1.5h-7c-.27614 0-.5-.2239-.5-.5zm10.5 2h-9v1.5h9zm-5 3h-4v1.5h4zm3.5 1.5h-1v1h1zm-1-1.5h-1.5v1.5 1 1.5h1.5 1 1.5v-1.5-1-1.5h-1.5zm-2.5 2.5h-4v1.5h4zm6.5 1.25h1.5v2.25h2.25v1.5h-2.25v2.25h-1.5v-2.25h-2.25v-1.5h2.25z"  fill-rule="evenodd"></path></svg>
+			<span>Subscribe</span>
+		</a>
+		<a class="actnbr-action actnbr-actn-following  no-display" href="index.html">
+			<svg class="gridicon" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 4.5H4V15C4 15.2761 4.22386 15.5 4.5 15.5H11.5V17H4.5C3.39543 17 2.5 16.1046 2.5 15V4.5V3H4H16H17.5V4.5V12.5H16V4.5ZM5.5 6.5H14.5V8H5.5V6.5ZM5.5 9.5H9.5V11H5.5V9.5ZM12 11H13V12H12V11ZM10.5 9.5H12H13H14.5V11V12V13.5H13H12H10.5V12V11V9.5ZM5.5 12H9.5V13.5H5.5V12Z" fill="#008A20"></path><path class="following-icon-tick" d="M13.5 16L15.5 18L19 14.5" stroke="#008A20" stroke-width="1.5"></path></svg>
+			<span>Subscribed</span>
+		</a>
+							<div class="actnbr-popover tip tip-top-left actnbr-notice" id="follow-bubble">
+							<div class="tip-arrow"></div>
+							<div class="tip-inner actnbr-follow-bubble">
+															<ul>
+											<li class="actnbr-sitename">
+			<a href="../../index.html">
+				<img loading='lazy' alt='' src='https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=50&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png' srcset='https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=50&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 1x, https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=75&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 1.5x, https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=100&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 2x, https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=150&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 3x, https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=200&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 4x' class='avatar avatar-50' height='50' width='50' />				JoyceGeek			</a>
+		</li>
+										<div class="actnbr-message no-display"></div>
+									<form method="post" action="https://subscribe.wordpress.com" accept-charset="utf-8" style="display: none;">
+																						<div class="actnbr-follow-count">Join 153 other subscribers</div>
+																					<div>
+										<input type="email" name="email" placeholder="Enter your email address" class="actnbr-email-field" aria-label="Enter your email address" />
+										</div>
+										<input type="hidden" name="action" value="subscribe" />
+										<input type="hidden" name="blog_id" value="69025680" />
+										<input type="hidden" name="source" value="https://joycegeek.com/category/dubliners/" />
+										<input type="hidden" name="sub-type" value="actionbar-follow" />
+										<input type="hidden" id="_wpnonce" name="_wpnonce" value="87209033c3" />										<div class="actnbr-button-wrap">
+											<button type="submit" value="Sign me up">
+												Sign me up											</button>
+										</div>
+									</form>
+									<li class="actnbr-login-nudge">
+										<div>
+											Already have a WordPress.com account? <a href="https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fjoycegeek.com%252F2015%252F11%252F11%252Freverse-reading%252F">Log in now.</a>										</div>
+									</li>
+								</ul>
+															</div>
+						</div>
+					</li>
+									<li class="actnbr-btn actnbr-hidden no-display" onclick="javascript:__tcfapi( 'showUi' );">
+						<a class="actnbr-action actnbr-actn-privacy" href="index.html#">
+							<svg class="gridicon gridicons-info-outline" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M13 9h-2V7h2v2zm0 2h-2v6h2v-6zm-1-7c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8m0-2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z"/></g></svg>							<span>Privacy						</span>
+						</a>
+					</li>
+							<li class="actnbr-ellipsis actnbr-hidden">
+				<svg class="gridicon gridicons-ellipsis" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M7 12c0 1.104-.896 2-2 2s-2-.896-2-2 .896-2 2-2 2 .896 2 2zm12-2c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm-7 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2z"/></g></svg>				<div class="actnbr-popover tip tip-top-left actnbr-more">
+					<div class="tip-arrow"></div>
+					<div class="tip-inner">
+						<ul>
+								<li class="actnbr-sitename">
+			<a href="../../index.html">
+				<img loading='lazy' alt='' src='https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=50&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png' srcset='https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=50&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 1x, https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=75&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 1.5x, https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=100&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 2x, https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=150&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 3x, https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=200&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 4x' class='avatar avatar-50' height='50' width='50' />				JoyceGeek			</a>
+		</li>
+								<li class="actnbr-folded-follow">
+										<a class="actnbr-action actnbr-actn-follow " href="index.html">
+			<svg class="gridicon" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path clip-rule="evenodd" d="m4 4.5h12v6.5h1.5v-6.5-1.5h-1.5-12-1.5v1.5 10.5c0 1.1046.89543 2 2 2h7v-1.5h-7c-.27614 0-.5-.2239-.5-.5zm10.5 2h-9v1.5h9zm-5 3h-4v1.5h4zm3.5 1.5h-1v1h1zm-1-1.5h-1.5v1.5 1 1.5h1.5 1 1.5v-1.5-1-1.5h-1.5zm-2.5 2.5h-4v1.5h4zm6.5 1.25h1.5v2.25h2.25v1.5h-2.25v2.25h-1.5v-2.25h-2.25v-1.5h2.25z"  fill-rule="evenodd"></path></svg>
+			<span>Subscribe</span>
+		</a>
+		<a class="actnbr-action actnbr-actn-following  no-display" href="index.html">
+			<svg class="gridicon" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 4.5H4V15C4 15.2761 4.22386 15.5 4.5 15.5H11.5V17H4.5C3.39543 17 2.5 16.1046 2.5 15V4.5V3H4H16H17.5V4.5V12.5H16V4.5ZM5.5 6.5H14.5V8H5.5V6.5ZM5.5 9.5H9.5V11H5.5V9.5ZM12 11H13V12H12V11ZM10.5 9.5H12H13H14.5V11V12V13.5H13H12H10.5V12V11V9.5ZM5.5 12H9.5V13.5H5.5V12Z" fill="#008A20"></path><path class="following-icon-tick" d="M13.5 16L15.5 18L19 14.5" stroke="#008A20" stroke-width="1.5"></path></svg>
+			<span>Subscribed</span>
+		</a>
+								</li>
+														<li class="actnbr-signup"><a href="https://wordpress.com/start/">Sign up</a></li>
+							<li class="actnbr-login"><a href="https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fjoycegeek.com%252F2015%252F11%252F11%252Freverse-reading%252F">Log in</a></li>
+															<li class="flb-report">
+									<a href="https://wordpress.com/abuse/?report_url=https://joycegeek.com" target="_blank" rel="noopener noreferrer">
+										Report this content									</a>
+								</li>
+															<li class="actnbr-reader">
+									<a href="https://wordpress.com/reader/feeds/25892135">
+										View site in Reader									</a>
+								</li>
+															<li class="actnbr-subs">
+									<a href="https://subscribe.wordpress.com/">Manage subscriptions</a>
+								</li>
+																<li class="actnbr-fold"><a href="index.html">Collapse this bar</a></li>
+														</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+<script>
+window.addEventListener( "DOMContentLoaded", function( event ) {
+	var link = document.createElement( "link" );
+	link.href = "/wp-content/mu-plugins/actionbar/actionbar.css?v=20250116";
+	link.type = "text/css";
+	link.rel = "stylesheet";
+	document.head.appendChild( link );
+
+	var script = document.createElement( "script" );
+	script.src = "/wp-content/mu-plugins/actionbar/actionbar.js?v=20250204";
+	document.body.appendChild( script );
+} );
+</script>
+
+			<div id="jp-carousel-loading-overlay">
+			<div id="jp-carousel-loading-wrapper">
+				<span id="jp-carousel-library-loading">&nbsp;</span>
+			</div>
+		</div>
+		<div class="jp-carousel-overlay" style="display: none;">
+
+		<div class="jp-carousel-container">
+			<!-- The Carousel Swiper -->
+			<div
+				class="jp-carousel-wrap swiper jp-carousel-swiper-container jp-carousel-transitions"
+				itemscope
+				itemtype="https://schema.org/ImageGallery">
+				<div class="jp-carousel swiper-wrapper"></div>
+				<div class="jp-swiper-button-prev swiper-button-prev">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskPrev" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="9" height="12">
+							<path d="M16.2072 16.59L11.6496 12L16.2072 7.41L14.8041 6L8.8335 12L14.8041 18L16.2072 16.59Z" fill="white"/>
+						</mask>
+						<g mask="url(#maskPrev)">
+							<rect x="0.579102" width="23.8823" height="24" fill="#FFFFFF"/>
+						</g>
+					</svg>
+				</div>
+				<div class="jp-swiper-button-next swiper-button-next">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskNext" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="8" height="12">
+							<path d="M8.59814 16.59L13.1557 12L8.59814 7.41L10.0012 6L15.9718 12L10.0012 18L8.59814 16.59Z" fill="white"/>
+						</mask>
+						<g mask="url(#maskNext)">
+							<rect x="0.34375" width="23.8822" height="24" fill="#FFFFFF"/>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<!-- The main close buton -->
+			<div class="jp-carousel-close-hint">
+				<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<mask id="maskClose" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="5" width="15" height="14">
+						<path d="M19.3166 6.41L17.9135 5L12.3509 10.59L6.78834 5L5.38525 6.41L10.9478 12L5.38525 17.59L6.78834 19L12.3509 13.41L17.9135 19L19.3166 17.59L13.754 12L19.3166 6.41Z" fill="white"/>
+					</mask>
+					<g mask="url(#maskClose)">
+						<rect x="0.409668" width="23.8823" height="24" fill="#FFFFFF"/>
+					</g>
+				</svg>
+			</div>
+			<!-- Image info, comments and meta -->
+			<div class="jp-carousel-info">
+				<div class="jp-carousel-info-footer">
+					<div class="jp-carousel-pagination-container">
+						<div class="jp-swiper-pagination swiper-pagination"></div>
+						<div class="jp-carousel-pagination"></div>
+					</div>
+					<div class="jp-carousel-photo-title-container">
+						<h2 class="jp-carousel-photo-caption"></h2>
+					</div>
+					<div class="jp-carousel-photo-icons-container">
+						<a href="index.html#" class="jp-carousel-icon-btn jp-carousel-icon-info" aria-label="Toggle photo metadata visibility">
+							<span class="jp-carousel-icon">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="maskInfo" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M12.7537 2C7.26076 2 2.80273 6.48 2.80273 12C2.80273 17.52 7.26076 22 12.7537 22C18.2466 22 22.7046 17.52 22.7046 12C22.7046 6.48 18.2466 2 12.7537 2ZM11.7586 7V9H13.7488V7H11.7586ZM11.7586 11V17H13.7488V11H11.7586ZM4.79292 12C4.79292 16.41 8.36531 20 12.7537 20C17.142 20 20.7144 16.41 20.7144 12C20.7144 7.59 17.142 4 12.7537 4C8.36531 4 4.79292 7.59 4.79292 12Z" fill="white"/>
+									</mask>
+									<g mask="url(#maskInfo)">
+										<rect x="0.8125" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+							</span>
+						</a>
+												<a href="index.html#" class="jp-carousel-icon-btn jp-carousel-icon-comments" aria-label="Toggle photo comments visibility">
+							<span class="jp-carousel-icon">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="maskComments" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M4.3271 2H20.2486C21.3432 2 22.2388 2.9 22.2388 4V16C22.2388 17.1 21.3432 18 20.2486 18H6.31729L2.33691 22V4C2.33691 2.9 3.2325 2 4.3271 2ZM6.31729 16H20.2486V4H4.3271V18L6.31729 16Z" fill="white"/>
+									</mask>
+									<g mask="url(#maskComments)">
+										<rect x="0.34668" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+
+								<span class="jp-carousel-has-comments-indicator" aria-label="This image has comments."></span>
+							</span>
+						</a>
+											</div>
+				</div>
+				<div class="jp-carousel-info-extra">
+					<div class="jp-carousel-info-content-wrapper">
+						<div class="jp-carousel-photo-title-container">
+							<h2 class="jp-carousel-photo-title"></h2>
+						</div>
+						<div class="jp-carousel-comments-wrapper">
+															<div id="jp-carousel-comments-loading">
+									<span>Loading Comments...</span>
+								</div>
+								<div class="jp-carousel-comments"></div>
+								<div id="jp-carousel-comment-form-container">
+									<span id="jp-carousel-comment-form-spinner">&nbsp;</span>
+									<div id="jp-carousel-comment-post-results"></div>
+																														<form id="jp-carousel-comment-form">
+												<label for="jp-carousel-comment-form-comment-field" class="screen-reader-text">Write a Comment...</label>
+												<textarea
+													name="comment"
+													class="jp-carousel-comment-form-field jp-carousel-comment-form-textarea"
+													id="jp-carousel-comment-form-comment-field"
+													placeholder="Write a Comment..."
+												></textarea>
+												<div id="jp-carousel-comment-form-submit-and-info-wrapper">
+													<div id="jp-carousel-comment-form-commenting-as">
+																													<fieldset>
+																<label for="jp-carousel-comment-form-email-field">Email (Required)</label>
+																<input type="text" name="email" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-email-field" />
+															</fieldset>
+															<fieldset>
+																<label for="jp-carousel-comment-form-author-field">Name (Required)</label>
+																<input type="text" name="author" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-author-field" />
+															</fieldset>
+															<fieldset>
+																<label for="jp-carousel-comment-form-url-field">Website</label>
+																<input type="text" name="url" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-url-field" />
+															</fieldset>
+																											</div>
+													<input
+														type="submit"
+														name="submit"
+														class="jp-carousel-comment-form-button"
+														id="jp-carousel-comment-form-button-submit"
+														value="Post Comment" />
+												</div>
+											</form>
+																											</div>
+													</div>
+						<div class="jp-carousel-image-meta">
+							<div class="jp-carousel-title-and-caption">
+								<div class="jp-carousel-photo-info">
+									<h3 class="jp-carousel-caption" itemprop="caption description"></h3>
+								</div>
+
+								<div class="jp-carousel-photo-description"></div>
+							</div>
+							<ul class="jp-carousel-image-exif" style="display: none;"></ul>
+							<a class="jp-carousel-image-download" href="index.html#" target="_blank" style="display: none;">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="19" height="18">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M5.84615 5V19H19.7775V12H21.7677V19C21.7677 20.1 20.8721 21 19.7775 21H5.84615C4.74159 21 3.85596 20.1 3.85596 19V5C3.85596 3.9 4.74159 3 5.84615 3H12.8118V5H5.84615ZM14.802 5V3H21.7677V10H19.7775V6.41L9.99569 16.24L8.59261 14.83L18.3744 5H14.802Z" fill="white"/>
+									</mask>
+									<g mask="url(#mask0)">
+										<rect x="0.870605" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+								<span class="jp-carousel-download-text"></span>
+							</a>
+							<div class="jp-carousel-image-map" style="display: none;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+		
+	<script type="text/javascript">
+		(function () {
+			var wpcom_reblog = {
+				source: 'toolbar',
+
+				toggle_reblog_box_flair: function (obj_id, post_id) {
+
+					// Go to site selector. This will redirect to their blog if they only have one.
+					const postEndpoint = `https://wordpress.com/post`;
+
+					// Ideally we would use the permalink here, but fortunately this will be replaced with the 
+					// post permalink in the editor.
+					const originalURL = `${ document.location.href }?page_id=${ post_id }`; 
+					
+					const url =
+						postEndpoint +
+						'?url=' +
+						encodeURIComponent( originalURL ) +
+						'&is_post_share=true' +
+						'&v=5';
+
+					const redirect = function () {
+						if (
+							! window.open( url, '_blank' )
+						) {
+							location.href = url;
+						}
+					};
+
+					if ( /Firefox/.test( navigator.userAgent ) ) {
+						setTimeout( redirect, 0 );
+					} else {
+						redirect();
+					}
+				},
+			};
+
+			window.wpcom_reblog = wpcom_reblog;
+		})();
+	</script>
+<script type="text/javascript" id="jetpack-carousel-js-extra">
+/* <![CDATA[ */
+var jetpackSwiperLibraryPath = {"url":"/wp-content/mu-plugins/jetpack-plugin/sun/_inc/blocks/swiper.js"};
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https://joycegeek.com/wp-admin/admin-ajax.php","nonce":"813153ec17","display_exif":"1","display_comments":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","image_label":"Open image in full-screen.","download_original":"View full size \u003Cspan class=\"photo-size\"\u003E{0}\u003Cspan class=\"photo-size-times\"\u003E\u00d7\u003C/span\u003E{1}\u003C/span\u003E","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","copyright":"Copyright","comment_registration":"0","require_name_email":"1","login_url":"https://joycegeek.wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fjoycegeek.com%2F2015%2F11%2F11%2Freverse-reading%2F","blog_id":"69025680","meta_data":["camera","aperture","shutter_speed","focal_length","copyright"],"stats_query_args":"blog=69025680&v=wpcom&tz=-6&user_id=0&arch_cat=dubliners&arch_results=2&subd=joycegeek","is_public":"1"};
+//# sourceURL=jetpack-carousel-js-extra
+/* ]]> */
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='../../_static/index.html%3F%3F-eJxtjDsOgCAQBS8kbij8FcajGF2JAWEhwobrayEWxnJeZh7kINBTUpTAsQiWd00RjEphweNhiEwwa0JYWdsNcDk9R2VfrQy101SbWMH%252Fa9FEDujdB+9ucqPsWtkPQ9e05gLzpzlh'></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/","ext":".png","svgUrl":"https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?m=1764078722i&ver=6.9-RC2-61304"}}
+</script>
+<script type="module">
+/* <![CDATA[ */
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
+/* ]]> */
+</script>
+<script src="https://stats.wp.com/w.js?68" defer></script> <script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'69025680','blog_tz':'-6','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+		// Prevent sending pageview tracking from WP-Admin pages.
+		_stq.push(['view', {'blog':'69025680','v':'wpcom','tz':'-6','user_id':'0','arch_cat':'dubliners','arch_results':'2','subd':'joycegeek'}]);
+		_stq.push(['extra', {'crypt':'UE5tW3cvZGRzV2xFSGUla1NSakMvUXFZbFEmVHVULnMsSTBSfl0sY3dUZlFDSUZrNS5DOU5EelNoNlF1c0o2L2ozekhBbW9VZ1dweGttVGJJWmhCd2lTOFlFVVBzVno3LWNDU25oVjV8MjJfWVlVVXVSMzUsLGFqeV15LUwzX3FWL0w9YUNML2UwVzgmeGYwWVBySEZdNnlyUm5WL0UlX1I0MlVkOCtxdmVSdi1pa1lmPXVFaHRPeXZhV0ozekUsdD1mR3BnX0hqQ1l2LXcxZ28rQ0xMdT9qY0ZjeV1qd1Q0Ty56bTgxcT1qWDBCRDY5PWxqfEJLXyUwflZ8UGRQ'}]);
+_stq.push([ 'clickTrackerInit', '69025680', '0' ]);
+</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:1px;width:1px;overflow:hidden;position:absolute;bottom:1px;" alt="" /></noscript>
+<meta id="bilmur" property="bilmur:data" content="" data-provider="wordpress.com" data-service="simple" data-site-tz="America/Denver" data-custom-props="{&quot;logged_in&quot;:&quot;0&quot;,&quot;wptheme&quot;:&quot;pub\/quintus&quot;,&quot;wptheme_is_block&quot;:&quot;0&quot;}"  >
+		<script defer src="../../wp-content/js/bilmur.min.js%3Fi=17&amp;m=202550"></script> 	
+</body>
+</html>
+<!--
+	generated 207 seconds ago
+	generated in 0.204 seconds
+	served from batcache in 0.003 seconds
+	expires in 93 seconds
+-->
