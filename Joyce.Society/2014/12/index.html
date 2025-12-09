@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html id="ie7" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>December &laquo; 2014 &laquo; JoyceGeek</title>
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://joycegeek.com/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="https://s2.wp.com/wp-content/themes/pub/quintus/js/html5.js?m=1315596887i" type="text/javascript"></script>
+<![endif]-->
+
+<script type="text/javascript">
+  WebFontConfig = {"google":{"families":["Merriweather:r,i,b,bi:latin,latin-ext","EB+Garamond:500:latin,latin-ext"]},"api_url":"https:\/\/fonts-api.wp.com\/css"};
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = '/wp-content/plugins/custom-fonts/js/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+	})();
+</script><style id="jetpack-custom-fonts-css">.wf-active #site-title{font-family:"EB Garamond",serif;font-style:normal;font-weight:500}.wf-active .entry-meta .entry-date, .wf-active body{font-family:"Merriweather",serif}.wf-active #access .menu, .wf-active #comments #comments-title, .wf-active #content nav, .wf-active #site-description, .wf-active .blog-footer, .wf-active .comment .comment-author, .wf-active .comment .comment-meta, .wf-active .content .page-title, .wf-active .entry-content label, .wf-active .entry-meta, .wf-active .entry-title, .wf-active .widget .widget-title{font-family:"EB Garamond",serif;font-style:normal;font-weight:500}.wf-active .entry-content h1, .wf-active .entry-content h2, .wf-active .entry-content h3, .wf-active .entry-content h4, .wf-active .entry-content h5, .wf-active .entry-content h6{font-family:"EB Garamond",serif;font-weight:500;font-style:normal}.wf-active #site-description{font-weight:500;font-style:normal}.wf-active #access .menu{font-weight:500;font-style:normal}.wf-active #access ul ul a{font-style:normal;font-weight:500}.wf-active .content .page-title{font-weight:500;font-style:normal}.wf-active .entry-title, .wf-active .entry-title a{font-weight:500;font-style:normal}.wf-active .entry-meta{font-style:normal;font-weight:500}.wf-active .entry-meta .entry-date b{font-weight:500;font-style:normal}.wf-active footer.entry-meta .comments-link a{font-style:normal;font-weight:500}.wf-active #content nav div a{font-style:normal;font-weight:500}.wf-active .format-link .entry-title a{font-style:normal;font-weight:500}.wf-active .format-link .entry-title:after{font-style:normal;font-weight:500}.wf-active .entry-content label{font-weight:500;font-style:normal}.wf-active #comments #comments-title{font-style:normal;font-weight:500}.wf-active #comments #comments-title em{font-style:normal;font-weight:500}.wf-active .comment .comment-author cite{font-style:normal;font-weight:500}.wf-active .comment .comment-meta{font-style:normal;font-weight:500}.wf-active .widget .widget-title{font-weight:500;font-style:normal}.wf-active .blog-footer{font-style:normal;font-weight:500}</style>
+<meta name='robots' content='max-image-preview:large' />
+<meta name="google-site-verification" content="x-XGTI63KjxWax_Y7nUFdww69HrSdCBGnvWsFf2jzBs" />
+
+<!-- Async WordPress.com Remote Login -->
+<script id="wpcom_remote_login_js">
+var wpcom_remote_login_extra_auth = '';
+function wpcom_remote_login_remove_dom_node_id( element_id ) {
+	var dom_node = document.getElementById( element_id );
+	if ( dom_node ) { dom_node.parentNode.removeChild( dom_node ); }
+}
+function wpcom_remote_login_remove_dom_node_classes( class_name ) {
+	var dom_nodes = document.querySelectorAll( '.' + class_name );
+	for ( var i = 0; i < dom_nodes.length; i++ ) {
+		dom_nodes[ i ].parentNode.removeChild( dom_nodes[ i ] );
+	}
+}
+function wpcom_remote_login_final_cleanup() {
+	wpcom_remote_login_remove_dom_node_classes( "wpcom_remote_login_msg" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_key" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_validate" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_js" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_request_access_iframe" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_request_access_styles" );
+}
+
+// Watch for messages back from the remote login
+window.addEventListener( "message", function( e ) {
+	if ( e.origin === "https://r-login.wordpress.com" ) {
+		var data = {};
+		try {
+			data = JSON.parse( e.data );
+		} catch( e ) {
+			wpcom_remote_login_final_cleanup();
+			return;
+		}
+
+		if ( data.msg === 'LOGIN' ) {
+			// Clean up the login check iframe
+			wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_key" );
+
+			var id_regex = new RegExp( /^[0-9]+$/ );
+			var token_regex = new RegExp( /^.*|.*|.*$/ );
+			if (
+				token_regex.test( data.token )
+				&& id_regex.test( data.wpcomid )
+			) {
+				// We have everything we need to ask for a login
+				var script = document.createElement( "script" );
+				script.setAttribute( "id", "wpcom_remote_login_validate" );
+				script.src = '/remote-login.php?wpcom_remote_login=validate'
+					+ '&wpcomid=' + data.wpcomid
+					+ '&token=' + encodeURIComponent( data.token )
+					+ '&host=' + window.location.protocol
+					+ '//' + window.location.hostname
+					+ '&postid=502'
+					+ '&is_singular=';
+				document.body.appendChild( script );
+			}
+
+			return;
+		}
+
+		// Safari ITP, not logged in, so redirect
+		if ( data.msg === 'LOGIN-REDIRECT' ) {
+			window.location = 'https://wordpress.com/log-in?redirect_to=' + window.location.href;
+			return;
+		}
+
+		// Safari ITP, storage access failed, remove the request
+		if ( data.msg === 'LOGIN-REMOVE' ) {
+			var css_zap = 'html { -webkit-transition: margin-top 1s; transition: margin-top 1s; } /* 9001 */ html { margin-top: 0 !important; } * html body { margin-top: 0 !important; } @media screen and ( max-width: 782px ) { html { margin-top: 0 !important; } * html body { margin-top: 0 !important; } }';
+			var style_zap = document.createElement( 'style' );
+			style_zap.type = 'text/css';
+			style_zap.appendChild( document.createTextNode( css_zap ) );
+			document.body.appendChild( style_zap );
+
+			var e = document.getElementById( 'wpcom_request_access_iframe' );
+			e.parentNode.removeChild( e );
+
+			document.cookie = 'wordpress_com_login_access=denied; path=/; max-age=31536000';
+
+			return;
+		}
+
+		// Safari ITP
+		if ( data.msg === 'REQUEST_ACCESS' ) {
+			console.log( 'request access: safari' );
+
+			// Check ITP iframe enable/disable knob
+			if ( wpcom_remote_login_extra_auth !== 'safari_itp_iframe' ) {
+				return;
+			}
+
+			// If we are in a "private window" there is no ITP.
+			var private_window = false;
+			try {
+				var opendb = window.openDatabase( null, null, null, null );
+			} catch( e ) {
+				private_window = true;
+			}
+
+			if ( private_window ) {
+				console.log( 'private window' );
+				return;
+			}
+
+			var iframe = document.createElement( 'iframe' );
+			iframe.id = 'wpcom_request_access_iframe';
+			iframe.setAttribute( 'scrolling', 'no' );
+			iframe.setAttribute( 'sandbox', 'allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-top-navigation-by-user-activation' );
+			iframe.src = 'https://r-login.wordpress.com/remote-login.php?wpcom_remote_login=request_access&origin=' + encodeURIComponent( data.origin ) + '&wpcomid=' + encodeURIComponent( data.wpcomid );
+
+			var css = 'html { -webkit-transition: margin-top 1s; transition: margin-top 1s; } /* 9001 */ html { margin-top: 46px !important; } * html body { margin-top: 46px !important; } @media screen and ( max-width: 660px ) { html { margin-top: 71px !important; } * html body { margin-top: 71px !important; } #wpcom_request_access_iframe { display: block; height: 71px !important; } } #wpcom_request_access_iframe { border: 0px; height: 46px; position: fixed; top: 0; left: 0; width: 100%; min-width: 100%; z-index: 99999; background: #23282d; } ';
+
+			var style = document.createElement( 'style' );
+			style.type = 'text/css';
+			style.id = 'wpcom_request_access_styles';
+			style.appendChild( document.createTextNode( css ) );
+			document.body.appendChild( style );
+
+			document.body.appendChild( iframe );
+		}
+
+		if ( data.msg === 'DONE' ) {
+			wpcom_remote_login_final_cleanup();
+		}
+	}
+}, false );
+
+// Inject the remote login iframe after the page has had a chance to load
+// more critical resources
+window.addEventListener( "DOMContentLoaded", function( e ) {
+	var iframe = document.createElement( "iframe" );
+	iframe.style.display = "none";
+	iframe.setAttribute( "scrolling", "no" );
+	iframe.setAttribute( "id", "wpcom_remote_login_key" );
+	iframe.src = "https://r-login.wordpress.com/remote-login.php"
+		+ "?wpcom_remote_login=key"
+		+ "&origin=aHR0cHM6Ly9qb3ljZWdlZWsuY29t"
+		+ "&wpcomid=69025680"
+		+ "&time=" + Math.floor( Date.now() / 1000 );
+	document.body.appendChild( iframe );
+}, false );
+</script>
+<link rel='dns-prefetch' href='https://s2.wp.com/' />
+<link rel='dns-prefetch' href='https://s0.wp.com/' />
+<link rel="alternate" type="application/rss+xml" title="JoyceGeek &raquo; Feed" href="../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="JoyceGeek &raquo; Comments Feed" href="../../comments/feed/index.html" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+	<link crossorigin='anonymous' rel='stylesheet' id='all-css-0-1' href='../../wp-content/mu-plugins/infinity/themes/pub/quintus.css%3Fm=1340018328i&amp;cssminify=yes.css' type='text/css' media='all' />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-2-1' href='../../wp-content/plugins/gutenberg-core/v22.2.0/build/styles/block-library/style.css%3Fm=1764855221i&amp;cssminify=yes.css' type='text/css' media='all' />
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify {
+	text-align:justify;
+}
+.has-text-align-justify{text-align:justify;}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style><link crossorigin='anonymous' rel='stylesheet' id='all-css-0-2' href='../../_static/index.html%3F%3F-eJzTLy%252FQzcxLzilNSS3WzyrWz01NyUxMzUnNTc0rQeEU5CRWphbp5qSmJyZX6uVm5uklFxfr6OPTDpRD5sM02efaGpoZmFkYGRuZGmQBAHPvL0Y=&amp;cssminify=yes.css' type='text/css' media='all' />
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-family--albert-sans: 'Albert Sans', sans-serif;--wp--preset--font-family--alegreya: Alegreya, serif;--wp--preset--font-family--arvo: Arvo, serif;--wp--preset--font-family--bodoni-moda: 'Bodoni Moda', serif;--wp--preset--font-family--bricolage-grotesque: 'Bricolage Grotesque', sans-serif;--wp--preset--font-family--cabin: Cabin, sans-serif;--wp--preset--font-family--chivo: Chivo, sans-serif;--wp--preset--font-family--commissioner: Commissioner, sans-serif;--wp--preset--font-family--cormorant: Cormorant, serif;--wp--preset--font-family--courier-prime: 'Courier Prime', monospace;--wp--preset--font-family--crimson-pro: 'Crimson Pro', serif;--wp--preset--font-family--dm-mono: 'DM Mono', monospace;--wp--preset--font-family--dm-sans: 'DM Sans', sans-serif;--wp--preset--font-family--dm-serif-display: 'DM Serif Display', serif;--wp--preset--font-family--domine: Domine, serif;--wp--preset--font-family--eb-garamond: 'EB Garamond', serif;--wp--preset--font-family--epilogue: Epilogue, sans-serif;--wp--preset--font-family--fahkwang: Fahkwang, sans-serif;--wp--preset--font-family--figtree: Figtree, sans-serif;--wp--preset--font-family--fira-sans: 'Fira Sans', sans-serif;--wp--preset--font-family--fjalla-one: 'Fjalla One', sans-serif;--wp--preset--font-family--fraunces: Fraunces, serif;--wp--preset--font-family--gabarito: Gabarito, system-ui;--wp--preset--font-family--ibm-plex-mono: 'IBM Plex Mono', monospace;--wp--preset--font-family--ibm-plex-sans: 'IBM Plex Sans', sans-serif;--wp--preset--font-family--ibarra-real-nova: 'Ibarra Real Nova', serif;--wp--preset--font-family--instrument-serif: 'Instrument Serif', serif;--wp--preset--font-family--inter: Inter, sans-serif;--wp--preset--font-family--josefin-sans: 'Josefin Sans', sans-serif;--wp--preset--font-family--jost: Jost, sans-serif;--wp--preset--font-family--libre-baskerville: 'Libre Baskerville', serif;--wp--preset--font-family--libre-franklin: 'Libre Franklin', sans-serif;--wp--preset--font-family--literata: Literata, serif;--wp--preset--font-family--lora: Lora, serif;--wp--preset--font-family--merriweather: Merriweather, serif;--wp--preset--font-family--montserrat: Montserrat, sans-serif;--wp--preset--font-family--newsreader: Newsreader, serif;--wp--preset--font-family--noto-sans-mono: 'Noto Sans Mono', sans-serif;--wp--preset--font-family--nunito: Nunito, sans-serif;--wp--preset--font-family--open-sans: 'Open Sans', sans-serif;--wp--preset--font-family--overpass: Overpass, sans-serif;--wp--preset--font-family--pt-serif: 'PT Serif', serif;--wp--preset--font-family--petrona: Petrona, serif;--wp--preset--font-family--piazzolla: Piazzolla, serif;--wp--preset--font-family--playfair-display: 'Playfair Display', serif;--wp--preset--font-family--plus-jakarta-sans: 'Plus Jakarta Sans', sans-serif;--wp--preset--font-family--poppins: Poppins, sans-serif;--wp--preset--font-family--raleway: Raleway, sans-serif;--wp--preset--font-family--roboto: Roboto, sans-serif;--wp--preset--font-family--roboto-slab: 'Roboto Slab', serif;--wp--preset--font-family--rubik: Rubik, sans-serif;--wp--preset--font-family--rufina: Rufina, serif;--wp--preset--font-family--sora: Sora, sans-serif;--wp--preset--font-family--source-sans-3: 'Source Sans 3', sans-serif;--wp--preset--font-family--source-serif-4: 'Source Serif 4', serif;--wp--preset--font-family--space-mono: 'Space Mono', monospace;--wp--preset--font-family--syne: Syne, sans-serif;--wp--preset--font-family--texturina: Texturina, serif;--wp--preset--font-family--urbanist: Urbanist, sans-serif;--wp--preset--font-family--work-sans: 'Work Sans', sans-serif;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-albert-sans-font-family{font-family: var(--wp--preset--font-family--albert-sans) !important;}.has-alegreya-font-family{font-family: var(--wp--preset--font-family--alegreya) !important;}.has-arvo-font-family{font-family: var(--wp--preset--font-family--arvo) !important;}.has-bodoni-moda-font-family{font-family: var(--wp--preset--font-family--bodoni-moda) !important;}.has-bricolage-grotesque-font-family{font-family: var(--wp--preset--font-family--bricolage-grotesque) !important;}.has-cabin-font-family{font-family: var(--wp--preset--font-family--cabin) !important;}.has-chivo-font-family{font-family: var(--wp--preset--font-family--chivo) !important;}.has-commissioner-font-family{font-family: var(--wp--preset--font-family--commissioner) !important;}.has-cormorant-font-family{font-family: var(--wp--preset--font-family--cormorant) !important;}.has-courier-prime-font-family{font-family: var(--wp--preset--font-family--courier-prime) !important;}.has-crimson-pro-font-family{font-family: var(--wp--preset--font-family--crimson-pro) !important;}.has-dm-mono-font-family{font-family: var(--wp--preset--font-family--dm-mono) !important;}.has-dm-sans-font-family{font-family: var(--wp--preset--font-family--dm-sans) !important;}.has-dm-serif-display-font-family{font-family: var(--wp--preset--font-family--dm-serif-display) !important;}.has-domine-font-family{font-family: var(--wp--preset--font-family--domine) !important;}.has-eb-garamond-font-family{font-family: var(--wp--preset--font-family--eb-garamond) !important;}.has-epilogue-font-family{font-family: var(--wp--preset--font-family--epilogue) !important;}.has-fahkwang-font-family{font-family: var(--wp--preset--font-family--fahkwang) !important;}.has-figtree-font-family{font-family: var(--wp--preset--font-family--figtree) !important;}.has-fira-sans-font-family{font-family: var(--wp--preset--font-family--fira-sans) !important;}.has-fjalla-one-font-family{font-family: var(--wp--preset--font-family--fjalla-one) !important;}.has-fraunces-font-family{font-family: var(--wp--preset--font-family--fraunces) !important;}.has-gabarito-font-family{font-family: var(--wp--preset--font-family--gabarito) !important;}.has-ibm-plex-mono-font-family{font-family: var(--wp--preset--font-family--ibm-plex-mono) !important;}.has-ibm-plex-sans-font-family{font-family: var(--wp--preset--font-family--ibm-plex-sans) !important;}.has-ibarra-real-nova-font-family{font-family: var(--wp--preset--font-family--ibarra-real-nova) !important;}.has-instrument-serif-font-family{font-family: var(--wp--preset--font-family--instrument-serif) !important;}.has-inter-font-family{font-family: var(--wp--preset--font-family--inter) !important;}.has-josefin-sans-font-family{font-family: var(--wp--preset--font-family--josefin-sans) !important;}.has-jost-font-family{font-family: var(--wp--preset--font-family--jost) !important;}.has-libre-baskerville-font-family{font-family: var(--wp--preset--font-family--libre-baskerville) !important;}.has-libre-franklin-font-family{font-family: var(--wp--preset--font-family--libre-franklin) !important;}.has-literata-font-family{font-family: var(--wp--preset--font-family--literata) !important;}.has-lora-font-family{font-family: var(--wp--preset--font-family--lora) !important;}.has-merriweather-font-family{font-family: var(--wp--preset--font-family--merriweather) !important;}.has-montserrat-font-family{font-family: var(--wp--preset--font-family--montserrat) !important;}.has-newsreader-font-family{font-family: var(--wp--preset--font-family--newsreader) !important;}.has-noto-sans-mono-font-family{font-family: var(--wp--preset--font-family--noto-sans-mono) !important;}.has-nunito-font-family{font-family: var(--wp--preset--font-family--nunito) !important;}.has-open-sans-font-family{font-family: var(--wp--preset--font-family--open-sans) !important;}.has-overpass-font-family{font-family: var(--wp--preset--font-family--overpass) !important;}.has-pt-serif-font-family{font-family: var(--wp--preset--font-family--pt-serif) !important;}.has-petrona-font-family{font-family: var(--wp--preset--font-family--petrona) !important;}.has-piazzolla-font-family{font-family: var(--wp--preset--font-family--piazzolla) !important;}.has-playfair-display-font-family{font-family: var(--wp--preset--font-family--playfair-display) !important;}.has-plus-jakarta-sans-font-family{font-family: var(--wp--preset--font-family--plus-jakarta-sans) !important;}.has-poppins-font-family{font-family: var(--wp--preset--font-family--poppins) !important;}.has-raleway-font-family{font-family: var(--wp--preset--font-family--raleway) !important;}.has-roboto-font-family{font-family: var(--wp--preset--font-family--roboto) !important;}.has-roboto-slab-font-family{font-family: var(--wp--preset--font-family--roboto-slab) !important;}.has-rubik-font-family{font-family: var(--wp--preset--font-family--rubik) !important;}.has-rufina-font-family{font-family: var(--wp--preset--font-family--rufina) !important;}.has-sora-font-family{font-family: var(--wp--preset--font-family--sora) !important;}.has-source-sans-3-font-family{font-family: var(--wp--preset--font-family--source-sans-3) !important;}.has-source-serif-4-font-family{font-family: var(--wp--preset--font-family--source-serif-4) !important;}.has-space-mono-font-family{font-family: var(--wp--preset--font-family--space-mono) !important;}.has-syne-font-family{font-family: var(--wp--preset--font-family--syne) !important;}.has-texturina-font-family{font-family: var(--wp--preset--font-family--texturina) !important;}.has-urbanist-font-family{font-family: var(--wp--preset--font-family--urbanist) !important;}.has-work-sans-font-family{font-family: var(--wp--preset--font-family--work-sans) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-4-1' href='../../_static/index.html%3F%3F-eJyFj10KwkAMhC9kNtQWrQ%252FiWbZtrKv752bX4u1NEbQi6EtIhvmGDE4R+uAz+YzRltF4xj50NvQXxrWqWlUBGxctQaKbanAwnF8O4Hy3pHrmFS6CXIF3ViLRXdR5djgajCZLTmy%252FsCkKA10XEzGDTGeKg3wSkL+4p4yxdHgtxufC+PevRNJglHVEcS3OX9BIAaS3zib4jwOOVps0owe3r7ZNtdn.css' type='text/css' media='all' />
+<link crossorigin='anonymous' rel='stylesheet' id='print-css-5-1' href='../../wp-content/mu-plugins/global-print/global-print.css%3Fm=1465851035i&amp;cssminify=yes.css' type='text/css' media='print' />
+<style id='jetpack-global-styles-frontend-style-inline-css'>
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+/*# sourceURL=jetpack-global-styles-frontend-style-inline-css */
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-8-1' href='../../wp-content/themes/h4/global.css%3Fm=1420737423i&amp;cssminify=yes.css' type='text/css' media='all' />
+<script type="text/javascript" id="wpcom-actionbar-placeholder-js-extra">
+/* <![CDATA[ */
+var actionbardata = {"siteID":"69025680","postID":"0","siteURL":"https://joycegeek.com","xhrURL":"https://joycegeek.com/wp-admin/admin-ajax.php","nonce":"5d291f3206","isLoggedIn":"","statusMessage":"","subsEmailDefault":"instantly","proxyScriptUrl":"https://s0.wp.com/wp-content/js/wpcom-proxy-request.js?m=1513050504i&amp;ver=20211021","i18n":{"followedText":"New posts from this site will now appear in your \u003Ca href=\"https://wordpress.com/reader\"\u003EReader\u003C/a\u003E","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","shortLinkCopied":"Shortlink copied to clipboard."}};
+//# sourceURL=wpcom-actionbar-placeholder-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" id="jetpack-mu-wpcom-settings-js-before">
+/* <![CDATA[ */
+var JETPACK_MU_WPCOM_SETTINGS = {"assetsUrl":"https://s1.wp.com/wp-content/mu-plugins/jetpack-mu-wpcom-plugin/sun/jetpack_vendor/automattic/jetpack-mu-wpcom/src/build/"};
+//# sourceURL=jetpack-mu-wpcom-settings-js-before
+/* ]]> */
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='../../wp-content/js/rlt-proxy.js%3Fm=1720530689i'></script>
+<script type="text/javascript" id="rlt-proxy-js-after">
+/* <![CDATA[ */
+	rltInitialize( {"token":null,"iframeOrigins":["https:\/\/widgets.wp.com"]} );
+//# sourceURL=rlt-proxy-js-after
+/* ]]> */
+</script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://joycegeek.wordpress.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress.com" />
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="December 2014 &#8211; JoyceGeek" />
+<meta property="og:site_name" content="JoyceGeek" />
+<meta property="og:image" content="https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=200&#038;ts=1765299833" />
+<meta property="og:image:width" content="200" />
+<meta property="og:image:height" content="200" />
+<meta property="og:image:alt" content="" />
+<meta property="og:locale" content="en_US" />
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="shortcut icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=32" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=32" sizes="16x16" />
+<link rel="apple-touch-icon" href="https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=114" />
+<link rel='openid.server' href='../../index.html%3Fopenidserver=1.html' />
+<link rel='openid.delegate' href='../../index.html' />
+<link rel="search" type="application/opensearchdescription+xml" href="../../osd.xml" title="JoyceGeek" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+<meta name="theme-color" content="#153c15" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>		<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="description" content="4 posts published by JoyceGeek during December 2014" />
+
+	<style type="text/css">
+		#ie7 .blog-header .site-branding {
+			display: block;
+		}
+	</style>
+	<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #153c15; background-image: url("https://joycegeek.files.wordpress.com/2014/06/web-background.jpg"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }
+</style>
+	<style type="text/css" id="custom-colors-css">.content article {
+	background-image: none;
+}
+#page { background-color: #f1f1f1;}
+.blog-footer a { color: #6D6D6D;}
+#access { background-color: #fff;}
+#content nav div a { color: #3A3A3A;}
+footer.entry-meta .comments-link a { fg1: #fff;}
+.entry-meta .entry-date { color: #6D6D6D;}
+.blog-footer { color: #6D6D6D;}
+body { background: #153c15;}
+footer.entry-meta { border-color: #DED9D4;}
+footer.entry-meta { border-color: rgba( 222, 217, 212, 0.4 );}
+.widget .widget-title { border-color: #DED9D4;}
+.widget .widget-title { border-color: rgba( 222, 217, 212, 0.4 );}
+#access .menu { border-color: #DED9D4;}
+#access .menu { border-color: rgba( 222, 217, 212, 0.5 );}
+#content nav div a { background-color: #DED9D4;}
+#content nav div a { border-color: #C7BFB6;}
+#content nav div a:hover { background-color: #B1A59A;}
+#content nav div a:hover { border-color: #9B8C7D;}
+footer.entry-meta .comments-link a { background-color: #DED9D4;}
+footer.entry-meta .comments-link a:hover { background-color: #C7BFB6;}
+#respond label { background-color: #DED9D4;}
+#wp-calendar tbody td { background-color: #DED9D4;}
+.entry-meta .entry-date { background-color: #ffffff;}
+.blog-footer { background-color: #ffffff;}
+.page-link a { background-color: #ffffff;}
+.page-link a:hover { background-color: #CCCCCC;}
+.content .page-link a { color: #424242;}
+#wp-calendar tbody #today { background-color: #ffffff;}
+.widget_authors img + strong { background-color: #ffffff;}
+.content a { color: #666666;}
+.entry-meta .entry-date:hover { color: #f1f1f1;}
+.image-attachment .entry-content .entry-attachment { background-color: #f1f1f1;}
+.wp-caption { background-color: #f1f1f1;}
+#comments #comments-title em:before { color: #f1f1f1;}
+#comments #comments-title em:after { color: #f1f1f1;}
+.widget_authors a:hover strong { color: #f1f1f1;}
+.entry-title, .entry-title a { color: #4D6A83;}
+.widget_authors img + strong { color: #C6D4E1;}
+.widget_authors a:hover strong { background-color: #C6D4E1;}
+</style>
+			<link rel="stylesheet" id="custom-css-css" type="text/css" href="https://s0.wp.com/?custom-css=1&#038;csblog=4FCJq&#038;cscache=6&#038;csrev=24" />
+			<link crossorigin='anonymous' rel='stylesheet' id='all-css-0-3' href='../../_static/index.html%3F%3F-eJydj9sKwjAQRH%252FIuNQL6oP4KdImS9k2yS7ZDcW%252Ft1IVfFOfhjMMBwYmcZ6zYTZI1UmsPWWFAU1aPz4ZtGa4UvbQRfajgk4kWNZedQVfCxKHGlHBt4WrYnxvXsWfvolCjzYnlyAFVZ2wmltqULtF%252FNG8XK0Uw4yd+kJixPP2g9aJ8kN8SefmsN+ejs2u2Qx3UYV%252F%252FQ==&amp;cssminify=ye.css' type='text/css' media='all' />
+</head>
+
+<body class="archive date custom-background wp-theme-pubquintus customizer-styles-applied color-default jetpack-reblog-enabled custom-colors">
+
+<div id="page" class="hfeed">
+		<header class="blog-header" role="banner">
+		<div class="site-branding">
+			<h1 id="site-title"><a href="../../index.html" title="JoyceGeek" rel="home">JoyceGeek</a></h1>
+			<h2 id="site-description">A James Joyce Blogsite</h2>
+		</div>
+	</header>
+
+	<nav id="access" role="navigation">
+		<form method="get" id="searchform" action="../../index.html">
+	<input type="text" class="field" name="s" id="s" placeholder="Search" />
+	<label for="s" class="assistive-text">Search</label>
+	<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
+</form>		<div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-2225" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2225"><a href="../../index.html">What’s a JoyceGeek?</a></li>
+<li id="menu-item-2226" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2226"><a href="../../dontpanic/index.html">Finnegans Wake in Performance</a></li>
+<li id="menu-item-2227" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2227"><a href="../../thundervideos/index.html">ThunderVideos</a></li>
+<li id="menu-item-2228" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2228"><a href="../../whats-a-joycegeek/all-about-adam-harvey/index.html">Meet Adam Harvey: JoyceGeek</a></li>
+<li id="menu-item-2229" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-2229"><a href="../../joyceblog-2/index.html">JoyceBlog</a></li>
+<li id="menu-item-2230" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2230"><a href="../../groupread/index.html">JoyceGroup Santa Fe</a></li>
+<li id="menu-item-4556" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4556"><a href="../../bloomsday/index.html">Bloomsday in Santa Fe</a></li>
+</ul></div>	</nav>
+
+	<div id="main">
+		<section id="primary">
+			<div class="content" id="content" role="main">
+
+				<header class="page-header">
+					<h1 class="page-title">
+						Monthly Archives: <span>December 2014</span>					</h1>
+									</header>
+
+				
+								
+								
+					
+<article id="post-502" class="post-502 post type-post status-publish format-standard hentry category-uncategorized">
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="https://joycegeek.com/2014/12/24/simonsays/" rel="bookmark">Simon Says: Challenge&nbsp;Yourself</a></h1>
+
+				<div class="entry-meta">
+			<a class="entry-date" title="December 24 2014" href="https://joycegeek.com/2014/12/24/simonsays/">
+				<time datetime="2014-12-24T17:20:06-07:00">Dec<b>24</b></time>
+			</a>
+					</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		<p>In the nearly 2,500 Saturdays I&#8217;ve had in my life, never once have I gotten up at four o&#8217;clock in the morning to listen to the radio.</p>
+<p style="text-align:justify;">Simon Loekle has me wondering if I shouldn&#8217;t be ashamed of myself. Here&#8217;s a guy who gets up <span style="text-decoration:underline;">every</span> Saturday morning at four, not just to go to work, but to shower, trim and comb his beard, press his suit, and arrive at <span style="text-decoration:underline;"><span style="color:#339966;"><a style="color:#339966;text-decoration:underline;" href="http://www.wbai.org/programlist.php#Arts">WBAI in New York</a></span></span> at 6:00 am in time for his two-hour arts and literature program &#8220;<span style="text-decoration:underline;"><span style="color:#339966;"><a style="color:#339966;text-decoration:underline;" href="http://www.wbai.org/program.php?program=132">As I Please</a></span></span>&#8221; looking like this:</p>
+<p style="text-align:center;"> <a href="http://www.simonloekle.com/" target="_blank" rel="noopener"><img data-attachment-id="503" data-permalink="https://joycegeek.com/2014/12/24/simonsays/loekle/" data-orig-file="https://joycegeek.com/wp-content/uploads/2014/12/loekle.jpg" data-orig-size="640,636" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;\u00a92010 Maria Boyadjieva&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Loekle" data-image-description="" data-image-caption="" data-medium-file="https://joycegeek.com/wp-content/uploads/2014/12/loekle.jpg?w=300" data-large-file="https://joycegeek.com/wp-content/uploads/2014/12/loekle.jpg?w=640" class="aligncenter wp-image-503 size-full" src="../../wp-content/uploads/2014/12/loekle.jpg%3Fw=640&amp;h=636" alt="Loekle" width="640" height="636" srcset="../../wp-content/uploads/2014/12/loekle.jpg 640w, ../../wp-content/uploads/2014/12/loekle.jpg%3Fw=150&amp;h=150=150 15../../wp-content/uploads/2014/12/loekle.jpg%3Fw=300&amp;h=298mp;h=298 300w" sizes="(max-width: 640px) 100vw, 640px" /></a></p>
+<h1 style="text-align:center;">Geek</h1>
+<p style="text-align:justify;">Actually, &#8216;geek&#8217; doesn&#8217;t even begin to describe the man in this photograph. This is not Simon dressed up for anything in particular &#8211; this is Simon as you might find him on laundry day, or at the Oscars, or anything in between for that matter. Often seen sporting a wide-brimmed Panama hat and genuine ash-plant walking stick, Simon is the very portrait of a modernist &#8211; as much of an envoy from the mid-twentieth century as you can hope to encounter without an actual time machine.</p>
+<p style="text-align:justify;">Here are a few more descriptors:</p>
+<h1 style="text-align:center;">Raconteur</h1>
+<p style="text-align:justify;">That Sinatra-style-cigarette-hold is no mistake. Although &#8220;As I Please&#8221; always has plenty of music, readings and local announcements, Simon could easily fill both hours of weekly airtime with anecdotes alone. His is a voice you could actually get used to in the morning &#8211; Regis Philbin simply pales by comparison.</p>
+<h1 style="text-align:center;">Jazz-Musicologist</h1>
+<p>Again, think mid-twentieth century: Satchmo, Duke, Bird, Diz, Monk, Prez, Hawk, etc. &#8211; much more than just Old Blue Eyes, and usually taking as much as half of Simon&#8217;s airtime, especially if you include the music history anecdotes he always brings in.</p>
+<p>(I&#8217;ll pass over Simon&#8217;s remaining descriptors &#8211; <span style="text-decoration:underline;"><span style="color:#339966;"><a style="color:#339966;text-decoration:underline;" href="http://www.simonloekle.com/nyc-tours.html" target="_blank" rel="noopener">perambulator</a></span></span>, <span style="text-decoration:underline;"><span style="color:#339966;"><a style="color:#339966;text-decoration:underline;" href="http://www.simonloekle.com/dazibao.html" target="_blank" rel="noopener">cartoonist</a></span></span>, <span style="text-decoration:underline;"><span style="color:#339966;"><a style="color:#339966;text-decoration:underline;" href="https://joycegeek.com/wp-content/uploads/2014/12/pledge-drive-pugilist.mp3" target="_blank" rel="noopener">pledge drive pugilist</a></span></span>, etc. &#8211; to talk about what most impresses me about Simon, for it is here where Simon and I land on our most common ground):</p>
+<h1 style="text-align:center;"><strong><span style="text-decoration:underline;">High</span></strong>-Modernist</h1>
+<p style="text-align:justify;">The literature portion of &#8220;As I Please&#8221; generally goes straight for the hard stuff: Eliot, Pound, Beckett, Joyce. At least once a month, Simon makes a point of reading aloud from these truly challenging modernist writers, and not just their &#8220;easy stuff&#8221;: he&#8217;ll dive right into the <em>Four Quartets</em>, the <em>Cantos</em>, the <em>Trilogy</em>, the <em>Wake</em>, and he&#8217;ll make no apologies for doing so.</p>
+<p style="text-align:justify;">With regards to <em><strong>Finnegans Wake</strong></em>, Simon is well on his way to completing a full audio archive of Joyce&#8217;s final work. Once completed, this project will put Simon into one of the most exclusive clubs in existence: <span style="color:#008000;"><a style="color:#008000;" title="Interview With a VoiceGeek: Patrick Horgan" href="https://joycegeek.com/2015/03/05/horgan/">Patrick Horgan</a></span> and <span style="color:#008000;"><a style="color:#008000;" title="Crossing the Deadly Line: an Overdue Rant" href="https://joycegeek.com/2015/01/29/deadly/">Patrick Healy</a></span> are the only two members at present. Of all the readers who have made efforts at committing Finnegans Wake to audio format &#8211; Patrick Ball, Patrick Bedford, Jim Norton, Marcella Riordan, Siobhan McKenna, etc., noone else has come even close to laying tracks down for the entire book.</p>
+<p style="text-align:justify;">But Simon is not a man to be rushed. Generally only once a year (the final Saturday to be exact), Simon reads around ten or so pages of <em><strong>Finnegans Wake</strong></em> into the microphone <span style="text-decoration:underline;"><span style="color:#339966;"><strong><a style="color:#339966;text-decoration:underline;" href="../../2015/12/01/loekle-archive/index.html">and archives it</a></strong></span></span> &#8211; his reading is slow, methodical, and passionate. Informed by as much as two months of preparation, each annual reading is essentially flawless in its execution. And just consider &#8211; this is live radio; no chance to do a re-take if he flubs a word or phrase, and he never does.</p>
+<p style="text-align:justify;">He&#8217;s been doing this since 1996, and has covered around 150 pages thus far, so at this rate, he should be done with the project in about fifty years. Despite his slim frame and penchant for tobacco, he might very well live to see this project to completion without even picking up the pace &#8211; his energy and exuberance are a marvel to witness. But even if he doesn&#8217;t live to complete the project, Simon will have made his point abundantly clear:</p>
+<h2 style="text-align:center;">If it&#8217;s not hard, it&#8217;s not worth pursuing, and the pursuit is all that really matters anyway.</h2>
+<p style="text-align:justify;">So follow Simon&#8217;s lead: challenge yourself. Simon&#8217;s &#8220;Year-Out WakeShow&#8221; is coming up this Saturday morning at 6am eastern time, 3am pacific, and the passage he&#8217;ll be reading starts on page 448 (the paragraph break near the bottom), and will likely end somewhere on page 457. Those of you who live across the pond need not get up till noon &#8211; lucky you &#8211; and even we lazy North Americans have the option of tuning into the podcast on WBAI, which should be available until mid 2015, and by then of course Raphael will have put it permanently onto <span style="text-decoration:underline;color:#339966;"><a style="color:#339966;text-decoration:underline;" href="http://fweet.org/pages/fw_read.php">fweet.org</a></span>. The point is: no excuses. If it&#8217;s good enough for Simon it should be good enough for you.</p>
+<p><a href="https://joycegeek.com/wp-content/uploads/2014/12/smoking-geeks1.jpg"><img data-attachment-id="512" data-permalink="https://joycegeek.com/2014/12/24/simonsays/smoking-geeks/" data-orig-file="https://joycegeek.com/wp-content/uploads/2014/12/smoking-geeks1.jpg" data-orig-size="480,640" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.4&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 4&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1407536278&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;3.85&quot;,&quot;iso&quot;:&quot;3200&quot;,&quot;shutter_speed&quot;:&quot;0.066666666666667&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;,&quot;latitude&quot;:&quot;40.7275&quot;,&quot;longitude&quot;:&quot;-73.992166666667&quot;}" data-image-title="Smoking Geeks" data-image-description="" data-image-caption="&lt;p&gt;Smoking Geeks&lt;/p&gt;
+" data-medium-file="https://joycegeek.com/wp-content/uploads/2014/12/smoking-geeks1.jpg?w=225" data-large-file="https://joycegeek.com/wp-content/uploads/2014/12/smoking-geeks1.jpg?w=480" class="alignright wp-image-512 size-thumbnail" src="../../wp-content/uploads/2014/12/smoking-geeks1.jpg%3Fw=113&amp;h=150" alt="Smoking Geeks" width="113" height="150" srcset="../../wp-content/uploads/2014/12/smoking-geeks1.jpg%3Fw=113 113w, ../../wp-content/uploads/2014/12/smoking-geeks1.jpg%3Fw=226 226w" sizes="(max-width: 113px) 100vw, 113px" /></a></p>
+<p style="text-align:justify;">Allow me to demonstrate. Here&#8217;s a little selfie Simon and I took this summer outside Simon&#8217;s favorite haunt: <span style="text-decoration:underline;"><span style="color:#339966;"><a style="color:#339966;text-decoration:underline;" href="http://www.swiftnycbar.com/" target="_blank" rel="noopener">Swift&#8217;s Hibernian Lounge</a></span></span> on 4th Street near Bowery. That&#8217;s me on the left, enjoying my lone cigarette of 2014:</p>
+<hr />
+<h2 style="text-align:justify;">Addendum: 11/28/2015</h2>
+<p style="text-align:justify;">Simon passed away this morning at the age of 62 from pancreatic cancer. I will be posting <strong><span style="color:#008000;"><a style="color:#008000;" href="../../2015/12/01/loekle-archive/index.html">another blog</a></span></strong> about this extraordinary man soon &#8211; meanwhile you can go to his <a href="https://www.facebook.com/simon.loekle.5?fref=nf" target="_blank" rel="noopener"><strong><span style="color:#008000;">facebook</span> <span style="color:#008000;">page</span></strong></a> which is presently covered in memorials.</p>
+			</div><!-- .entry-content -->
+	
+	<footer class="entry-meta">
+			<span class="comments-link"><a href="https://joycegeek.com/2014/12/24/simonsays/#respond">Leave a comment</a></span>
+				<span class="cat-links"><span class="entry-utility-prep entry-utility-prep-cat-links">Posted in </span><a href="../../category/uncategorized/index.html" rel="category tag">Uncategorized</a></span>
+						</footer><!-- #entry-meta -->
+</article><!-- #post-## -->
+
+				
+					
+<article id="post-406" class="post-406 post type-post status-publish format-standard hentry category-finnegans-wake category-joyceplanet-navigation">
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="https://joycegeek.com/2014/12/18/rosetree/" rel="bookmark">The Rosetree Principle</a></h1>
+
+				<div class="entry-meta">
+			<a class="entry-date" title="December 18 2014" href="https://joycegeek.com/2014/12/18/rosetree/">
+				<time datetime="2014-12-18T17:39:04-07:00">Dec<b>18</b></time>
+			</a>
+					</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		<p style="text-align: justify"><a href="../../wp-content/uploads/2014/12/joyce-and-rosetree2.jpg"><img data-attachment-id="479" data-permalink="https://joycegeek.com/2014/12/18/rosetree/joyce-and-rosetree/" data-orig-file="https://joycegeek.com/wp-content/uploads/2014/12/joyce-and-rosetree2.jpg" data-orig-size="750,582" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Joyce and RoseTree" data-image-description="" data-image-caption="" data-medium-file="https://joycegeek.com/wp-content/uploads/2014/12/joyce-and-rosetree2.jpg?w=300" data-large-file="https://joycegeek.com/wp-content/uploads/2014/12/joyce-and-rosetree2.jpg?w=640" class="aligncenter wp-image-479 size-full" style="border: 10px solid #136600" src="../../wp-content/uploads/2014/12/joyce-and-rosetree2.jpg%3Fw=640" alt=""   srcset="../../wp-content/uploads/2014/12/joyce-and-rosetree2.jpg 750w, ../../wp-content/uploads/2014/12/joyce-and-rosetree2.jpg%3Fw=150&amp;h=116=116 15../../wp-content/uploads/2014/12/joyce-and-rosetree2.jpg%3Fw=300&amp;h=233mp;h=233 300w" sizes="(max-width: 750px) 100vw, 750px" /></a></p>
+<p style="text-align: justify">I have said elsewhere (and often) that <strong><em>Finnegans Wake</em></strong> is far too dense and multi-layered a book to be understood through anything less than careful examination of its details, and that most if not all attempts at summarizing, condensing and paraphrasing it are doomed to bore most readers off at the outset. I stand by that statement &#8211; I&#8217;ll even reiterate it, but &#8220;dense and multi-layered&#8221; should not be misconstrued as tortuous and impenetrable. Details happen to be fun, and there are a number of simple and straightforward strategies a newbie reader can employ to facilitate understanding the book as a whole even while being forced to read at the obligatory snail’s pace <em><strong>Finnegans Wake</strong></em> requires.</p>
+<p style="text-align: justify">For example, the book is absolutely saturated with musical references that 20 years ago would have basically required pitching a tent at the library of congress to fully absorb. With today&#8217;s technology, nearly all of the <strong><em>Wake</em></strong>&#8216;s more than 2000 references to over 800 songs are a mere click away, and if you sit with this music a while (in the comfort of your own home no less) patterns emerge that help to illuminate not just what <strong><em>Finnegans Wake</em></strong> sounds like, but what it has to say about the inner workings of the human experience.</p>
+<p style="text-align: justify">So of the many musical threads contained in <strong><em>Finnegans Wake</em></strong> to choose from, it makes sense to go with the thread that eventually leads to the titular song of the book. The audio file in the link below is excerpted (as are all of the recordings on this post for copyright purposes) from a tune entitled &#8220;The Rose Tree&#8221;:</p>
+<h6 style="padding-left: 30px;text-align: center">The Rose Tree &#8211; Ryan Thomson</h6>
+<audio class="wp-audio-shortcode" id="audio-406-1" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="../../wp-content/uploads/2014/12/rt-thomson.mp3%3F_=1" /><a href="https://joycegeek.com/wp-content/uploads/2014/12/rt-thomson.mp3">https://joycegeek.com/wp-content/uploads/2014/12/rt-thomson.mp3</a></audio>
+<p style="text-align: justify">Chances are this tune sounds familiar: &#8220;Turkey in the Straw&#8221; or &#8220;Zip Coon&#8221; or perhaps &#8220;The Girl I Left Behind Me&#8221;. But no &#8211; this one is called &#8220;The Rose Tree&#8221;, and its melody can be clearly distinguished from the other three if you set them side by side:</p>
+<h6 style="padding-left: 30px;text-align: center">Turkey in the Straw &#8211; Dick Kimmel</h6>
+<audio class="wp-audio-shortcode" id="audio-406-2" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="../../wp-content/uploads/2014/12/tits-kimmel.mp3%3F_=2" /><a href="https://joycegeek.com/wp-content/uploads/2014/12/tits-kimmel.mp3">https://joycegeek.com/wp-content/uploads/2014/12/tits-kimmel.mp3</a></audio>
+<h6 style="padding-left: 30px;text-align: center">Old Zip Coon &#8211; Japher&#8217;s Original Sandy River Minstrels</h6>
+<audio class="wp-audio-shortcode" id="audio-406-3" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="../../wp-content/uploads/2014/12/zc-sr-minstrels.mp3%3F_=3" /><a href="https://joycegeek.com/wp-content/uploads/2014/12/zc-sr-minstrels.mp3">https://joycegeek.com/wp-content/uploads/2014/12/zc-sr-minstrels.mp3</a></audio>
+<h6 style="padding-left: 30px;text-align: center">The Girl I left Behind Me &#8211; The Princeton Trio</h6>
+<audio class="wp-audio-shortcode" id="audio-406-4" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="../../wp-content/uploads/2014/12/tgilbm-princeton31.mp3%3F_=4" /><a href="https://joycegeek.com/wp-content/uploads/2014/12/tgilbm-princeton31.mp3">https://joycegeek.com/wp-content/uploads/2014/12/tgilbm-princeton31.mp3</a></audio>
+<p style="text-align: justify">There is no question that all three songs stem from the same source. Uncovering the true identity of this source song (what it was called when it first emerged, what it exactly sounded like, etc) is pretty much impossible, but the mind’s ear can clearly hear the common undercurrent these songs share: With some minor melodic and tempo variation, they follow a very strict pattern: they start with an opening phrase (unresolved), followed by a 2nd refrain that echoes the opening phrase (but this time is resolved), then a bridge (unresolved), and then a final refrain (echoing the 2nd refrain and resolved). For the sake of shorthand as well as an uncannily useful metaphor, I&#8217;ll refer to this family of songs as &#8220;The Rose Tree&#8221; family.</p>
+<p style="text-align: justify">The song itself has a fascinating and polymorphic history. According to <span style="color: #008000"><strong><a style="color: #008000" href="http://www.ibiblio.org/fiddlers/ROS_ROTT.htm#ROSE_TREE_[1]" target="_blank" rel="noopener">The Fiddler&#8217;s Companion</a></strong></span>, &#8220;The Rose Tree&#8221; first appeared in sheet-music form with that title in 1782 (pre-dating the other versions by only a few years) as part of an opera entitled <em>The Poor Soldier</em>. The opera&#8217;s composer William Shield quite specifically did <span style="text-decoration: underline">not</span> claim authorship, listing the melody as &#8220;traditional&#8221;. Here&#8217;s the Shield version:</p>
+<h6 style="padding-left: 30px;text-align: center">A Rose Tree in Full Bearing &#8211; David &amp; Ginger Hildebrand</h6>
+<audio class="wp-audio-shortcode" id="audio-406-5" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="../../wp-content/uploads/2014/12/rt-hildebrand.mp3%3F_=5" /><a href="https://joycegeek.com/wp-content/uploads/2014/12/rt-hildebrand.mp3">https://joycegeek.com/wp-content/uploads/2014/12/rt-hildebrand.mp3</a></audio>
+<p>A few decades later, Thomas Moore wrote his own lyrics for it (fun fact: the musical arrangement for the recording below was composed by none other than Ludwig Van Beethoven):</p>
+<h6 style="padding-left: 30px;text-align: center">I&#8217;d Mourn the Hopes That Leave Me &#8211; DIT Conservatory of Music and Drama</h6>
+<audio class="wp-audio-shortcode" id="audio-406-6" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="../../wp-content/uploads/2014/12/imth-dit.mp3%3F_=6" /><a href="https://joycegeek.com/wp-content/uploads/2014/12/imth-dit.mp3">https://joycegeek.com/wp-content/uploads/2014/12/imth-dit.mp3</a></audio>
+<p style="text-align: justify">And somewhere along the line, a marching-band version was written:</p>
+<h6 style="padding-left: 30px;text-align: center">The Rose Tree &#8211; The Trail Band</h6>
+<audio class="wp-audio-shortcode" id="audio-406-7" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="../../wp-content/uploads/2014/12/rt-trail-band.mp3%3F_=7" /><a href="https://joycegeek.com/wp-content/uploads/2014/12/rt-trail-band.mp3">https://joycegeek.com/wp-content/uploads/2014/12/rt-trail-band.mp3</a></audio>
+<p style="text-align: justify">&#8230;and so on. Clearly, this tune was the 19th century equivalent of &#8220;#1 on the Billboard Charts,&#8221; and the anonymous authorship made it fair game to bastardize and distort at will, very often by other anonymous songsters. So eventually this happened:</p>
+<h6 style="padding-left: 30px;text-align: center">Tim Finnegan&#8217;s Wake &#8211; Tom Kines</h6>
+<audio class="wp-audio-shortcode" id="audio-406-8" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="../../wp-content/uploads/2014/12/tfw-kines-version.mp3%3F_=8" /><a href="https://joycegeek.com/wp-content/uploads/2014/12/tfw-kines-version.mp3">https://joycegeek.com/wp-content/uploads/2014/12/tfw-kines-version.mp3</a></audio>
+<p style="text-align: justify">Give a song a hundred years of this kind of treatment &#8211; reworkings, distortions, colorings, augmentations, etc &#8211; and you&#8217;ll eventually have an entire family of song-branches so distinct from one another that a single musician could cover them all and not seem the least bit redundant. Ronnie Drew alone covered at least three recognizably separate &#8220;Rose Tree&#8221; branches (and yes, I do have something of a man-crush on Ronnie Drew &#8211; viz. my <span style="color: #008000"><strong><a style="color: #008000" href="https://www.youtube.com/watch?v=5dVI2FnK4-Q&amp;list=UU616DUlCsLhHvXUYp_bC7Cw" target="_blank" rel="noopener">Thundervideo #8</a></strong></span>):</p>
+<h1 style="text-align: justify">Turkey in the Straw/Zip Coon:</h1>
+<h6 style="padding-left: 30px;text-align: center">Phil the Fluter&#8217;s Ball &#8211; The Dubliners with Ronnie Drew</h6>
+<audio class="wp-audio-shortcode" id="audio-406-9" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="../../wp-content/uploads/2014/12/pfb-drew.mp3%3F_=9" /><a href="https://joycegeek.com/wp-content/uploads/2014/12/pfb-drew.mp3">https://joycegeek.com/wp-content/uploads/2014/12/pfb-drew.mp3</a></audio>
+<h5 style="text-align: center"> &#8212;</h5>
+<h1 style="text-align: justify">The Girl I Left Behind Me:</h1>
+<h6 style="padding-left: 30px;text-align: center">Rare Old Mountain Dew &#8211; The Dubliners with Ronnie Drew (and Shane McGowan)</h6>
+<audio class="wp-audio-shortcode" id="audio-406-10" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="../../wp-content/uploads/2014/12/md-drew.mp3%3F_=10" /><a href="https://joycegeek.com/wp-content/uploads/2014/12/md-drew.mp3">https://joycegeek.com/wp-content/uploads/2014/12/md-drew.mp3</a></audio>
+<h5 style="text-align: center">&#8212;</h5>
+<h1 style="text-align: justify">The Rose Tree:</h1>
+<h6 style="padding-left: 30px;text-align: center">Finnegan&#8217;s Wake &#8211; The Dubliners with Ronnie Drew</h6>
+<audio class="wp-audio-shortcode" id="audio-406-11" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="../../wp-content/uploads/2014/12/tfw-drew.mp3%3F_=11" /><a href="https://joycegeek.com/wp-content/uploads/2014/12/tfw-drew.mp3">https://joycegeek.com/wp-content/uploads/2014/12/tfw-drew.mp3</a></audio>
+<h5 style="text-align: center">&#8212;</h5>
+<p style="text-align: justify">A sentence on page 304 of <strong><em>Finnegans Wake</em></strong> is very much worth mentioning here &#8211; it can be found in the fourth footnote at the bottom of the page. Here it is:</p>
+<blockquote>
+<h4 style="text-align: justify">If I&#8217;d more in the cups that peeves thee you could cracksmith your rows tureens.</h4>
+</blockquote>
+<p style="text-align: justify">Among other things, this sentence describes a shrewish domestic squabble somewhat similar to the events in &#8220;Tim Finnegan&#8217;s Wake&#8221;- kitchen utensils and pottery are thrown about. More to our purpose, however, it distorts Thomas Moore&#8217;s &#8220;I&#8217;d Mourn the Hopes That Leave Me&#8221; and its source &#8220;Rose Tree&#8221; into &#8220;I&#8217;d more in the cups that peeves thee&#8221; and &#8220;rows tureens&#8221;. This is a practice Joyce employs throughout the novel: nearly every time a Thomas Moore Irish Melody is mentioned, its source melody can be found nearby &#8211; even when its title is given by Moore as &#8216;unknown&#8221;, so that for example the song listed by Moore as &#8220;Sing, Sweet Harp, Oh Sing to Me (air unknown)&#8221; becomes &#8220;Sing, sweetharp, thing to me anone!&#8221; [p. 224, line 16 from the top].</p>
+<p style="text-align: justify">Joyce here is clearly encouraging his reader to meditate on the genesis of popular music. He makes references in <strong><em>Finnegans Wake </em></strong>to every single one of the above songs.  For the record, here they are:</p>
+<p style="text-align: justify;padding-left: 60px"><em>The Rose Tree</em>: FW p. 304, footnote 4 (see above)</p>
+<p style="text-align: justify;padding-left: 60px"><em>I&#8217;d Mourn the Hopes That Leave Me</em>: 304 fn 4 (ibid), 439.34</p>
+<p style="text-align: justify;padding-left: 60px"><em>Zip Coon/Turkey in the Straw</em>: 176.14-15, 191.12-13</p>
+<p style="text-align: justify;padding-left: 60px"><em>The Girl I Left Behind Me</em>: 9.33, 184.25, 234.7-8, 341.7, 469.1-2</p>
+<p style="text-align: justify;padding-left: 60px"><em>The Mountain Dew</em>: 95.25, 372.28</p>
+<p style="text-align: justify;padding-left: 60px"><em>Phil the Fluter’s Ball</em>: 6.18-19,28, 12.34-35, 26.1-2, 58.11-14, 63.27, 76.28, 230.21, 240.23, 277.25-278.3, 297.18-19, 318.16-17, 319.13-14, 341.10, 351.14-15, 363.14-15, 444.9-10</p>
+<p style="text-align: justify;padding-left: 60px"><em>Tim Finnegan&#8217;s Wake</em>: book&#8217;s title, 4.26-34, 6.7-9,26-27, 15.24-26, 24.15, 70.12-13, 74.8, 93.35-36, 105.21, 176.16,20, 258.8-9, 276.21-22, 315.2, 317.3-4, 321.17,29, 350.2, 358.23, 375.16-17, 379.34, 382.25, 415.15, 453.4, 487.20, 496.36-497.1, 499.13,17-18, 511.15,23, 512.23, 531.25-26, 537.34, 565.14</p>
+<p style="text-align: justify">That&#8217;s around 60 references to what amounts to a single song &#8211; or at least a single family of songs. And the <strong><em>Wake</em></strong> gives similar treatment to other root song families &#8211; &#8220;Rosin the Beau&#8221;, &#8220;Lillibulero&#8221;, &#8220;The Shan Van Voght&#8221;, and &#8220;The Wren Song&#8221; all come to immediate mind. Given the variety of genres <strong><em>Finnegans Wake</em></strong> makes reference to &#8211; music hall songs, classical art songs, arias, children&#8217;s songs, hymns, lullabies, anthems, jigs, reels, planxties, ballads, sea shanties, work songs &#8211; it&#8217;s surprising how many songs can be grouped together under a single folk rubric.</p>
+<p style="text-align: justify">Songs in <strong><em>Finnegans Wake</em></strong> amalgamate and shift identities every bit as much as the book’s characters do, so much so that many of them start sounding like the same song. But this new amalgamated song is by its very definition <em>nameless</em>. The song we call &#8220;Rose Tree&#8221; probably doesn&#8217;t actually have an &#8220;original&#8221; name at all.</p>
+<p style="text-align: justify">Or perhaps &#8211; and here&#8217;s the real point &#8211; it has more original names than can be counted.</p>
+<p style="text-align: justify">So what&#8217;s to do? James Joyce&#8217;s answer: Call it “Tim Finnegan’s Wake”, take out the &#8216;Tim&#8217; and the apostrophe so that it can contain more scenarios and linguistic possibilities than merely one man’s funeral, and use it for the title of your book.</p>
+<p> More on this topic to come&#8230;</p>
+			</div><!-- .entry-content -->
+	
+	<footer class="entry-meta">
+			<span class="comments-link"><a href="https://joycegeek.com/2014/12/18/rosetree/#respond">Leave a comment</a></span>
+				<span class="cat-links"><span class="entry-utility-prep entry-utility-prep-cat-links">Posted in </span><a href="../../category/finnegans-wake/index.html" rel="category tag">Finnegans Wake</a>, <a href="../../category/joyceplanet-navigation/index.html" rel="category tag">JoycePlanet Navigation</a></span>
+						</footer><!-- #entry-meta -->
+</article><!-- #post-## -->
+
+				
+					
+<article id="post-371" class="post-371 post type-post status-publish format-standard hentry category-joyceplanet-navigation category-local-joycethings">
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="https://joycegeek.com/2014/12/11/joyce-wrote-shakespeare/" rel="bookmark">Joyce Wrote Shakespeare: a Conspiracy&nbsp;Theory</a></h1>
+
+				<div class="entry-meta">
+			<a class="entry-date" title="December 11 2014" href="https://joycegeek.com/2014/12/11/joyce-wrote-shakespeare/">
+				<time datetime="2014-12-11T11:44:19-07:00">Dec<b>11</b></time>
+			</a>
+					</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		<p><a href="../../wp-content/uploads/2014/12/sj.jpg"><img data-attachment-id="641" data-permalink="https://joycegeek.com/2014/12/11/joyce-wrote-shakespeare/sj/" data-orig-file="https://joycegeek.com/wp-content/uploads/2014/12/sj.jpg" data-orig-size="630,480" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="S&amp;amp;J" data-image-description="" data-image-caption="" data-medium-file="https://joycegeek.com/wp-content/uploads/2014/12/sj.jpg?w=300" data-large-file="https://joycegeek.com/wp-content/uploads/2014/12/sj.jpg?w=630" loading="lazy" class="aligncenter wp-image-641 size-full" src="../../wp-content/uploads/2014/12/sj.jpg%3Fw=640" alt="S&amp;J"   srcset="../../wp-content/uploads/2014/12/sj.jpg 630w, ../../wp-content/uploads/2014/12/sj.jpg%3Fw=150&amp;h=114=114 15../../wp-content/uploads/2014/12/sj.jpg%3Fw=300&amp;h=229mp;h=229 300w" sizes="(max-width: 630px) 100vw, 630px" /></a></p>
+<p style="text-align:justify;">JoyceGroup Santa Fe will be launching into the ninth chapter of <em><strong>Ulysses</strong></em> this week, which takes for its Homeric counterpart the &#8216;Scylla and Charybdis&#8217; dilemma: Odysseus must choose between two impossible paths, Scylla (a vicious six-headed monster sure to devour his crew) on the one hand, and Charybdis (a massive whirlpool sure to destroy his fleet) on the other.</p>
+<p style="text-align:justify;">Treacherous waters indeed, and no fitter metaphor for a discussion of the authorship of Shakespeare&#8217;s works. If you thought the Joyce Wars were bad, just start speculating on the Shakespeare authorship issue in mixed company. I&#8217;ve seen people shout, pound tables, even storm out of rooms when this topic is broached. The great Peter Brook himself <span style="color:#008000;"><strong><a style="color:#008000;" href="https://www.youtube.com/watch?v=CkqLd4vrktA">recently described</a></strong></span> any and all alternative authorship theories as &#8220;completely idiotic,&#8221; adding that such theorizing is solely motivated by the selfish desire for academic prestige in a soon-to-be-deflated but presently burgeoning scholastic industry.</p>
+<p style="text-align:justify;">With surprisingly little variation, Brook&#8217;s is by far the most common argument against alternate Shakespeare claimancy, and in my opinion, it skirts dangerously close to the <span style="color:#008000;"><strong><a style="color:#008000;" href="http://laurencetennant.com/bonds/adhominem.html">ad hominem fallacy</a></strong></span>. What difference does it make that a theorist might be motivated by self-advancement? Show me the evidence; that&#8217;s where I&#8217;ll be convinced, one way or the other. I would much rather hear a theory on how <span style="text-decoration:underline;">the man</span><em>:</em> <em>William Shakespeare</em> &#8211; through his own ruminations, motivations and struggles &#8211; came about writing any given work.</p>
+<p style="text-align:justify;">Well as it turns out, Stephen Dedalus (autobiographical counterpart of James Joyce) lays his own authorship theory (that Shakespeare wrote Shakespeare) before a small audience of elite members of the Dublin intelligentsia in the &#8216;Scylla and Charybdis&#8217; chapter. Given what he has to work with, Stephen&#8217;s portrait is astonishingly vivid. Just consider: virtually no documentation of the life of Shakespeare the man exists; other lives contemporary to his own were much better chronicled &#8211; Edward DeVere, Francis Bacon, Mary Sidney, etc. &#8211; and so provide much more grist to the adventurous theorist. By contrast, Shakespeare&#8217;s biography is woefully patchy, and Stephen&#8217;s plaster is at times so thin that he himself admits when cornered that he doesn&#8217;t actually believe his own argument. But by the end of Stephen&#8217;s dissertation, a far greater purpose has been served: William Shakespeare has become nearly as real a character in the novel as Leopold Bloom himself. Using what very little documentation exists on Shakespeare (his last will and testament, his appearance on the Globe stage as Hamlet&#8217;s ghost, his son&#8217;s death, etc) Stephen manages to construct a gripping portrait of the artist &#8211; a writer who has worked the detritus of his utterly chaotic and grief-ridden life into one of the all-time greatest bildungsroman portraits in English literature: <em>Hamlet</em>.</p>
+<p style="text-align:justify;">You might very well see in this portrait the echoes of another writer, and you wouldn&#8217;t be mistaken. James Joyce had his virtues, but humility was certainly not one of them. He knew perfectly well that he was onto something big with his Shakespearean reconstruction &#8211; much more than mere authorship theory or semi-oblique self-portraiture. By creating in the imagined person of William Shakespeare an echo/reflection of himself (i.e. a man with an intense investment in his personal integrity as well as deep-set insecurities), Joyce created something with which we can all potentially identify &#8211; not just some floating head in a ruffled collar and dorky hairdo that we all bow down to as some kind of iconic &#8220;genius.&#8221; It is no mistake that Stephen&#8217;s portrait of Shakespeare (cuckold, son-less father) has as much in common with Leopold Bloom as it does with Stephen himself.</p>
+<p style="text-align:justify;">So then we have the following amalgam which, if taken out of the above context, is of course mere cinematic goofiness:</p>
+<p style="text-align:justify;padding-left:30px;"><em>(Stephen and Bloom gaze in the mirror. The face of William Shakespeare, beardless, appears there, rigid in facial paralysis, crowned by the reflection of the reindeer antlered hatrack in the hall.)</em></p>
+<p style="padding-left:30px;text-align:right;"><em>-‘Circe’ chapter</em></p>
+<p style="text-align:justify;">This kind of stuff happens all the time in <em><strong>Finnegans Wake</strong></em>. Character identities become so fluid as to literally shift from persona to persona without any apparent justification. In the above passage, Stephen and Bloom amalgamate to become Shakespeare, and in the passage from <em><strong>Finnegans Wake</strong></em> which JoyceGroup Santa Fe is presently working on, Sir Tristan and St. Patrick amalgamate to become Anna Livia Plurabelle.</p>
+<p style="text-align:justify;">Or perhaps Shakespeare splits in two to become Bloom and Stephen, and Anna Livia gives birth to twins &#8211; I&#8217;m happy to go in either direction. That&#8217;s what happens with continuous exposure to Joyce, particularly the <em><strong>Wake</strong></em>. The mind elasticizes. After 20+ years of working on this stuff, I&#8217;ve come to a place where I generally welcome <span style="text-decoration:underline;">all</span> theories &#8211; especially if they can help me to connect to the text I&#8217;m trying to understand. The price may very well be credibility: As anyone who dares to venture beyond Shakespeare&#8217;s authority must face Peter Brook&#8217;s vicious rebuke, so too must Stephen face universal dismissal as a crackpot at the end of &#8220;Scylla and Charybdis.&#8221; But the reward &#8211; flexibility of mind and spirit &#8211; is pretty invaluable. So if you happen to be an Oxfordian, a Baconian, a Sidneyite, or even a Shakespearean, you have nothing to fear from me.</p>
+<p>Just keep yourself pliable, and let&#8217;s theorize.</p>
+			</div><!-- .entry-content -->
+	
+	<footer class="entry-meta">
+			<span class="comments-link"><a href="https://joycegeek.com/2014/12/11/joyce-wrote-shakespeare/#respond">Leave a comment</a></span>
+				<span class="cat-links"><span class="entry-utility-prep entry-utility-prep-cat-links">Posted in </span><a href="../../category/joyceplanet-navigation/index.html" rel="category tag">JoycePlanet Navigation</a>, <a href="../../category/local-joycethings/index.html" rel="category tag">Local JoyceThings</a></span>
+						</footer><!-- #entry-meta -->
+</article><!-- #post-## -->
+
+				
+					
+<article id="post-323" class="post-323 post type-post status-publish format-standard hentry category-joyceplanet-navigation category-prophecy tag-finnegans-wake tag-james-joyce tag-klook-klook-klook">
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="https://joycegeek.com/2014/12/03/genres-genres-everywhere/" rel="bookmark">Genres, Genres Everywhere</a></h1>
+
+				<div class="entry-meta">
+			<a class="entry-date" title="December 3 2014" href="https://joycegeek.com/2014/12/03/genres-genres-everywhere/">
+				<time datetime="2014-12-03T12:54:18-07:00">Dec<b>3</b></time>
+			</a>
+					</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		<h1 style="text-align:center;"><a href="../../wp-content/uploads/2014/12/genre-quartet.jpg"><img data-attachment-id="331" data-permalink="https://joycegeek.com/2014/12/03/genres-genres-everywhere/genre-quartet/" data-orig-file="https://joycegeek.com/wp-content/uploads/2014/12/genre-quartet.jpg" data-orig-size="2560,1064" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Genre Quartet" data-image-description="" data-image-caption="" data-medium-file="https://joycegeek.com/wp-content/uploads/2014/12/genre-quartet.jpg?w=300" data-large-file="https://joycegeek.com/wp-content/uploads/2014/12/genre-quartet.jpg?w=640" loading="lazy" class="  aligncenter wp-image-331 size-full" src="../../wp-content/uploads/2014/12/genre-quartet.jpg%3Fw=640" alt="Genre Quartet"   srcset="../../wp-content/uploads/2014/12/genre-quartet.jpg 2560w, ../../wp-content/uploads/2014/12/genre-quartet.jpg%3Fw=150&amp;h=62h=62 15../../wp-content/uploads/2014/12/genre-quartet.jpg%3Fw=300&amp;h=125mp;h=12../../wp-content/uploads/2014/12/genre-quartet.jpg%3Fw=768&amp;h=31968&amp;../../wp-content/uploads/2014/12/genre-quartet.jpg%3Fw=1024&amp;h=426w=1024&a../../wp-content/uploads/2014/12/genre-quartet.jpg%3Fw=1440&amp;h=599jpg?w=1440&amp;h=599 1440w" sizes="(max-width: 2560px) 100vw, 2560px" /></a></h1>
+<h1 style="text-align:center;"><em>One of these authors is not like the others.<br />
+Can you guess which one?</em></h1>
+<p style="text-align:justify;">That&#8217;s right: the correct answer is Agatha Christie &#8211; the only female of the group.</p>
+<p style="text-align:justify;">One thing all four do have in common, however, is that they&#8217;re all masters of genre fiction, especially James Joyce, whose novel <em><strong>Ulysses</strong></em> explores countless genres &#8211; some of which hadn&#8217;t even been invented yet when <em><strong>Ulysses</strong></em> was first published. Here are just a few examples:</p>
+<h2 style="padding-left:30px;text-align:justify;">Zombie Apocalypse:</h2>
+<p style="padding-left:60px;text-align:justify;"><em>(Stephen&#8217;s mother, emaciated, rises stark through the floor, in leper grey with a wreath of faded orangeblossoms and a torn bridal veil, her face worn and noseless, green with gravemould. Her hair is scant and lank. She fixes her bluecircled hollow eyesockets on Stephen and opens her toothless mouth uttering a silent word.)</em></p>
+<p style="padding-left:60px;text-align:right;"><em>-&#8216;Circe&#8217; chapter</em></p>
+<h2 style="padding-left:30px;text-align:justify;">Superhero Goth:</h2>
+<p style="padding-left:60px;text-align:justify;">The figure seated on a large boulder at the foot of a round tower was that of a broadshouldered deepchested stronglimbed frankeyed redhaired freelyfreckled shaggybearded widemouthed largenosed longheaded deepvoiced barekneed brawnyhanded hairylegged ruddyfaced sinewyarmed hero.</p>
+<p style="padding-left:60px;text-align:right;"><em>-&#8216;Cyclpos&#8217; chapter</em></p>
+<h2 style="padding-left:30px;text-align:justify;">Steam-Punk Science Fiction:</h2>
+<p style="padding-left:60px;text-align:justify;">The disk shot down the groove, wobbled a while, ceased and ogled them: six.</p>
+<p style="padding-left:60px;text-align:right;">&#8211;<em>&#8216;Wandering Rocks&#8217; chapter</em></p>
+<h2 style="padding-left:30px;text-align:justify;">Teen Vampire Romance:</h2>
+<p style="padding-left:60px;text-align:justify;">Should a girl tell? No, a thousand times no. That was their secret, only theirs, alone in the hiding twilight and there was none to know or tell save the little bat that flew so softly through the evening to and fro and little bats don&#8217;t tell.</p>
+<p style="padding-left:60px;text-align:right;">&#8211;<em>&#8216;Nausicaa&#8217; chapter<br />
+</em></p>
+<p style="text-align:justify;">Any of the given quotes would work just fine within the genres I gave them, especially that last one. It&#8217;s kind of spooky, really, and it&#8217;s enough to convince me that a close watching of HBO&#8217;s <em>True Blood</em> might yield some overt references to &#8216;Nausicaa.&#8217; After all, <em>True Blood</em> executive producer Alan Ball is said to have configured both <em>American Beauty</em> and <em>Six Feet Under</em> around <strong><em>Ulysses</em></strong> and <strong><em>Finnegans Wake</em></strong>, respectively. This is only conjecture, however. I tried watching <em>True Blood</em> not long ago, and just couldn&#8217;t get into it &#8211; probably never will.</p>
+<p style="text-align:justify;">My point, however, is that Joyce&#8217;s influence on our present culture might best be localized in our own genre-based storytelling. Kubrick&#8217;s <em>2001: a Space Odyssey</em> and the Cohens&#8217; <em>O Brother, Where Art Thou?</em> both shamelessly ape Joyce&#8217;s use of Homer&#8217;s <em>Odyssey</em>, and the recent release of the Australian horror movie <em>The Babadook</em> has me strongly suspecting a Joycean influence in its title. It&#8217;s an amazingly well-made film, and I highly recommend it to anyone who can stomach the horror genre. I would put it up there with <em>The Shining</em> and <em>Blue Velvet</em>. Frightening, yes, but masterful, genuinely moving, and highly thought-provoking.</p>
+<p style="text-align:justify;">Anyway, &#8220;Babadook&#8221; is basically a nonsense word meaning &#8220;bogey-man&#8221; (or &#8220;boogy-man&#8221; as we Yanks would have it), and it appears in the film as both title and main character of a strangely satanic children&#8217;s pop-up book; <span style="color:#008000;"><strong><a style="color:#008000;" href="http://www.nytimes.com/2014/11/23/movies/inside-the-horror-pop-up-book-in-the-babadook.html">here&#8217;s a link to a New York Times article about the book&#8217;s design</a></strong></span>. The video clip included in that article (which I would have embedded here had it been possible) shows a mother and child reading out loud from the book, which explains Mister Babadook&#8217;s name like so:</p>
+<p style="text-align:justify;padding-left:30px;">A rumbling sound and 3 sharp knocks<br />
+ba Ba-ba DOOK! DOOK! DOOK!<br />
+That&#8217;s when you&#8217;ll know when he&#8217;s around<br />
+You&#8217;ll see him if you look.</p>
+<p style="text-align:justify;">It could be my 20-plus years of Joyce-geekery informing the following observation, but I&#8217;ll make it anyway. The above quote &#8211; particularly the second line &#8211; has an uncanny resemblance to the &#8220;Black Liz&#8221; passage in <em><strong>Ulysses</strong></em>, which could easily be included in my genre list at the top like so:</p>
+<h2 style="text-align:justify;padding-left:30px;">Children&#8217;s Pop-Up Book:</h2>
+<p style="padding-left:60px;text-align:justify;">     Ga Ga Gara. Klook Klook Klook. Black Liz is our hen. She lays eggs for us. When she lays her egg she is so glad. Gara. Klook Klook Klook. Then comes good uncle Leo. He puts his hand under black Liz and takes her fresh egg. Ga ga ga ga Gara. Klook Klook Klook.</p>
+<p style="padding-left:60px;text-align:right;"><em>-&#8216;Cyclops&#8217; chapter</em></p>
+<p style="text-align:justify;">Add to this the nearly identical resemblance Mister Babadook&#8217;s knock has to the opening syllables of <span style="color:#008000;"><strong><a style="color:#008000;" href="https://www.youtube.com/watch?v=TV3vT5nW_I4">thunderword #1 in <span style="color:#008000;"><em>Finnegans Wake</em></span></a></strong></span>, and you&#8217;ve got yourself a seriously Joycean echo, whether filmmaker Jennifer Kent intended it or not.</p>
+<p style="text-align:justify;">Of course then the question arises: Is hearing a mere echo really enough to justify a full blog entry? What if &#8220;Babadook&#8221; really is just nonsense? For that matter, what if Kubrick and the Cohens had their own ideas about Homer&#8217;s <em>Odyssey</em>, utterly independent of what Joyce did?  And what if Alan Ball had never even heard of Joyce? What if James Joyce didn&#8217;t influence any of these filmmakers, who haven&#8217;t attributed any influence to him anyway? What are we Joyce-champions to do then?</p>
+<h1 style="text-align:center;">Answer: Celebrate!</h1>
+<p style="text-align:justify;">What an amazing author is James Joyce &#8211; to somehow prefigure whole aesthetic movements even down to the smallest details, so that whole volumes the size of Gifford&#8217;s annotations could be filled detailing all the amazing, uncanny corollaries with the post-Joycean world. Nobody dares attempt such a compilation for fear of morphing Joyce into some kind of art-prophet, but I think a happy middle ground can be reached:</p>
+<p style="text-align:justify;">Joyce went to mind-blogglingly meticulous lengths to demonstrate his vast knowledge of the great works of literature that preceded and influenced him. What if this wasn&#8217;t just to show off? What if he was attempting to demonstrate something? The evolution of artistic movements is not, as many would argue, particularly linear. &#8220;Modernism&#8221; has been around since at least the middle-ages, and even post-modernism isn&#8217;t exclusively bound to our day and age &#8211; just look at Laurence Sterne, Thomas Carlyle, etc.</p>
+<p style="text-align:justify;">So by allowing his language to exhibit enough elasticity to travel seamlessly from genre to genre, movement to movement, style to style etc, Joyce also allows a connection to be made from era to era. Given the tremendous elasticity of the language in <em><strong>Finnegans Wake</strong></em> in particular, it should naturally stand to reason that movements, words, <strong><span style="color:#008000;"><a style="color:#008000;text-decoration:underline;" href="../../2015/08/06/lunatic/index.html">and even events</a></span></strong> from the post-Joycean era would occasionally &#8211; and uncannily &#8211; be referenced, even if only by accident.</p>
+<p style="text-align:justify;">Believe me, it happens more often than you might imagine with Joyce.</p>
+			</div><!-- .entry-content -->
+	
+	<footer class="entry-meta">
+			<span class="comments-link"><a href="https://joycegeek.com/2014/12/03/genres-genres-everywhere/#respond">Leave a comment</a></span>
+				<span class="cat-links"><span class="entry-utility-prep entry-utility-prep-cat-links">Posted in </span><a href="../../category/joyceplanet-navigation/index.html" rel="category tag">JoycePlanet Navigation</a>, <a href="../../category/prophecy/index.html" rel="category tag">Prophecy</a></span>
+		<span class="tag-links">Tagged <a href="https://joycegeek.com/tag/finnegans-wake/" rel="tag">Finnegans Wake</a>, <a href="https://joycegeek.com/tag/james-joyce/" rel="tag">James Joyce</a>, <a href="https://joycegeek.com/tag/klook-klook-klook/" rel="tag">Klook Klook Klook</a></span>				</footer><!-- #entry-meta -->
+</article><!-- #post-## -->
+
+				
+								
+			</div><!-- #content -->
+		</section><!-- #primary -->
+
+<div id="secondary" class="widget-area" role="complementary">
+		<aside id="jetpack_display_posts_widget-2" class="widget widget_jetpack_display_posts_widget"><h1 class="widget-title">Latest from: JoyceGeek</h1><div class="jetpack-display-remote-posts"><h4><a href="../../2018/04/20/shempartthree/index.html">Syntax and Sigla: Shem part three</a></h4>
+<p>The animation project continues&#8230;</p>
+<h4><a href="../../2017/05/04/theshemproject/index.html">The Shem Project</a></h4>
+<p>A-year-and-a-half&#8217;s worth of work, all in one blogpost!</p>
+<h4><a href="../../2015/12/01/loekle-archive/index.html">Simon Loekle&#8217;s Finnegans Wake Audio Archive</a></h4>
+<p>(in)COMPLETE and (un)ABRIDGED</p>
+<h4><a href="../../2015/11/11/reverse-reading/index.html">Reverse-Reading: Beautiful, Fierce, Unkempt</a></h4>
+<p>Carl Jung said you could read Joyce backwards. Let&#8217;s try it!</p>
+<h4><a href="../../2015/08/06/lunatic/index.html">Readings from the Lunatic Fringe</a></h4>
+<p>BIFF WHACK BOOM CLUCK!<br />
+It&#8217;s time to be ridiculous.<br />
+But not really&#8230;</p>
+</div><!-- .jetpack-display-remote-posts --></aside><aside id="blog_subscription-3" class="widget widget_blog_subscription jetpack_subscription_widget"><h1 class="widget-title"><label for="subscribe-field">Follow the JoyceBlog via Email</label></h1>
+
+			<div class="wp-block-jetpack-subscriptions__container">
+			<form
+				action="https://subscribe.wordpress.com"
+				method="post"
+				accept-charset="utf-8"
+				data-blog="69025680"
+				data-post_access_level="everybody"
+				id="subscribe-blog"
+			>
+				<p>Enter your email address to follow this blog and receive notifications of new posts by email.</p>
+				<p id="subscribe-email">
+					<label
+						id="subscribe-field-label"
+						for="subscribe-field"
+						class="screen-reader-text"
+					>
+						Email Address:					</label>
+
+					<input
+							type="email"
+							name="email"
+							autocomplete="email"
+							
+							style="width: 95%; padding: 1px 10px"
+							placeholder="Email Address"
+							value=""
+							id="subscribe-field"
+							required
+						/>				</p>
+
+				<p id="subscribe-submit"
+									>
+					<input type="hidden" name="action" value="subscribe"/>
+					<input type="hidden" name="blog_id" value="69025680"/>
+					<input type="hidden" name="source" value="https://joycegeek.com/2014/12/"/>
+					<input type="hidden" name="sub-type" value="widget"/>
+					<input type="hidden" name="redirect_fragment" value="subscribe-blog"/>
+					<input type="hidden" id="_wpnonce" name="_wpnonce" value="87209033c3" />					<button type="submit"
+													class="wp-block-button__link"
+																	>
+						Follow					</button>
+				</p>
+			</form>
+						</div>
+			
+</aside><aside id="search-2" class="widget widget_search"><form method="get" id="searchform" action="../../index.html">
+	<input type="text" class="field" name="s" id="s" placeholder="Search" />
+	<label for="s" class="assistive-text">Search</label>
+	<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
+</form></aside>
+		<aside id="recent-posts-2" class="widget widget_recent_entries">
+		<h1 class="widget-title">Recent Posts</h1>
+		<ul>
+											<li>
+					<a href="../../2018/04/20/shempartthree/index.html">Syntax and Sigla: Shem part&nbsp;three</a>
+									</li>
+											<li>
+					<a href="../../2017/05/04/theshemproject/index.html">The Shem Project</a>
+									</li>
+											<li>
+					<a href="../../2015/12/01/loekle-archive/index.html">Simon Loekle&#8217;s Finnegans Wake Audio&nbsp;Archive</a>
+									</li>
+											<li>
+					<a href="../../2015/11/11/reverse-reading/index.html">Reverse-Reading: Beautiful, Fierce,&nbsp;Unkempt</a>
+									</li>
+											<li>
+					<a href="../../2015/08/06/lunatic/index.html">Readings from the Lunatic&nbsp;Fringe</a>
+									</li>
+					</ul>
+
+		</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h1 class="widget-title">Recent Comments</h1>				<table class="recentcommentsavatar" cellspacing="0" cellpadding="0" border="0">
+					<tr><td title="JoyceGeek" class="recentcommentsavatartop" style="height:48px; width:48px;"><a href="https://joycegeek.wordpress.com" rel="nofollow"><img referrerpolicy="no-referrer" alt='JoyceGeek&#039;s avatar' src='https://0.gravatar.com/avatar/31c34ac4fa14e2afbcbe006aefc1feb6aa11507e5f3fd3852f2d253c54876308?s=48&#038;d=identicon&#038;r=G' srcset='https://0.gravatar.com/avatar/31c34ac4fa14e2afbcbe006aefc1feb6aa11507e5f3fd3852f2d253c54876308?s=48&#038;d=identicon&#038;r=G 1x, https://0.gravatar.com/avatar/31c34ac4fa14e2afbcbe006aefc1feb6aa11507e5f3fd3852f2d253c54876308?s=72&#038;d=identicon&#038;r=G 1.5x, https://0.gravatar.com/avatar/31c34ac4fa14e2afbcbe006aefc1feb6aa11507e5f3fd3852f2d253c54876308?s=96&#038;d=identicon&#038;r=G 2x, https://0.gravatar.com/avatar/31c34ac4fa14e2afbcbe006aefc1feb6aa11507e5f3fd3852f2d253c54876308?s=144&#038;d=identicon&#038;r=G 3x, https://0.gravatar.com/avatar/31c34ac4fa14e2afbcbe006aefc1feb6aa11507e5f3fd3852f2d253c54876308?s=192&#038;d=identicon&#038;r=G 4x' class='avatar avatar-48' height='48' width='48' loading='lazy' decoding='async' /></a></td><td class="recentcommentstexttop" style=""><a href="https://joycegeek.wordpress.com" rel="nofollow">JoyceGeek</a> on <a href="../../2015/02/12/permission/comment-page-1/index.html#comment-13095">The Permission to&nbsp;Free-As&hellip;</a></td></tr><tr><td title="Paul Waldron" class="recentcommentsavatarend" style="height:48px; width:48px;"><img referrerpolicy="no-referrer" alt='Paul Waldron&#039;s avatar' src='https://1.gravatar.com/avatar/42dbdeb6d3f8d6a710a0a97e2a39826c41a871511c8db9dfdb1132d734ab0ccc?s=48&#038;d=identicon&#038;r=G' srcset='https://1.gravatar.com/avatar/42dbdeb6d3f8d6a710a0a97e2a39826c41a871511c8db9dfdb1132d734ab0ccc?s=48&#038;d=identicon&#038;r=G 1x, https://1.gravatar.com/avatar/42dbdeb6d3f8d6a710a0a97e2a39826c41a871511c8db9dfdb1132d734ab0ccc?s=72&#038;d=identicon&#038;r=G 1.5x, https://1.gravatar.com/avatar/42dbdeb6d3f8d6a710a0a97e2a39826c41a871511c8db9dfdb1132d734ab0ccc?s=96&#038;d=identicon&#038;r=G 2x, https://1.gravatar.com/avatar/42dbdeb6d3f8d6a710a0a97e2a39826c41a871511c8db9dfdb1132d734ab0ccc?s=144&#038;d=identicon&#038;r=G 3x, https://1.gravatar.com/avatar/42dbdeb6d3f8d6a710a0a97e2a39826c41a871511c8db9dfdb1132d734ab0ccc?s=192&#038;d=identicon&#038;r=G 4x' class='avatar avatar-48' height='48' width='48' loading='lazy' decoding='async' /></td><td class="recentcommentstextend" style="">Paul Waldron on <a href="../../2015/02/12/permission/comment-page-1/index.html#comment-13094">The Permission to&nbsp;Free-As&hellip;</a></td></tr><tr><td title="Joyce Audio – Audiobooks: Finnegans Wake &#8211;Shipwreck Library" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="https://shipwrecklibrary.com/joyce/joyce-audio-fw/" rel="nofollow"></a></td><td class="recentcommentstextend" style=""><a href="https://shipwrecklibrary.com/joyce/joyce-audio-fw/" rel="nofollow">Joyce Audio – Audiob&hellip;</a> on <a href="../../2015/03/05/horgan/comment-page-1/index.html#comment-13087">Interview With a VoiceGeek: Pa&hellip;</a></td></tr><tr><td title="Joyce Audio – Audiobooks: Finnegans Wake &#8211;Shipwreck Library" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="https://shipwrecklibrary.com/joyce/joyce-audio-fw/" rel="nofollow"></a></td><td class="recentcommentstextend" style=""><a href="https://shipwrecklibrary.com/joyce/joyce-audio-fw/" rel="nofollow">Joyce Audio – Audiob&hellip;</a> on <a href="../../2015/12/01/loekle-archive/comment-page-1/index.html#comment-13083">Simon Loekle&#8217;s Finnegans&hellip;</a></td></tr><tr><td title="Joyce Audio – Audiobooks: Finnegans Wake &#8211;Shipwreck Library" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="https://shipwrecklibrary.com/joyce/joyce-audio-fw/" rel="nofollow"></a></td><td class="recentcommentstextend" style=""><a href="https://shipwrecklibrary.com/joyce/joyce-audio-fw/" rel="nofollow">Joyce Audio – Audiob&hellip;</a> on <a href="../../2015/01/29/deadly/comment-page-1/index.html#comment-13082">Crossing the Deadly Line: an O&hellip;</a></td></tr>				</table>
+				</aside><aside id="archives-2" class="widget widget_archive"><h1 class="widget-title">Archives</h1>
+			<ul>
+					<li><a href='../../2018/04/index.html'>April 2018</a></li>
+	<li><a href='../../2017/05/index.html'>May 2017</a></li>
+	<li><a href='../../2015/12/index.html'>December 2015</a></li>
+	<li><a href='../../2015/11/index.html'>November 2015</a></li>
+	<li><a href='../../2015/08/index.html'>August 2015</a></li>
+	<li><a href='../../2015/06/index.html'>June 2015</a></li>
+	<li><a href='../../2015/04/index.html'>April 2015</a></li>
+	<li><a href='../../2015/03/index.html'>March 2015</a></li>
+	<li><a href='../../2015/02/index.html'>February 2015</a></li>
+	<li><a href='../../2015/01/index.html'>January 2015</a></li>
+	<li><a href='index.html' aria-current="page">December 2014</a></li>
+	<li><a href='../11/index.html'>November 2014</a></li>
+	<li><a href='../06/index.html'>June 2014</a></li>
+			</ul>
+
+			</aside><aside id="categories-2" class="widget widget_categories"><h1 class="widget-title">Categories</h1>
+			<ul>
+					<li class="cat-item cat-item-4204921"><a href="../../category/a-portrait-of-the-artist-as-a-young-man/index.html">A Portrait of the Artist as a Young Man</a>
+</li>
+	<li class="cat-item cat-item-1792569"><a href="../../category/annie-oakley/index.html">Annie Oakley</a>
+</li>
+	<li class="cat-item cat-item-276222"><a href="../../category/atomic-bomb/index.html">Atomic Bomb</a>
+</li>
+	<li class="cat-item cat-item-48159"><a href="../../category/batman/index.html">Batman</a>
+</li>
+	<li class="cat-item cat-item-307118"><a href="../../category/christopher-nolan/index.html">Christopher Nolan</a>
+</li>
+	<li class="cat-item cat-item-17535"><a href="../../category/dublin/index.html">Dublin</a>
+</li>
+	<li class="cat-item cat-item-722262"><a href="../../category/dubliners/index.html">Dubliners</a>
+</li>
+	<li class="cat-item cat-item-273891"><a href="../../category/finnegans-wake/index.html">Finnegans Wake</a>
+</li>
+	<li class="cat-item cat-item-218691454"><a href="../../category/frank-movie/index.html">Frank (movie)</a>
+</li>
+	<li class="cat-item cat-item-192006"><a href="../../category/frank-miller/index.html">Frank Miller</a>
+</li>
+	<li class="cat-item cat-item-1205470"><a href="../../category/fuzzy-zoeller/index.html">Fuzzy Zoeller</a>
+</li>
+	<li class="cat-item cat-item-65622"><a href="../../category/hiroshima/index.html">Hiroshima</a>
+</li>
+	<li class="cat-item cat-item-15509854"><a href="../../category/jono-manson/index.html">Jono Manson</a>
+</li>
+	<li class="cat-item cat-item-323159584"><a href="../../category/joyce-in-performance/index.html">Joyce in Performance</a>
+</li>
+	<li class="cat-item cat-item-241067845"><a href="../../category/joyceplanet-navigation/index.html">JoycePlanet Navigation</a>
+</li>
+	<li class="cat-item cat-item-792342"><a href="../../category/leonard-nimoy/index.html">Leonard Nimoy</a>
+</li>
+	<li class="cat-item cat-item-241065665"><a href="../../category/local-joycethings/index.html">Local JoyceThings</a>
+</li>
+	<li class="cat-item cat-item-774889"><a href="../../category/marylin-monroe/index.html">Marylin Monroe</a>
+</li>
+	<li class="cat-item cat-item-2501613"><a href="../../category/metempsychosis/index.html">Metempsychosis</a>
+</li>
+	<li class="cat-item cat-item-872145"><a href="../../category/mike-watt/index.html">Mike Watt</a>
+</li>
+	<li class="cat-item cat-item-6002294"><a href="../../category/patrick-horgan/index.html">Patrick Horgan</a>
+</li>
+	<li class="cat-item cat-item-11447493"><a href="../../category/peaches-browning/index.html">Peaches Browning</a>
+</li>
+	<li class="cat-item cat-item-1160604"><a href="../../category/phoenix-park/index.html">Phoenix Park</a>
+</li>
+	<li class="cat-item cat-item-42369"><a href="../../category/prophecy/index.html">Prophecy</a>
+</li>
+	<li class="cat-item cat-item-844215"><a href="../../category/rule-of-three/index.html">Rule of Three</a>
+</li>
+	<li class="cat-item cat-item-396600270"><a href="../../category/simon-loekle/index.html">Simon Loekle</a>
+</li>
+	<li class="cat-item cat-item-28444"><a href="../../category/star-trek/index.html">Star Trek</a>
+</li>
+	<li class="cat-item cat-item-31417905"><a href="../../category/stephen-rennicks/index.html">Stephen Rennicks</a>
+</li>
+	<li class="cat-item cat-item-354569526"><a href="../../category/the-prankquean/index.html">The Prankquean</a>
+</li>
+	<li class="cat-item cat-item-247581"><a href="../../category/tiger-woods/index.html">Tiger Woods</a>
+</li>
+	<li class="cat-item cat-item-1601"><a href="../../category/ulysses/index.html">Ulysses</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="../../category/uncategorized/index.html">Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-342518977"><a href="../../category/waywords-and-meansigns/index.html">Waywords and Meansigns</a>
+</li>
+	<li class="cat-item cat-item-62291"><a href="../../category/world-war-ii/index.html">World War II</a>
+</li>
+			</ul>
+
+			</aside><aside id="meta-2" class="widget widget_meta"><h1 class="widget-title">Meta</h1>
+		<ul>
+			<li><a class="click-register" href="https://wordpress.com/start?ref=wplogin">Create account</a></li>			<li><a href="https://joycegeek.wordpress.com/wp-login.php">Log in</a></li>
+			<li><a href="../../feed/index.html">Entries feed</a></li>
+			<li><a href="../../comments/feed/index.html">Comments feed</a></li>
+
+			<li><a href="https://wordpress.com/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.com</a></li>
+		</ul>
+
+		</aside></div><!-- #secondary .widget-area -->
+
+	</div><!-- #main -->
+
+	<footer class="blog-footer" id="colophon" role="contentinfo">
+		<div id="site-generator">
+			<a href="https://wordpress.com/?ref=footer_blog" rel="nofollow">Blog at WordPress.com.</a>		</div>
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<!--  -->
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/files/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/pub/quintus/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript" src="https://0.gravatar.com/js/hovercards/hovercards.min.js?ver=202550924dcd77a86c6f1d3698ec27fc5da92b28585ddad3ee636c0397cf312193b2a1" id="grofiles-cards-js"></script>
+<script type="text/javascript" id="wpgroho-js-extra">
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+//# sourceURL=wpgroho-js-extra
+/* ]]> */
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='../../wp-content/mu-plugins/gravatar-hovercards/wpgroho.js%3Fm=1610363240i'></script>
+
+	<script>
+		// Initialize and attach hovercards to all gravatars
+		( function() {
+			function init() {
+				if ( typeof Gravatar === 'undefined' ) {
+					return;
+				}
+
+				if ( typeof Gravatar.init !== 'function' ) {
+					return;
+				}
+
+				Gravatar.profile_cb = function ( hash, id ) {
+					WPGroHo.syncProfileData( hash, id );
+				};
+
+				Gravatar.my_hash = WPGroHo.my_hash;
+				Gravatar.init(
+					'body',
+					'#wp-admin-bar-my-account',
+					{
+						i18n: {
+							'Edit your profile →': 'Edit your profile →',
+							'View profile →': 'View profile →',
+							'Contact': 'Contact',
+							'Send money': 'Send money',
+							'Sorry, we are unable to load this Gravatar profile.': 'Sorry, we are unable to load this Gravatar profile.',
+							'Gravatar not found.': 'Gravatar not found.',
+							'Too Many Requests.': 'Too Many Requests.',
+							'Internal Server Error.': 'Internal Server Error.',
+							'Is this you?': 'Is this you?',
+							'Claim your free profile.': 'Claim your free profile.',
+							'Email': 'Email',
+							'Home Phone': 'Home Phone',
+							'Work Phone': 'Work Phone',
+							'Cell Phone': 'Cell Phone',
+							'Contact Form': 'Contact Form',
+							'Calendar': 'Calendar',
+						},
+					}
+				);
+			}
+
+			if ( document.readyState !== 'loading' ) {
+				init();
+			} else {
+				document.addEventListener( 'DOMContentLoaded', init );
+			}
+		} )();
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-cfe26e0ddcc0d722543ff990d49f824c">
+	</div>
+	<div class="grofile-hash-map-9b28f49d5562bfd85d0ad17d9f27eef1">
+	</div>
+	</div>
+		<div id="actionbar" dir="ltr" style="display: none;"
+			class="actnbr-pub-quintus actnbr-has-follow actnbr-has-actions">
+		<ul>
+								<li class="actnbr-btn actnbr-hidden">
+								<a class="actnbr-action actnbr-actn-follow " href="index.html">
+			<svg class="gridicon" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path clip-rule="evenodd" d="m4 4.5h12v6.5h1.5v-6.5-1.5h-1.5-12-1.5v1.5 10.5c0 1.1046.89543 2 2 2h7v-1.5h-7c-.27614 0-.5-.2239-.5-.5zm10.5 2h-9v1.5h9zm-5 3h-4v1.5h4zm3.5 1.5h-1v1h1zm-1-1.5h-1.5v1.5 1 1.5h1.5 1 1.5v-1.5-1-1.5h-1.5zm-2.5 2.5h-4v1.5h4zm6.5 1.25h1.5v2.25h2.25v1.5h-2.25v2.25h-1.5v-2.25h-2.25v-1.5h2.25z"  fill-rule="evenodd"></path></svg>
+			<span>Subscribe</span>
+		</a>
+		<a class="actnbr-action actnbr-actn-following  no-display" href="index.html">
+			<svg class="gridicon" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 4.5H4V15C4 15.2761 4.22386 15.5 4.5 15.5H11.5V17H4.5C3.39543 17 2.5 16.1046 2.5 15V4.5V3H4H16H17.5V4.5V12.5H16V4.5ZM5.5 6.5H14.5V8H5.5V6.5ZM5.5 9.5H9.5V11H5.5V9.5ZM12 11H13V12H12V11ZM10.5 9.5H12H13H14.5V11V12V13.5H13H12H10.5V12V11V9.5ZM5.5 12H9.5V13.5H5.5V12Z" fill="#008A20"></path><path class="following-icon-tick" d="M13.5 16L15.5 18L19 14.5" stroke="#008A20" stroke-width="1.5"></path></svg>
+			<span>Subscribed</span>
+		</a>
+							<div class="actnbr-popover tip tip-top-left actnbr-notice" id="follow-bubble">
+							<div class="tip-arrow"></div>
+							<div class="tip-inner actnbr-follow-bubble">
+															<ul>
+											<li class="actnbr-sitename">
+			<a href="../../index.html">
+				<img loading='lazy' alt='' src='https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=50&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png' srcset='https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=50&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 1x, https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=75&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 1.5x, https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=100&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 2x, https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=150&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 3x, https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=200&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 4x' class='avatar avatar-50' height='50' width='50' />				JoyceGeek			</a>
+		</li>
+										<div class="actnbr-message no-display"></div>
+									<form method="post" action="https://subscribe.wordpress.com" accept-charset="utf-8" style="display: none;">
+																						<div class="actnbr-follow-count">Join 153 other subscribers</div>
+																					<div>
+										<input type="email" name="email" placeholder="Enter your email address" class="actnbr-email-field" aria-label="Enter your email address" />
+										</div>
+										<input type="hidden" name="action" value="subscribe" />
+										<input type="hidden" name="blog_id" value="69025680" />
+										<input type="hidden" name="source" value="https://joycegeek.com/2014/12/" />
+										<input type="hidden" name="sub-type" value="actionbar-follow" />
+										<input type="hidden" id="_wpnonce" name="_wpnonce" value="87209033c3" />										<div class="actnbr-button-wrap">
+											<button type="submit" value="Sign me up">
+												Sign me up											</button>
+										</div>
+									</form>
+									<li class="actnbr-login-nudge">
+										<div>
+											Already have a WordPress.com account? <a href="https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fjoycegeek.com%252F2014%252F12%252F24%252Fsimonsays%252F">Log in now.</a>										</div>
+									</li>
+								</ul>
+															</div>
+						</div>
+					</li>
+									<li class="actnbr-btn actnbr-hidden no-display" onclick="javascript:__tcfapi( 'showUi' );">
+						<a class="actnbr-action actnbr-actn-privacy" href="index.html#">
+							<svg class="gridicon gridicons-info-outline" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M13 9h-2V7h2v2zm0 2h-2v6h2v-6zm-1-7c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8m0-2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z"/></g></svg>							<span>Privacy						</span>
+						</a>
+					</li>
+							<li class="actnbr-ellipsis actnbr-hidden">
+				<svg class="gridicon gridicons-ellipsis" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M7 12c0 1.104-.896 2-2 2s-2-.896-2-2 .896-2 2-2 2 .896 2 2zm12-2c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm-7 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2z"/></g></svg>				<div class="actnbr-popover tip tip-top-left actnbr-more">
+					<div class="tip-arrow"></div>
+					<div class="tip-inner">
+						<ul>
+								<li class="actnbr-sitename">
+			<a href="../../index.html">
+				<img loading='lazy' alt='' src='https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=50&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png' srcset='https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=50&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 1x, https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=75&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 1.5x, https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=100&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 2x, https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=150&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 3x, https://secure.gravatar.com/blavatar/931e012a7ddd167acfcad907be5e4ce9d1ad184716da122ca2378f5ca6a00179?s=200&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 4x' class='avatar avatar-50' height='50' width='50' />				JoyceGeek			</a>
+		</li>
+								<li class="actnbr-folded-follow">
+										<a class="actnbr-action actnbr-actn-follow " href="index.html">
+			<svg class="gridicon" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path clip-rule="evenodd" d="m4 4.5h12v6.5h1.5v-6.5-1.5h-1.5-12-1.5v1.5 10.5c0 1.1046.89543 2 2 2h7v-1.5h-7c-.27614 0-.5-.2239-.5-.5zm10.5 2h-9v1.5h9zm-5 3h-4v1.5h4zm3.5 1.5h-1v1h1zm-1-1.5h-1.5v1.5 1 1.5h1.5 1 1.5v-1.5-1-1.5h-1.5zm-2.5 2.5h-4v1.5h4zm6.5 1.25h1.5v2.25h2.25v1.5h-2.25v2.25h-1.5v-2.25h-2.25v-1.5h2.25z"  fill-rule="evenodd"></path></svg>
+			<span>Subscribe</span>
+		</a>
+		<a class="actnbr-action actnbr-actn-following  no-display" href="index.html">
+			<svg class="gridicon" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 4.5H4V15C4 15.2761 4.22386 15.5 4.5 15.5H11.5V17H4.5C3.39543 17 2.5 16.1046 2.5 15V4.5V3H4H16H17.5V4.5V12.5H16V4.5ZM5.5 6.5H14.5V8H5.5V6.5ZM5.5 9.5H9.5V11H5.5V9.5ZM12 11H13V12H12V11ZM10.5 9.5H12H13H14.5V11V12V13.5H13H12H10.5V12V11V9.5ZM5.5 12H9.5V13.5H5.5V12Z" fill="#008A20"></path><path class="following-icon-tick" d="M13.5 16L15.5 18L19 14.5" stroke="#008A20" stroke-width="1.5"></path></svg>
+			<span>Subscribed</span>
+		</a>
+								</li>
+														<li class="actnbr-signup"><a href="https://wordpress.com/start/">Sign up</a></li>
+							<li class="actnbr-login"><a href="https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fjoycegeek.com%252F2014%252F12%252F24%252Fsimonsays%252F">Log in</a></li>
+															<li class="flb-report">
+									<a href="https://wordpress.com/abuse/?report_url=https://joycegeek.com" target="_blank" rel="noopener noreferrer">
+										Report this content									</a>
+								</li>
+															<li class="actnbr-reader">
+									<a href="https://wordpress.com/reader/feeds/25892135">
+										View site in Reader									</a>
+								</li>
+															<li class="actnbr-subs">
+									<a href="https://subscribe.wordpress.com/">Manage subscriptions</a>
+								</li>
+																<li class="actnbr-fold"><a href="index.html">Collapse this bar</a></li>
+														</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+<script>
+window.addEventListener( "DOMContentLoaded", function( event ) {
+	var link = document.createElement( "link" );
+	link.href = "/wp-content/mu-plugins/actionbar/actionbar.css?v=20250116";
+	link.type = "text/css";
+	link.rel = "stylesheet";
+	document.head.appendChild( link );
+
+	var script = document.createElement( "script" );
+	script.src = "/wp-content/mu-plugins/actionbar/actionbar.js?v=20250204";
+	document.body.appendChild( script );
+} );
+</script>
+
+			<div id="jp-carousel-loading-overlay">
+			<div id="jp-carousel-loading-wrapper">
+				<span id="jp-carousel-library-loading">&nbsp;</span>
+			</div>
+		</div>
+		<div class="jp-carousel-overlay" style="display: none;">
+
+		<div class="jp-carousel-container">
+			<!-- The Carousel Swiper -->
+			<div
+				class="jp-carousel-wrap swiper jp-carousel-swiper-container jp-carousel-transitions"
+				itemscope
+				itemtype="https://schema.org/ImageGallery">
+				<div class="jp-carousel swiper-wrapper"></div>
+				<div class="jp-swiper-button-prev swiper-button-prev">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskPrev" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="9" height="12">
+							<path d="M16.2072 16.59L11.6496 12L16.2072 7.41L14.8041 6L8.8335 12L14.8041 18L16.2072 16.59Z" fill="white"/>
+						</mask>
+						<g mask="url(#maskPrev)">
+							<rect x="0.579102" width="23.8823" height="24" fill="#FFFFFF"/>
+						</g>
+					</svg>
+				</div>
+				<div class="jp-swiper-button-next swiper-button-next">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskNext" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="8" height="12">
+							<path d="M8.59814 16.59L13.1557 12L8.59814 7.41L10.0012 6L15.9718 12L10.0012 18L8.59814 16.59Z" fill="white"/>
+						</mask>
+						<g mask="url(#maskNext)">
+							<rect x="0.34375" width="23.8822" height="24" fill="#FFFFFF"/>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<!-- The main close buton -->
+			<div class="jp-carousel-close-hint">
+				<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<mask id="maskClose" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="5" width="15" height="14">
+						<path d="M19.3166 6.41L17.9135 5L12.3509 10.59L6.78834 5L5.38525 6.41L10.9478 12L5.38525 17.59L6.78834 19L12.3509 13.41L17.9135 19L19.3166 17.59L13.754 12L19.3166 6.41Z" fill="white"/>
+					</mask>
+					<g mask="url(#maskClose)">
+						<rect x="0.409668" width="23.8823" height="24" fill="#FFFFFF"/>
+					</g>
+				</svg>
+			</div>
+			<!-- Image info, comments and meta -->
+			<div class="jp-carousel-info">
+				<div class="jp-carousel-info-footer">
+					<div class="jp-carousel-pagination-container">
+						<div class="jp-swiper-pagination swiper-pagination"></div>
+						<div class="jp-carousel-pagination"></div>
+					</div>
+					<div class="jp-carousel-photo-title-container">
+						<h2 class="jp-carousel-photo-caption"></h2>
+					</div>
+					<div class="jp-carousel-photo-icons-container">
+						<a href="index.html#" class="jp-carousel-icon-btn jp-carousel-icon-info" aria-label="Toggle photo metadata visibility">
+							<span class="jp-carousel-icon">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="maskInfo" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M12.7537 2C7.26076 2 2.80273 6.48 2.80273 12C2.80273 17.52 7.26076 22 12.7537 22C18.2466 22 22.7046 17.52 22.7046 12C22.7046 6.48 18.2466 2 12.7537 2ZM11.7586 7V9H13.7488V7H11.7586ZM11.7586 11V17H13.7488V11H11.7586ZM4.79292 12C4.79292 16.41 8.36531 20 12.7537 20C17.142 20 20.7144 16.41 20.7144 12C20.7144 7.59 17.142 4 12.7537 4C8.36531 4 4.79292 7.59 4.79292 12Z" fill="white"/>
+									</mask>
+									<g mask="url(#maskInfo)">
+										<rect x="0.8125" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+							</span>
+						</a>
+												<a href="index.html#" class="jp-carousel-icon-btn jp-carousel-icon-comments" aria-label="Toggle photo comments visibility">
+							<span class="jp-carousel-icon">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="maskComments" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M4.3271 2H20.2486C21.3432 2 22.2388 2.9 22.2388 4V16C22.2388 17.1 21.3432 18 20.2486 18H6.31729L2.33691 22V4C2.33691 2.9 3.2325 2 4.3271 2ZM6.31729 16H20.2486V4H4.3271V18L6.31729 16Z" fill="white"/>
+									</mask>
+									<g mask="url(#maskComments)">
+										<rect x="0.34668" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+
+								<span class="jp-carousel-has-comments-indicator" aria-label="This image has comments."></span>
+							</span>
+						</a>
+											</div>
+				</div>
+				<div class="jp-carousel-info-extra">
+					<div class="jp-carousel-info-content-wrapper">
+						<div class="jp-carousel-photo-title-container">
+							<h2 class="jp-carousel-photo-title"></h2>
+						</div>
+						<div class="jp-carousel-comments-wrapper">
+															<div id="jp-carousel-comments-loading">
+									<span>Loading Comments...</span>
+								</div>
+								<div class="jp-carousel-comments"></div>
+								<div id="jp-carousel-comment-form-container">
+									<span id="jp-carousel-comment-form-spinner">&nbsp;</span>
+									<div id="jp-carousel-comment-post-results"></div>
+																														<form id="jp-carousel-comment-form">
+												<label for="jp-carousel-comment-form-comment-field" class="screen-reader-text">Write a Comment...</label>
+												<textarea
+													name="comment"
+													class="jp-carousel-comment-form-field jp-carousel-comment-form-textarea"
+													id="jp-carousel-comment-form-comment-field"
+													placeholder="Write a Comment..."
+												></textarea>
+												<div id="jp-carousel-comment-form-submit-and-info-wrapper">
+													<div id="jp-carousel-comment-form-commenting-as">
+																													<fieldset>
+																<label for="jp-carousel-comment-form-email-field">Email (Required)</label>
+																<input type="text" name="email" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-email-field" />
+															</fieldset>
+															<fieldset>
+																<label for="jp-carousel-comment-form-author-field">Name (Required)</label>
+																<input type="text" name="author" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-author-field" />
+															</fieldset>
+															<fieldset>
+																<label for="jp-carousel-comment-form-url-field">Website</label>
+																<input type="text" name="url" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-url-field" />
+															</fieldset>
+																											</div>
+													<input
+														type="submit"
+														name="submit"
+														class="jp-carousel-comment-form-button"
+														id="jp-carousel-comment-form-button-submit"
+														value="Post Comment" />
+												</div>
+											</form>
+																											</div>
+													</div>
+						<div class="jp-carousel-image-meta">
+							<div class="jp-carousel-title-and-caption">
+								<div class="jp-carousel-photo-info">
+									<h3 class="jp-carousel-caption" itemprop="caption description"></h3>
+								</div>
+
+								<div class="jp-carousel-photo-description"></div>
+							</div>
+							<ul class="jp-carousel-image-exif" style="display: none;"></ul>
+							<a class="jp-carousel-image-download" href="index.html#" target="_blank" style="display: none;">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="19" height="18">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M5.84615 5V19H19.7775V12H21.7677V19C21.7677 20.1 20.8721 21 19.7775 21H5.84615C4.74159 21 3.85596 20.1 3.85596 19V5C3.85596 3.9 4.74159 3 5.84615 3H12.8118V5H5.84615ZM14.802 5V3H21.7677V10H19.7775V6.41L9.99569 16.24L8.59261 14.83L18.3744 5H14.802Z" fill="white"/>
+									</mask>
+									<g mask="url(#mask0)">
+										<rect x="0.870605" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+								<span class="jp-carousel-download-text"></span>
+							</a>
+							<div class="jp-carousel-image-map" style="display: none;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+		
+	<script type="text/javascript">
+		(function () {
+			var wpcom_reblog = {
+				source: 'toolbar',
+
+				toggle_reblog_box_flair: function (obj_id, post_id) {
+
+					// Go to site selector. This will redirect to their blog if they only have one.
+					const postEndpoint = `https://wordpress.com/post`;
+
+					// Ideally we would use the permalink here, but fortunately this will be replaced with the 
+					// post permalink in the editor.
+					const originalURL = `${ document.location.href }?page_id=${ post_id }`; 
+					
+					const url =
+						postEndpoint +
+						'?url=' +
+						encodeURIComponent( originalURL ) +
+						'&is_post_share=true' +
+						'&v=5';
+
+					const redirect = function () {
+						if (
+							! window.open( url, '_blank' )
+						) {
+							location.href = url;
+						}
+					};
+
+					if ( /Firefox/.test( navigator.userAgent ) ) {
+						setTimeout( redirect, 0 );
+					} else {
+						redirect();
+					}
+				},
+			};
+
+			window.wpcom_reblog = wpcom_reblog;
+		})();
+	</script>
+<script type="text/javascript" id="jetpack-carousel-js-extra">
+/* <![CDATA[ */
+var jetpackSwiperLibraryPath = {"url":"/wp-content/mu-plugins/jetpack-plugin/sun/_inc/blocks/swiper.js"};
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https://joycegeek.com/wp-admin/admin-ajax.php","nonce":"813153ec17","display_exif":"1","display_comments":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","image_label":"Open image in full-screen.","download_original":"View full size \u003Cspan class=\"photo-size\"\u003E{0}\u003Cspan class=\"photo-size-times\"\u003E\u00d7\u003C/span\u003E{1}\u003C/span\u003E","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","copyright":"Copyright","comment_registration":"0","require_name_email":"1","login_url":"https://joycegeek.wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fjoycegeek.com%2F2014%2F12%2F24%2Fsimonsays%2F","blog_id":"69025680","meta_data":["camera","aperture","shutter_speed","focal_length","copyright"],"stats_query_args":"blog=69025680&v=wpcom&tz=-6&user_id=0&arch_date=2014%2F12&arch_results=4&subd=joycegeek","is_public":"1"};
+//# sourceURL=jetpack-carousel-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" id="mediaelement-js-extra">
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"/wp-includes/js/mediaelement/","classPrefix":"mejs-","stretching":"responsive","audioShortcodeLibrary":"mediaelement","videoShortcodeLibrary":"mediaelement"};
+//# sourceURL=mediaelement-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" id="mediaelement-core-js-before">
+/* <![CDATA[ */
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https://get.adobe.com/flashplayer/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left/Right Arrow keys to advance one second, Up/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+//# sourceURL=mediaelement-core-js-before
+/* ]]> */
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='../../_static/index.html%3F%3F-eJyVUO0KwjAMfCG7sB9u7of4KFLbMDqbrPaDsbc3yCZDFBwEwiV3lyMwBWVGzsgZqKjgS+84wYA5aHNfMKTCcHVs4Fact2B0HEtC%252F6atg4ocV0M6gLgK3ReL4iX1KBjnpf1FUuT6qDP+IhNap9EjvYJvgNJsJbaeMe7X7jkquy3ear48dP2QmoIZ6QOK7kLnum3qU9e1x2Z4Ai6tmBg='></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/","ext":".png","svgUrl":"https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?m=1764078722i&ver=6.9-RC2-61304"}}
+</script>
+<script type="module">
+/* <![CDATA[ */
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
+/* ]]> */
+</script>
+<script src="https://stats.wp.com/w.js?68" defer></script> <script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'69025680','blog_tz':'-6','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+		// Prevent sending pageview tracking from WP-Admin pages.
+		_stq.push(['view', {'blog':'69025680','v':'wpcom','tz':'-6','user_id':'0','arch_date':'2014/12','arch_results':'4','subd':'joycegeek'}]);
+		_stq.push(['extra', {'crypt':'UE5tW3cvZGRzV2xFSGUla1NSakMvUXFZbFEmVHVULnMsSTBSfl0sY3dUZlFDSUZrNS5DOU5EelNoNlF1c0o2L0I2bSZhSVhId3ZEPW1SYklpLUtNSW43V0ZCWFdvb2V2TmxoUmY/PWJrd0tSN11ObFQtT0pTY0JaUVBfLkswTF92cE52ZD1ydj1yRjBXJWo/bDcsTnFCNGt4ciUmcTRxd0twUiV+b1cwJi8mMj1VWjQ/eC94LmVIc3VJbFF8TkJiJnY0JmxIeUNKbG54P1Y4TjFhP1tEQzctbmRsYy1vMTBoZ21GNy92R0RbTWpEcG1SbnAlQ3gsZixLbVstVg=='}]);
+_stq.push([ 'clickTrackerInit', '69025680', '0' ]);
+</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:1px;width:1px;overflow:hidden;position:absolute;bottom:1px;" alt="" /></noscript>
+<meta id="bilmur" property="bilmur:data" content="" data-provider="wordpress.com" data-service="simple" data-site-tz="America/Denver" data-custom-props="{&quot;enq_jquery&quot;:&quot;1&quot;,&quot;logged_in&quot;:&quot;0&quot;,&quot;wptheme&quot;:&quot;pub\/quintus&quot;,&quot;wptheme_is_block&quot;:&quot;0&quot;}"  >
+		<script defer src="../../wp-content/js/bilmur.min.js%3Fi=17&amp;m=202550"></script> 	
+</body>
+</html>
