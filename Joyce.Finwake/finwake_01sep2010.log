@@ -1,0 +1,138 @@
+Открывается файл WARC «finwake_01sep2010.warc.gz».
+
+--2025-12-09 20:37:23--  https://finwake.com/01-sep2010-free-android/01.htm
+Распознаётся finwake.com (finwake.com)… 195.252.110.146
+Подключение к finwake.com (finwake.com)|195.252.110.146|:443... соединение установлено.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Кукисы, полученные из finwake.com, попытались изменить домен на $host
+Длина: 203797 (199K) [text/html]
+Сохранение в: «finwake.com/01-sep2010-free-android/01.htm»
+
+     0K .......... .......... .......... .......... .......... 25% 1,09M 0s
+    50K .......... .......... .......... .......... .......... 50%  952K 0s
+   100K .......... .......... .......... .......... .......... 75%  877K 0s
+   150K .......... .......... .......... .......... ......... 100% 11,0M=0,2s
+
+2025-12-09 20:37:28 (1,22 MB/s) - «finwake.com/01-sep2010-free-android/01.htm» сохранён [203797/203797]
+
+Загружается robots.txt; не обращайте внимание на ошибки.
+--2025-12-09 20:37:28--  https://finwake.com/robots.txt
+Повторное использование соединения с finwake.com:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Кукисы, полученные из finwake.com, попытались изменить домен на $host
+Длина: 97 [text/plain]
+Сохранение в: «finwake.com/robots.txt»
+
+     0K                                                       100% 30,8M=0s
+
+2025-12-09 20:37:29 (30,8 MB/s) - «finwake.com/robots.txt» сохранён [97/97]
+
+--2025-12-09 20:37:29--  https://finwake.com/01-sep2010-free-android/finstyle.css
+Повторное использование соединения с finwake.com:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Кукисы, полученные из finwake.com, попытались изменить домен на $host
+Длина: 8122 (7,9K) [text/css]
+Сохранение в: «finwake.com/01-sep2010-free-android/finstyle.css»
+
+     0K .......                                               100% 1,89G=0s
+
+2025-12-09 20:37:29 (1,89 GB/s) - «finwake.com/01-sep2010-free-android/finstyle.css» сохранён [8122/8122]
+
+--2025-12-09 20:37:29--  https://finwake.com/01-sep2010-free-android/E.png
+Повторное использование соединения с finwake.com:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Кукисы, полученные из finwake.com, попытались изменить домен на $host
+Длина: 4166 (4,1K) [image/png]
+Сохранение в: «finwake.com/01-sep2010-free-android/E.png»
+
+     0K ....                                                  100%  993M=0s
+
+2025-12-09 20:37:29 (993 MB/s) - «finwake.com/01-sep2010-free-android/E.png» сохранён [4166/4166]
+
+--2025-12-09 20:37:29--  https://finwake.com/01-sep2010-free-android/F-b.png
+Повторное использование соединения с finwake.com:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Кукисы, полученные из finwake.com, попытались изменить домен на $host
+Длина: 1514 (1,5K) [image/png]
+Сохранение в: «finwake.com/01-sep2010-free-android/F-b.png»
+
+     0K .                                                     100%  481M=0s
+
+2025-12-09 20:37:29 (481 MB/s) - «finwake.com/01-sep2010-free-android/F-b.png» сохранён [1514/1514]
+
+--2025-12-09 20:37:29--  https://finwake.com/01-sep2010-free-android/F-a.png
+Повторное использование соединения с finwake.com:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Кукисы, полученные из finwake.com, попытались изменить домен на $host
+Длина: 1514 (1,5K) [image/png]
+Сохранение в: «finwake.com/01-sep2010-free-android/F-a.png»
+
+     0K .                                                     100%  361M=0s
+
+2025-12-09 20:37:29 (361 MB/s) - «finwake.com/01-sep2010-free-android/F-a.png» сохранён [1514/1514]
+
+--2025-12-09 20:37:29--  https://finwake.com/01-sep2010-free-android/prevod3.htm
+Повторное использование соединения с finwake.com:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Кукисы, полученные из finwake.com, попытались изменить домен на $host
+Длина: 27286 (27K) [text/html]
+Сохранение в: «finwake.com/01-sep2010-free-android/prevod3.htm»
+
+     0K .......... .......... ......                          100% 51,0M=0,001s
+
+2025-12-09 20:37:29 (51,0 MB/s) - «finwake.com/01-sep2010-free-android/prevod3.htm» сохранён [27286/27286]
+
+--2025-12-09 20:37:29--  https://finwake.com/01-sep2010-free-android/paper3.png
+Повторное использование соединения с finwake.com:443.
+HTTP-запрос отправлен. Ожидание ответа… 404 Not Found
+Кукисы, полученные из finwake.com, попытались изменить домен на $host
+
+     0K                                                       100%  100M=0s
+
+2025-12-09 20:37:29 ОШИБКА 404: Not Found.
+
+--2025-12-09 20:37:29--  https://finwake.com/01-sep2010-free-android/foot.css
+Повторное использование соединения с finwake.com:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Кукисы, полученные из finwake.com, попытались изменить домен на $host
+Длина: 3204 (3,1K) [text/css]
+Сохранение в: «finwake.com/01-sep2010-free-android/foot.css»
+
+     0K ...                                                   100%  764M=0s
+
+2025-12-09 20:37:29 (764 MB/s) - «finwake.com/01-sep2010-free-android/foot.css» сохранён [3204/3204]
+
+--2025-12-09 20:37:29--  https://finwake.com/01-sep2010-free-android/rn3.gif
+Повторное использование соединения с finwake.com:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Кукисы, полученные из finwake.com, попытались изменить домен на $host
+Длина: 308 [image/gif]
+Сохранение в: «finwake.com/01-sep2010-free-android/rn3.gif»
+
+     0K                                                       100% 42,0M=0s
+
+2025-12-09 20:37:30 (42,0 MB/s) - «finwake.com/01-sep2010-free-android/rn3.gif» сохранён [308/308]
+
+--2025-12-09 20:37:30--  https://finwake.com/01-sep2010-free-android/wsir.gif
+Повторное использование соединения с finwake.com:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Кукисы, полученные из finwake.com, попытались изменить домен на $host
+Длина: 936 [image/gif]
+Сохранение в: «finwake.com/01-sep2010-free-android/wsir.gif»
+
+     0K                                                       100%  298M=0s
+
+2025-12-09 20:37:30 (298 MB/s) - «finwake.com/01-sep2010-free-android/wsir.gif» сохранён [936/936]
+
+ЗАВЕРШЕНО --2025-12-09 20:37:30--
+Общее время: 6,4s
+Загружено: 10 файлов, 245K за 0,2s (1,50 MB/s)
+Преобразование ссылок в finwake.com/01-sep2010-free-android/prevod3.htm… 7.
+3-4
+Преобразование ссылок в finwake.com/01-sep2010-free-android/01.htm… 2598.
+147-2451
+Преобразование ссылок в finwake.com/01-sep2010-free-android/finstyle.css… 1.
+0-1
+Преобразование ссылок в finwake.com/01-sep2010-free-android/foot.css… 1.
+0-1
+Ссылки преобразованы в файлы (4) за 0,03 секунд.

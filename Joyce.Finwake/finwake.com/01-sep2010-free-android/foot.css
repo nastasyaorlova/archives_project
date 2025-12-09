@@ -1,0 +1,126 @@
+body 
+
+{
+background-image: url("https://finwake.com/01-sep2010-free-android/foot.png");
+font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+text-align: justify;
+color: white;
+text: #FFFFFF; 
+}
+
+p {
+  margin: 0.1vw 0.1vw 2.8vw 0.3vw;
+  width: 98%;
+}
+
+a:link, a:visited { color: #70DB93;}
+
+img {
+    float: right;
+    padding: 0.2vw;
+	border: 1px solid white;
+    margin-left: 1.5vw; margin-right:0; margin-top: 0.6vw; margin-bottom: 0.1vw;
+}
+
+/* Scrollbar custom width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #36454f; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff; 
+}
+
+/* vertikalna android: Sony C5 = 360 */
+@media only screen and (max-width: 420px) 
+
+       { body {font-size: 2.8vw;
+	         line-height: 1.4;}
+       } 
+	   
+/* Samsung S10 = 480, Xperia = 540, Alcatel tablet = 600, vertikalna */
+@media only screen and (min-width: 421px) and (max-width: 650px) and (orientation: portrait)
+
+       { body { font-size: 2.6vw;
+	           line-height: 1.2;}
+       }  
+
+/* Sony C5 = 640, horizontalna */
+@media only screen and (min-width: 421px) and (max-width: 650px) and (orientation: landscape)
+
+       { body { font-size: 2.4vw;}
+	    } 
+
+/* Surface Pro = 720, Galaxy Tab 10 = 800, vertikalna */
+@media only screen and (min-width: 651px) and (max-width: 900px) and (orientation: portrait)
+
+       { body { font-size: 2.4vw}
+	   p {margin: 0.1vw 0.1vw 2.8vw 0.3vw;}
+       }
+
+/* Samsunzi = 740, 760, Xiaomi Mi 10 = 851, horizontalna */
+@media only screen and (min-width: 651px) and (max-width: 900px) and (orientation:landscape)
+
+    { body { font-size: 1.9vw}
+    }	   
+    
+/* Android tablet, vertikalna */
+@media only screen and (min-width: 901px) and (max-width: 1100px) and (orientation:portrait)
+
+        { body {font-size: 2.2vw;}
+         p {margin: 0.1vw 0.1vw 2.7vw 0.3vw;}
+        } 
+		
+/* Alcatel tablet = 960, iPad = 1024, horizontalna */
+@media only screen and (min-width: 921px) and (max-width: 1100px) and (orientation:landscape)
+
+       { body { font-size: 1.9vw;}
+         p {margin: 0.1vw 0.1vw 2.4vw 0.3vw;}
+       }
+  
+@media only screen and (min-width: 1101px) and (max-width: 1160px)
+
+       { body { font-size: 1.8vw; }
+         p {margin: 0.1vw 0.1vw 2.1vw 0.2vw;}
+       }
+
+@media only screen and (min-width: 1161px) and (max-width: 1280px)
+
+       { body { font-size: 1.6vw;
+	           line-height: 1.5;}
+         p {margin: 0.1vw 0.1vw 2.4vw 0.2vw;}
+       }
+
+@media only screen and (min-width: 1281px) and (max-width: 1360px)
+
+       { body { font-size: 1.56vw;
+	           line-height: 1.35;}
+         p {margin: 0.1vw 0.1vw 2.1vw 0.2vw;}
+       }	   
+	   
+@media only screen and (min-width: 1361px) and (max-width: 1440px)
+
+       { body { font-size: 1.6vw;
+	           line-height: 1.5;}
+         p {margin: 0.1vw 0.1vw 2.4vw 0.2vw;}
+       }		   
+	   
+@media only screen and (min-width: 1441px) 
+
+       { body { font-size: 1.4vw;
+	           line-height: 1.5;}
+         p {margin: 0.1vw 0.1vw 2vw 0.2vw;}
+       }
