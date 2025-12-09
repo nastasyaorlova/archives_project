@@ -1,0 +1,17 @@
+# Don't index any action pages
+#
+User-agent: *
+Disallow: /request/
+Disallow: /search/external/
+Disallow: /external/
+Disallow: /search/articles/
+Disallow: /article/
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: StolenCameraFinder
+Disallow: /

@@ -1,0 +1,302 @@
+Открывается файл WARC «joycecoll.warc.gz».
+
+--2025-12-09 19:52:03--  https://search.library.wisc.edu/digital/AJoyceColl
+Распознаётся search.library.wisc.edu (search.library.wisc.edu)… 128.104.46.254
+Подключение к search.library.wisc.edu (search.library.wisc.edu)|128.104.46.254|:443... соединение установлено.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: нет данных [text/html]
+Сохранение в: «search.library.wisc.edu/digital/AJoyceColl.html»
+
+     0K .......... .......... .......... .......... ..........  213K
+    50K .......... .......... .......... .......... ..........  270K
+   100K .......... .......... .......... .....                  241K=0,6s
+
+2025-12-09 19:52:07 (239 KB/s) - «search.library.wisc.edu/digital/AJoyceColl.html» сохранён [138611]
+
+Загружается robots.txt; не обращайте внимание на ошибки.
+--2025-12-09 19:52:07--  https://search.library.wisc.edu/robots.txt
+Повторное использование соединения с search.library.wisc.edu:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: 282 [text/plain]
+Сохранение в: «search.library.wisc.edu/robots.txt»
+
+     0K                                                       100% 89,6M=0s
+
+2025-12-09 19:52:07 (89,6 MB/s) - «search.library.wisc.edu/robots.txt» сохранён [282/282]
+
+--2025-12-09 19:52:07--  https://search.library.wisc.edu/assets/application-1c5f41ad761bc5d6913582fccc54a8f20676aeec8e18c80d566c00e2efa6c5e8.css
+Повторное использование соединения с search.library.wisc.edu:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: 233049 (228K) [text/css]
+Сохранение в: «search.library.wisc.edu/assets/application-1c5f41ad761bc5d6913582fccc54a8f20676aeec8e18c80d566c00e2efa6c5e8.css»
+
+     0K .......... .......... .......... .......... .......... 21%  268K 1s
+    50K .......... .......... .......... .......... .......... 43%  514K 0s
+   100K .......... .......... .......... .......... .......... 65%  178K 0s
+   150K .......... .......... .......... .......... .......... 87%  527K 0s
+   200K .......... .......... .......                         100%  141K=0,9s
+
+2025-12-09 19:52:08 (266 KB/s) - «search.library.wisc.edu/assets/application-1c5f41ad761bc5d6913582fccc54a8f20676aeec8e18c80d566c00e2efa6c5e8.css» сохранён [233049/233049]
+
+--2025-12-09 19:52:08--  https://search.library.wisc.edu/assets/application-78ea8987cfbf35dff7ad1e8a54350b457fe9ddf6d9e43b1afa3460fd22112c11.js
+Повторное использование соединения с search.library.wisc.edu:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: 587065 (573K) [text/javascript]
+Сохранение в: «search.library.wisc.edu/assets/application-78ea8987cfbf35dff7ad1e8a54350b457fe9ddf6d9e43b1afa3460fd22112c11.js»
+
+     0K .......... .......... .......... .......... ..........  8%  534K 1s
+    50K .......... .......... .......... .......... .......... 17%  263K 1s
+   100K .......... .......... .......... .......... .......... 26%  175K 2s
+   150K .......... .......... .......... .......... .......... 34%  178K 2s
+   200K .......... .......... .......... .......... .......... 43%  175K 1s
+   250K .......... .......... .......... .......... .......... 52%  131K 1s
+   300K .......... .......... .......... .......... .......... 61%  176K 1s
+   350K .......... .......... .......... .......... .......... 69%  175K 1s
+   400K .......... .......... .......... .......... .......... 78%  177K 1s
+   450K .......... .......... .......... .......... .......... 87%  176K 0s
+   500K .......... .......... .......... .......... .......... 95%  263K 0s
+   550K .......... .......... ...                             100%  248K=2,9s
+
+2025-12-09 19:52:11 (195 KB/s) - «search.library.wisc.edu/assets/application-78ea8987cfbf35dff7ad1e8a54350b457fe9ddf6d9e43b1afa3460fd22112c11.js» сохранён [587065/587065]
+
+--2025-12-09 19:52:11--  https://search.library.wisc.edu/digital/AMF2PZFZHI2WND8U
+Повторное использование соединения с search.library.wisc.edu:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: нет данных [text/html]
+Сохранение в: «search.library.wisc.edu/digital/AMF2PZFZHI2WND8U.html»
+
+     0K .......... .......... .......... .......... ..........  262K
+    50K .......... .......... .......... .......... ..........  260K
+   100K .......... .......... .......... ...                    337K=0,5s
+
+2025-12-09 19:52:12 (277 KB/s) - «search.library.wisc.edu/digital/AMF2PZFZHI2WND8U.html» сохранён [136990]
+
+--2025-12-09 19:52:12--  https://search.library.wisc.edu/digital/ASTF5P5WSYPFV58I
+Повторное использование соединения с search.library.wisc.edu:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: нет данных [text/html]
+Сохранение в: «search.library.wisc.edu/digital/ASTF5P5WSYPFV58I.html»
+
+     0K .......... .......... .......... .......... ..........  382K
+    50K .......... .......... .......... .......... ..........  309K
+   100K .......... .......... .......... ..                     251K=0,4s
+
+2025-12-09 19:52:12 (314 KB/s) - «search.library.wisc.edu/digital/ASTF5P5WSYPFV58I.html» сохранён [135350]
+
+--2025-12-09 19:52:12--  https://search.library.wisc.edu/digital/ANHKH63NBVZYNK8F
+Повторное использование соединения с search.library.wisc.edu:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: нет данных [text/html]
+Сохранение в: «search.library.wisc.edu/digital/ANHKH63NBVZYNK8F.html»
+
+     0K .......... .......... .......... .......... ..........  255K
+    50K .......... .......... .......... .......... ..........  274K
+   100K .......... .......... .......... .                     23,3M=0,4s
+
+2025-12-09 19:52:13 (346 KB/s) - «search.library.wisc.edu/digital/ANHKH63NBVZYNK8F.html» сохранён [134697]
+
+--2025-12-09 19:52:13--  https://search.library.wisc.edu/digital/AUZQHZR3UF5SXK9B
+Повторное использование соединения с search.library.wisc.edu:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: нет данных [text/html]
+Сохранение в: «search.library.wisc.edu/digital/AUZQHZR3UF5SXK9B.html»
+
+     0K .......... .......... .......... .......... ..........  371K
+    50K .......... .......... .......... .......... ..........  889K
+   100K .......... .......... .......... ...                    141K=0,4s
+
+2025-12-09 19:52:14 (312 KB/s) - «search.library.wisc.edu/digital/AUZQHZR3UF5SXK9B.html» сохранён [136513]
+
+--2025-12-09 19:52:14--  https://search.library.wisc.edu/digital/ALWMEAM3TP7WFK84
+Повторное использование соединения с search.library.wisc.edu:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: нет данных [text/html]
+Сохранение в: «search.library.wisc.edu/digital/ALWMEAM3TP7WFK84.html»
+
+     0K .......... .......... .......... .......... ..........  264K
+    50K .......... .......... .......... .......... ..........  517K
+   100K .......... .......... .......... ..                     340K=0,4s
+
+2025-12-09 19:52:14 (347 KB/s) - «search.library.wisc.edu/digital/ALWMEAM3TP7WFK84.html» сохранён [135277]
+
+--2025-12-09 19:52:14--  https://search.library.wisc.edu/digital/AP4KOGGNDV3TQ28T
+Повторное использование соединения с search.library.wisc.edu:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: нет данных [text/html]
+Сохранение в: «search.library.wisc.edu/digital/AP4KOGGNDV3TQ28T.html»
+
+     0K .......... .......... .......... .......... .......... 1014K
+    50K .......... .......... .......... .......... .......... 7,43M
+   100K .......... .......... .......... ..                     172K=0,2s
+
+2025-12-09 19:52:15 (542 KB/s) - «search.library.wisc.edu/digital/AP4KOGGNDV3TQ28T.html» сохранён [135514]
+
+--2025-12-09 19:52:15--  https://search.library.wisc.edu/digital/AVFM6QW2LHD6NX86
+Повторное использование соединения с search.library.wisc.edu:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: нет данных [text/html]
+Сохранение в: «search.library.wisc.edu/digital/AVFM6QW2LHD6NX86.html»
+
+     0K .......... .......... .......... .......... ..........  285K
+    50K .......... .......... .......... .......... ..........  530K
+   100K .......... .......... .......... .                      309K=0,4s
+
+2025-12-09 19:52:16 (354 KB/s) - «search.library.wisc.edu/digital/AVFM6QW2LHD6NX86.html» сохранён [134854]
+
+--2025-12-09 19:52:16--  https://search.library.wisc.edu/digital/AXDQ4VQC3DV5T28D
+Повторное использование соединения с search.library.wisc.edu:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: нет данных [text/html]
+Сохранение в: «search.library.wisc.edu/digital/AXDQ4VQC3DV5T28D.html»
+
+     0K .......... .......... .......... .......... ..........  523K
+    50K .......... .......... .......... .......... ..........  266K
+   100K .......... .......... .......... ...                    328K=0,4s
+
+2025-12-09 19:52:16 (346 KB/s) - «search.library.wisc.edu/digital/AXDQ4VQC3DV5T28D.html» сохранён [136546]
+
+--2025-12-09 19:52:16--  https://search.library.wisc.edu/digital/A3HUXDVV6K4IFG8W
+Повторное использование соединения с search.library.wisc.edu:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: нет данных [text/html]
+Сохранение в: «search.library.wisc.edu/digital/A3HUXDVV6K4IFG8W.html»
+
+     0K .......... .......... .......... .......... ..........  496K
+    50K .......... .......... .......... .......... ..........  560K
+   100K .......... .......... .......... .                      334K=0,3s
+
+2025-12-09 19:52:17 (462 KB/s) - «search.library.wisc.edu/digital/A3HUXDVV6K4IFG8W.html» сохранён [135029]
+
+--2025-12-09 19:52:17--  https://search.library.wisc.edu/digital/AE474LZYOPEOXL8S
+Повторное использование соединения с search.library.wisc.edu:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: нет данных [text/html]
+Сохранение в: «search.library.wisc.edu/digital/AE474LZYOPEOXL8S.html»
+
+     0K .......... .......... .......... .......... ..........  539K
+    50K .......... .......... .......... .......... ..........  530K
+   100K .......... .......... .......... ..                     319K=0,3s
+
+2025-12-09 19:52:18 (458 KB/s) - «search.library.wisc.edu/digital/AE474LZYOPEOXL8S.html» сохранён [135757]
+
+--2025-12-09 19:52:18--  https://search.library.wisc.edu/digital/ACDDDFJSM52QAN8M
+Повторное использование соединения с search.library.wisc.edu:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: нет данных [text/html]
+Сохранение в: «search.library.wisc.edu/digital/ACDDDFJSM52QAN8M.html»
+
+     0K .......... .......... .......... .......... ..........  519K
+    50K .......... .......... .......... .......... ..........  532K
+   100K .......... .......... .......... .                      325K=0,3s
+
+2025-12-09 19:52:18 (459 KB/s) - «search.library.wisc.edu/digital/ACDDDFJSM52QAN8M.html» сохранён [134187]
+
+--2025-12-09 19:52:18--  https://search.library.wisc.edu/digital/AYFISM4BZEXJQQ9D
+Повторное использование соединения с search.library.wisc.edu:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: нет данных [text/html]
+Сохранение в: «search.library.wisc.edu/digital/AYFISM4BZEXJQQ9D.html»
+
+     0K .......... .......... .......... .......... ..........  536K
+    50K .......... .......... .......... .......... .......... 14,1M
+   100K .......... .......... .......... .                      162K=0,3s
+
+2025-12-09 19:52:19 (451 KB/s) - «search.library.wisc.edu/digital/AYFISM4BZEXJQQ9D.html» сохранён [134787]
+
+--2025-12-09 19:52:19--  https://search.library.wisc.edu/digital/AZDRV454D6GO368L
+Повторное использование соединения с search.library.wisc.edu:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: нет данных [text/html]
+Сохранение в: «search.library.wisc.edu/digital/AZDRV454D6GO368L.html»
+
+     0K .......... .......... .......... .......... ..........  529K
+    50K .......... .......... .......... .......... ..........  526K
+   100K .......... .......... .......... .                      163K=0,4s
+
+2025-12-09 19:52:19 (344 KB/s) - «search.library.wisc.edu/digital/AZDRV454D6GO368L.html» сохранён [134633]
+
+--2025-12-09 19:52:19--  https://search.library.wisc.edu/digital/AE7SBB45V3K3IK8R
+Повторное использование соединения с search.library.wisc.edu:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: нет данных [text/html]
+Сохранение в: «search.library.wisc.edu/digital/AE7SBB45V3K3IK8R.html»
+
+     0K .......... .......... .......... .......... ..........  522K
+    50K .......... .......... .......... .......... ..........  527K
+   100K .......... .......... .......... .                      333K=0,3s
+
+2025-12-09 19:52:20 (461 KB/s) - «search.library.wisc.edu/digital/AE7SBB45V3K3IK8R.html» сохранён [134506]
+
+--2025-12-09 19:52:20--  https://search.library.wisc.edu/digital/AZUCOQUUW5IAR28J
+Повторное использование соединения с search.library.wisc.edu:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: нет данных [text/html]
+Сохранение в: «search.library.wisc.edu/digital/AZUCOQUUW5IAR28J.html»
+
+     0K .......... .......... .......... .......... .......... 11,6M
+    50K .......... .......... .......... .......... ..........  519K
+   100K .......... .......... .......... .                      361K=0,2s
+
+2025-12-09 19:52:20 (699 KB/s) - «search.library.wisc.edu/digital/AZUCOQUUW5IAR28J.html» сохранён [134934]
+
+--2025-12-09 19:52:20--  https://search.library.wisc.edu/assets/wisc/lake-ebf3e3c8cd42e71bc2bf61da0b3181bb5a5fffde23513d25cb9d48e7b4566722.jpg
+Повторное использование соединения с search.library.wisc.edu:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: 17219 (17K) [image/jpeg]
+Сохранение в: «search.library.wisc.edu/assets/wisc/lake-ebf3e3c8cd42e71bc2bf61da0b3181bb5a5fffde23513d25cb9d48e7b4566722.jpg»
+
+     0K .......... ......                                     100% 33,4M=0s
+
+2025-12-09 19:52:20 (33,4 MB/s) - «search.library.wisc.edu/assets/wisc/lake-ebf3e3c8cd42e71bc2bf61da0b3181bb5a5fffde23513d25cb9d48e7b4566722.jpg» сохранён [17219/17219]
+
+--2025-12-09 19:52:20--  https://search.library.wisc.edu/assets/banner/weatherATS-0ae9aaf171c31f5940f86a60f82dc8ea93e0ec9c6d22ec47fcbc10369256f348.jpg
+Повторное использование соединения с search.library.wisc.edu:443.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: 173307 (169K) [image/jpeg]
+Сохранение в: «search.library.wisc.edu/assets/banner/weatherATS-0ae9aaf171c31f5940f86a60f82dc8ea93e0ec9c6d22ec47fcbc10369256f348.jpg»
+
+     0K .......... .......... .......... .......... .......... 29% 44,9M 0s
+    50K .......... .......... .......... .......... .......... 59%  546K 0s
+   100K .......... .......... .......... .......... .......... 88%  513K 0s
+   150K .......... .........                                  100% 39,4M=0,2s
+
+2025-12-09 19:52:21 (888 KB/s) - «search.library.wisc.edu/assets/banner/weatherATS-0ae9aaf171c31f5940f86a60f82dc8ea93e0ec9c6d22ec47fcbc10369256f348.jpg» сохранён [173307/173307]
+
+ЗАВЕРШЕНО --2025-12-09 19:52:21--
+Общее время: 17s
+Загружено: 21 файлов, 3,0M за 9,7s (322 KB/s)
+Преобразование ссылок в search.library.wisc.edu/digital/AZDRV454D6GO368L.html… 47.
+10-37
+Преобразование ссылок в search.library.wisc.edu/digital/ASTF5P5WSYPFV58I.html… 56.
+10-46
+Преобразование ссылок в search.library.wisc.edu/digital/ACDDDFJSM52QAN8M.html… 42.
+10-32
+Преобразование ссылок в search.library.wisc.edu/digital/AXDQ4VQC3DV5T28D.html… 71.
+10-61
+Преобразование ссылок в search.library.wisc.edu/digital/AJoyceColl.html… 37.
+24-13
+Преобразование ссылок в search.library.wisc.edu/digital/AVFM6QW2LHD6NX86.html… 49.
+10-39
+Преобразование ссылок в search.library.wisc.edu/digital/AUZQHZR3UF5SXK9B.html… 63.
+10-53
+Преобразование ссылок в search.library.wisc.edu/digital/AMF2PZFZHI2WND8U.html… 67.
+10-57
+Преобразование ссылок в search.library.wisc.edu/digital/AP4KOGGNDV3TQ28T.html… 50.
+10-40
+Преобразование ссылок в search.library.wisc.edu/digital/A3HUXDVV6K4IFG8W.html… 46.
+10-36
+Преобразование ссылок в search.library.wisc.edu/digital/AZUCOQUUW5IAR28J.html… 51.
+10-41
+Преобразование ссылок в search.library.wisc.edu/digital/AYFISM4BZEXJQQ9D.html… 48.
+10-38
+Преобразование ссылок в search.library.wisc.edu/digital/ALWMEAM3TP7WFK84.html… 52.
+10-42
+Преобразование ссылок в search.library.wisc.edu/digital/ANHKH63NBVZYNK8F.html… 47.
+10-37
+Преобразование ссылок в search.library.wisc.edu/digital/AE474LZYOPEOXL8S.html… 63.
+10-53
+Преобразование ссылок в search.library.wisc.edu/digital/AE7SBB45V3K3IK8R.html… 46.
+10-36
+Преобразование ссылок в search.library.wisc.edu/assets/application-1c5f41ad761bc5d6913582fccc54a8f20676aeec8e18c80d566c00e2efa6c5e8.css… 2.
+2-0
+Ссылки преобразованы в файлы (17) за 0,03 секунд.
