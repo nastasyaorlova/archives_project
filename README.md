@@ -15,28 +15,28 @@
 
 В коллекцию вошли следующие ресурсы:
 
-1. # [Finwake.com](https://finwake.com/01-sep2010-free-android/01.htm). 
+1. ### [Finwake.com](https://finwake.com/01-sep2010-free-android/01.htm). 
    Неофициальный онлайн-ресурс, посвящённый *Finnegans Wake* (конкордансы, комментарии, навигация по тексту и т.д.).
 
-2. # [The Joyce Project](https://www.joyceproject.com/1)
+2. ### [The Joyce Project](https://www.joyceproject.com/1)
 
    Онлайн-издание *Ulysses* с полным текстом романа, цветовой разметкой и подробными гиперссылочными аннотациями, созданное Джоном Хантом для поддержки чтения романа.
 
-3. # [James Joyce Collection, University at Buffalo](https://library.buffalo.edu/jamesjoyce.html)
+3. ### [James Joyce Collection, University at Buffalo](https://library.buffalo.edu/jamesjoyce.html)
 
    Крупнейшее собрание рукописей, писем, рабочих тетрадей и исследовательской литературы о Джойсе; сайт описывает физическую и цифровую коллекции, даёт доступ к выборке оцифрованных материалов. 
 
-4. # [James Joyce Digital Archive (JJDA)](https://jjda.ie/)  
+4. ### [James Joyce Digital Archive (JJDA)](https://jjda.ie/)  
    Цифровой архив, представляющий полные композитационные истории *Ulysses* и *Finnegans Wake* — от черновых записей и тетрадей до финальных изданий в интерактивном формате.
 
-5. # [James Joyce Scholars' Collection (UW–Madison)](https://search.library.wisc.edu/digital/AJoyceColl)
+5. ### [James Joyce Scholars' Collection (UW–Madison)](https://search.library.wisc.edu/digital/AJoyceColl)
   
    Цифровая коллекция рукописей и ранних изданий Джойса и сопутствующих материалов, доступная через библиотечный портал Университета Висконсина–Мэдисон (UWDigitial Collections).
 
-6. # [JoyceGeek](https://joycegeek.com/) 
+6. ### [JoyceGeek](https://joycegeek.com/) 
    Блог и сайт актёра и исследователя Адама Харви, посвящённый в первую очередь *Finnegans Wake*: перформансы, видеогайды, блог JoyceBlog, материалы о чтении и постановках Джойса. 
 
-7. ## [James Joyce Society](https://joycesociety.com/)
+7. ### [James Joyce Society](https://joycesociety.com/)
    Сайт James Joyce Society (основано в 1947), содержащий информацию о событиях, читательских группах, архиве общества и новостях джойсоведческого сообщества. 
 
 Коллекция интересна для цифровых гуманитарных исследований и джойсоведения в частности как набор **разноплановых типов ресурсов**:
